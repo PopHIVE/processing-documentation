@@ -1,4 +1,14 @@
+.
+..
+.DS_Store
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+*_files
+*.html
+*.pptx
+
+/.quarto/
+/docs/
