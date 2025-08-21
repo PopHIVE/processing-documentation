@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>processing-documentation</title>
+<title>processing-documentation – Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,50 +20,13 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./pophivelogo.png" rel="icon" type="image/png">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,20 +35,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b038de6be90fa9907b4761afebd3794a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -100,9 +51,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  });
+</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="_styles/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -113,23 +78,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">processing-documentation</span>
+    <span class="navbar-title">Documentation</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./Pages/childhood-immunizations/childhood-immunizations.html"> 
+<span class="menu-text">Childhood Immunizations</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-respiratory-diseases" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Respiratory Diseases</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-respiratory-diseases">    
+        <li>
+    <a class="dropdown-item" href="./Pages/respiratory-diseases/covid.html">
+ <span class="dropdown-text">COVID-19</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./Pages/respiratory-diseases/influenza.html">
+ <span class="dropdown-text">Influenza</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Pages/respiratory-diseases/pneumococcus.html">
+ <span class="dropdown-text">Pneumococcus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Pages/respiratory-diseases/rsv.html">
+ <span class="dropdown-text">Respiratory Syncytial Virus</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chronic-diseases" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chronic Diseases</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chronic-diseases">    
+        <li>
+    <a class="dropdown-item" href="./Pages/chronic-diseases/diabetes.html">
+ <span class="dropdown-text">Diabetes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Pages/chronic-diseases/obesity.html">
+ <span class="dropdown-text">Obesity</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-injury--overdose" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Injury &amp; Overdose</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-injury--overdose">    
+        <li>
+    <a class="dropdown-item" href="./Pages/injury-and-overdose/opioid-overdoses.html">
+ <span class="dropdown-text">Opioid Overdoses</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -166,18 +175,199 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    classDef pass stroke:#66bb6a
+    classDef warn stroke:#ffa726
+    classDef fail stroke:#f44336
+    s0("`&lt;h4&gt;&lt;a href="https://data.cdc.gov" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/qvzb-qs6p/" target="_blank" rel="noreferrer"&gt;Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/3cxc-4k8q" target="_blank" rel="noreferrer"&gt;Percent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region, National Respiratory and Enteric Virus Surveillance System&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s1("`&lt;h4&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Streptococcus pneumoniae Serotype Distribution Among US Adults Hospitalized With Community-Acquired Pneumonia, 2019-2020&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Open Forum for Infectious Diseases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s2("`&lt;h4&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/" target="_blank" rel="noreferrer"&gt;CMU Delphi&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/doctor-visits.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Doctor Visits&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hospital-admissions.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Hospital Admissions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nhsn.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; National Healthcare Safety Network Respiratory Hospitalizations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s3("`&lt;h4&gt;&lt;a href="https://cosmos.epic.com/" target="_blank" rel="noreferrer"&gt;Epic Cosmos&lt;/a&gt;&lt;/h4&gt;`")
+    s4("`&lt;h4&gt;&lt;a href="https://trends.google.com" target="_blank" rel="noreferrer"&gt;Google Trends&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/DISSC-yale/gtrends_collection" target="_blank" rel="noreferrer"&gt;Yale Data-Intensive Social Sciences, Google Trends Collection Framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s5("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention (NCHS)&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death Counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s6("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;National Immunization Survey&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;About the National Immunization Surveys (NIS)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s7("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nwss" target="_blank" rel="noreferrer"&gt;National Wastewater Surveillance System&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/COVID19-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater COVID-19 State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/InfluenzaA-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater Influenza A State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/RSV-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater RSV State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    subgraph abcs["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/abcs" target="_blank" rel="noreferrer"&gt;abcs&lt;/a&gt;`"]
+        direction LR
+        n1["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+        n2["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/uad.csv.gz" target="_blank" rel="noreferrer"&gt;uad.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph brfss["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/brfss" target="_blank" rel="noreferrer"&gt;brfss&lt;/a&gt;`"]
+        direction LR
+        n3["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/brfss/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph delphi_doctors_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_doctors_claims" target="_blank" rel="noreferrer"&gt;delphi_doctors_claims&lt;/a&gt;`"]
+        direction LR
+        n4["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_doctors_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph delphi_hospital_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_hospital_claims" target="_blank" rel="noreferrer"&gt;delphi_hospital_claims&lt;/a&gt;`"]
+        direction LR
+        n5["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_hospital_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph delphi_nhsn["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_nhsn" target="_blank" rel="noreferrer"&gt;delphi_nhsn&lt;/a&gt;`"]
+        direction LR
+        n6["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_nhsn/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph epic["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/epic" target="_blank" rel="noreferrer"&gt;epic&lt;/a&gt;`"]
+        direction LR
+        n7["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/children.csv.gz" target="_blank" rel="noreferrer"&gt;children.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n8["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/county_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;county_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n9["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/no_geo.csv.gz" target="_blank" rel="noreferrer"&gt;no_geo.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: positive_rsv_tests_(%)&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: n_self_harm&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: n_patients&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: epic_positive_rsv_tests_(%)&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: epic_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: epic_n_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+    end
+    subgraph gtrends["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/gtrends" target="_blank" rel="noreferrer"&gt;gtrends&lt;/a&gt;`"]
+        direction LR
+        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;geography_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: fips&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: term&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n13["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: gtrends_rsv_adjusted&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+    end
+    subgraph nchs_mortality["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nchs_mortality" target="_blank" rel="noreferrer"&gt;nchs_mortality&lt;/a&gt;`"]
+        direction LR
+        n14["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data_county.csv.gz" target="_blank" rel="noreferrer"&gt;data_county.csv.gz&lt;/a&gt;`"]:::pass
+        n15["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph nis["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nis" target="_blank" rel="noreferrer"&gt;nis&lt;/a&gt;`"]
+        direction LR
+        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: insurance&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: urban&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: age&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+    end
+    subgraph NREVSS["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/NREVSS" target="_blank" rel="noreferrer"&gt;NREVSS&lt;/a&gt;`"]
+        direction LR
+        n19["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/NREVSS/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph nssp["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nssp" target="_blank" rel="noreferrer"&gt;nssp&lt;/a&gt;`"]
+        direction LR
+        n20["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nssp/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph respnet["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/respnet" target="_blank" rel="noreferrer"&gt;respnet&lt;/a&gt;`"]
+        direction LR
+        n21["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/respnet/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph schoolvaxview["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/schoolvaxview" target="_blank" rel="noreferrer"&gt;schoolvaxview&lt;/a&gt;`"]
+        direction LR
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;geography_nas&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: grade&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: N&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vax&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: percent_surveyed&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: survey_type&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;geography_nas&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: grade&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: N&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vax&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: percent_surveyed&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: survey_type&lt;/li&gt;&lt;/ul&gt;`"]:::warn
+    end
+    subgraph wastewater["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/wastewater" target="_blank" rel="noreferrer"&gt;wastewater&lt;/a&gt;`"]
+        direction LR
+        n24["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/wastewater/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
+    end
+    subgraph bundle_childhood_immunizations["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_childhood_immunizations" target="_blank" rel="noreferrer"&gt;bundle_childhood_immunizations&lt;/a&gt;`"]
+        direction LR
+        n25["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/mmr_rates_epic.parquet" target="_blank" rel="noreferrer"&gt;mmr_rates_epic.parquet&lt;/a&gt;`"]
+        n26["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_insurance.parquet" target="_blank" rel="noreferrer"&gt;nis_insurance.parquet&lt;/a&gt;`"]
+        n27["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_overall.parquet" target="_blank" rel="noreferrer"&gt;nis_overall.parquet&lt;/a&gt;`"]
+        n28["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_urban.parquet" target="_blank" rel="noreferrer"&gt;nis_urban.parquet&lt;/a&gt;`"]
+        n29["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/schoolvaxview_exemptions.parquet" target="_blank" rel="noreferrer"&gt;schoolvaxview_exemptions.parquet&lt;/a&gt;`"]
+        n30["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/schoolvaxview_overall.parquet" target="_blank" rel="noreferrer"&gt;schoolvaxview_overall.parquet&lt;/a&gt;`"]
+        n31["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/state_compare.parquet" target="_blank" rel="noreferrer"&gt;state_compare.parquet&lt;/a&gt;`"]
+    end
+    subgraph bundle_chronic_diseases["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_chronic_diseases" target="_blank" rel="noreferrer"&gt;bundle_chronic_diseases&lt;/a&gt;`"]
+        direction LR
+        n32["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/brfss_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;brfss_prevalence_by_geography.parquet&lt;/a&gt;`"]
+        n33["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography_county.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography_county.parquet&lt;/a&gt;`"]
+        n34["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography.parquet&lt;/a&gt;`"]
+        n35["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/prevalence_by_geography_and_source.parquet" target="_blank" rel="noreferrer"&gt;prevalence_by_geography_and_source.parquet&lt;/a&gt;`"]
+    end
+    subgraph bundle_respiratory["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_respiratory" target="_blank" rel="noreferrer"&gt;bundle_respiratory&lt;/a&gt;`"]
+        direction LR
+        n36["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;covid_ed_visits_by_county.parquet&lt;/a&gt;`"]
+        n37["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;covid_overall_trends.parquet&lt;/a&gt;`"]
+        n38["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;covid_trends_by_age.parquet&lt;/a&gt;`"]
+        n39["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;flu_ed_visits_by_county.parquet&lt;/a&gt;`"]
+        n40["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;flu_overall_trends.parquet&lt;/a&gt;`"]
+        n41["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;flu_trends_by_age.parquet&lt;/a&gt;`"]
+        n42["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_by_geography.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_by_geography.parquet&lt;/a&gt;`"]
+        n43["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_comparison.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_comparison.parquet&lt;/a&gt;`"]
+        n44["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_serotype_trends.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_serotype_trends.parquet&lt;/a&gt;`"]
+        n45["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;rsv_ed_visits_by_county.parquet&lt;/a&gt;`"]
+        n46["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_google_dma.parquet" target="_blank" rel="noreferrer"&gt;rsv_google_dma.parquet&lt;/a&gt;`"]
+        n47["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;rsv_overall_trends.parquet&lt;/a&gt;`"]
+        n48["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_positive_tests.parquet" target="_blank" rel="noreferrer"&gt;rsv_positive_tests.parquet&lt;/a&gt;`"]
+        n49["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_testing_pct.parquet" target="_blank" rel="noreferrer"&gt;rsv_testing_pct.parquet&lt;/a&gt;`"]
+        n50["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;rsv_trends_by_age.parquet&lt;/a&gt;`"]
+    end
+    s0 --&gt; n1
+    s0 --&gt; n2
+    s1 --&gt; n2
+    s2 --&gt; n4
+    s2 --&gt; n5
+    s2 --&gt; n6
+    s3 --&gt; n7
+    s3 --&gt; n8
+    s3 --&gt; n9
+    s3 --&gt; n10
+    s3 --&gt; n11
+    s4 --&gt; n13
+    s5 --&gt; n14
+    s5 --&gt; n15
+    s6 --&gt; n16
+    s6 --&gt; n17
+    s6 --&gt; n18
+    s0 --&gt; n19
+    s7 --&gt; n24
+    n23 --&gt; bundle_childhood_immunizations
+    n22 --&gt; bundle_childhood_immunizations
+    n18 --&gt; bundle_childhood_immunizations
+    n17 --&gt; bundle_childhood_immunizations
+    n16 --&gt; bundle_childhood_immunizations
+    n7 --&gt; bundle_childhood_immunizations
+    n3 --&gt; bundle_chronic_diseases
+    n10 --&gt; bundle_chronic_diseases
+    n11 --&gt; bundle_respiratory
+    n13 --&gt; bundle_respiratory
+    n24 --&gt; bundle_respiratory
+    n1 --&gt; bundle_respiratory
+    n2 --&gt; bundle_respiratory
+    n19 --&gt; bundle_respiratory
+    n20 --&gt; bundle_respiratory
+    n21 --&gt; bundle_respiratory
+    nNA --&gt; bundle_respiratory
+    nNA --&gt; bundle_respiratory
+    nNA --&gt; bundle_respiratory
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
+</div>
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -268,7 +458,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/PopHIVE\.github\.io\/processing-documentation\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -596,6 +786,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This site was built on a pophive.github.io page. <br> It was rendered using Quarto (v 1.6.39) and theme <a href="https://bootswatch.com/sandstone/">sandstone</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions"><ul><li><a href="https://github.com/PopHIVE/processing-documentation/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/PopHIVE/processing-documentation/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.pophive.org/" target="_blank">
+<p><span class="bi bi-globe" data-bs-toggle="tooltip" title="Visit PopHIVE.org"></span></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSchAasiq7ovCCNz9ussb7C2ntkZ-8Rjc7-tNSglkf5boS-A0w/viewform" target="_blank">
+<p><span class="bi bi-envelope-paper" data-bs-toggle="tooltip" title="Provide Feedback"></span></p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
