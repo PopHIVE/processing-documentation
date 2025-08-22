@@ -8,7 +8,7 @@ This site serves as a centralized hub for resource information and process docum
 
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/PopHIVE/processing-documentation) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/PopHIVE/processing-documentation) ![GitHub Release Date](https://img.shields.io/github/release-date/PopHIVE/processing-documentation) ![GitHub repo size](https://img.shields.io/github/repo-size/PopHIVE/processing-documentation)
 
-![GitHub contributors](https://img.shields.io/github/contributors/PopHIVE/processing-documentation) ![GitHub last commit](https://img.shields.io/github/last-commit/PopHIVE/processing-documentation) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/PopHIVEprocessing-documentation) ![GitHub language count](https://img.shields.io/github/languages/count/PopHIVE/processing-documentation) ![GitHub top language](https://img.shields.io/github/languages/top/PopHIVE/processing-documentation)
+![GitHub contributors](https://img.shields.io/github/contributors/PopHIVE/processing-documentation) ![GitHub last commit](https://img.shields.io/github/last-commit/PopHIVE/processing-documentation) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/PopHIVE/processing-documentation) ![GitHub language count](https://img.shields.io/github/languages/count/PopHIVE/processing-documentation) ![GitHub top language](https://img.shields.io/github/languages/top/PopHIVE/processing-documentation)
 
 ## Legal Disclaimer
 
