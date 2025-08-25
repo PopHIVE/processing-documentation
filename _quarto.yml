@@ -1,11 +1,11 @@
 project:
   type: book
   
-header-includes:
-  - '<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">'
-  - '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>'
-  - '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>'
-  - |
+header-includes: |
+  '<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">'
+  '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>'
+  '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>'
+  |
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -19,12 +19,9 @@ header-includes:
 book:
   title: "Documentation"
   favicon: pophivelogo.png
-  bread-crumbs: false
   search: true
-  back-to-top-navigation: true
   repo-url: https://github.com/PopHIVE/processing-documentation
-  issue-url: https://github.com/PopHIVE/processing-documentation/issues
-  repo-actions: [source, issue]
+  repo-actions: source
   sidebar:
     style: "docked"
   date-format: long
@@ -63,10 +60,8 @@ book:
     center:
       - text: '<span class="bi bi-globe" data-bs-toggle="tooltip" title="Visit PopHIVE.org"></span>'
         href: https://www.pophive.org/
-        target: _blank
       - text: '<span class="bi bi-envelope-paper" data-bs-toggle="tooltip" title="Provide Feedback"></span>'
         href: https://docs.google.com/forms/d/e/1FAIpQLSchAasiq7ovCCNz9ussb7C2ntkZ-8Rjc7-tNSglkf5boS-A0w/viewform
-        target: _blank
 
 
 format:
