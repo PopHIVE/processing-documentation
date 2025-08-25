@@ -10,48 +10,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Fetch all history for all branches
 
-      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'  # Adjust the Python version as needed
 
-      # Step 3: Set up R
       - name: Set up R
         uses: r-lib/actions/setup-r@v1
         with:
-          r-version: '4.1.0'  # Adjust based on the required R version
+          r-version: '4.4.3'  # Adjust based on the required R version
 
-      # Step 4: Install necessary R packages
       - name: Install R packages
         run: |
           Rscript -e 'install.packages(c("quarto", "jsonlite"), repos = "https://cloud.r-project.org")'
 
-      # Step 5: Install Quarto
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.269/quarto-1.2.269-linux-amd64.deb
           sudo dpkg -i quarto-1.2.269-linux-amd64.deb
 
-      # Step 6: Run the Python script to update the index.qmd
       - name: Update Index Page
         run: |
+          # Custom script to update the index.qmd
           python update_index.py
 
-      # Step 7: Render the Quarto book
       - name: Render Quarto Book
         run: |
           quarto render
 
-      # Step 8: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
           publish_dir: ./_site  # Adjust if your build output directory is different
-          publish_branch: gh-pages  # gh-pages branch for GitHub Pages
+          publish_branch: gh-pages  # gh-pages branch for GitHub Pages"
