@@ -9,16 +9,12 @@ number-sections: false
 ## ----------------------------------------------------------------
 ## SET UP THE ENVIRONMENT
 
-# Initiate the package environment.
-# renv::init()
-renv::restore()
 
 suppressPackageStartupMessages({
   library("jsonlite")
 })
 
 source("R/dcf_status_diagram_copied 08.25.2025.R")
-
 
 # URL of the gzipped JSON file
 url <- "https://raw.githubusercontent.com/PopHIVE/Ingest/main/report.json.gz"
