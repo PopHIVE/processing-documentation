@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main  # Change this to the branch you want to trigger the action
-    paths:
-      - 'index.qmd'  # Watch for changes to index.qmd
 
 jobs:
   build:
@@ -46,10 +44,10 @@ jobs:
         run: |
           python update_index.py
 
-      # Step 7: Render the Quarto book (index.qmd only)
+      # Step 7: Render the Quarto book
       - name: Render Quarto Book
         run: |
-          quarto render index.qmd
+          quarto render
 
       # Step 8: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
