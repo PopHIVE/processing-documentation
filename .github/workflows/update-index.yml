@@ -1,0 +1,42 @@
+name: Update Quarto Index Page
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the action
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'  # Adjust the Python version as needed
+
+      - name: Install Quarto
+        run: |
+          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.269/quarto-1.2.269-linux-amd64.deb
+          sudo dpkg -i quarto-1.2.269-linux-amd64.deb
+
+      - name: Render Quarto Book
+        run: |
+          quarto render
+
+      - name: Update Index Page
+        run: |
+          # Custom script to update the index page
+          python update_index.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site  # Adjust if your build output directory is different
+          publish_branch: gh-pages  # gh-pages branch for GitHub Pages
