@@ -1,4 +1,5 @@
 ---
-title: "Pneumococcus"
-editor: source
+number-sections: false
 ---
+
+# Pneumococcus {.unnumbered}

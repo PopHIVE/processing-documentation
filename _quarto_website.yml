@@ -16,7 +16,7 @@ header-includes:
     </script>
 
 website:
-  title: "Documentation"
+  title: "Process Documentation"
   page-navigation: true
   back-to-top-navigation: true
   bread-crumbs: false
@@ -27,8 +27,8 @@ website:
   repo-actions: [source, issue]
   navbar:
     left:
-      - text: "Childhood Immunizations"
-        href: Pages/childhood-immunizations/childhood-immunizations.qmd
+      - text: "Immunizations"
+        href: Pages/immunizations/childhood-immunizations.qmd
       - text: "Respiratory Diseases"
         menu:
           - text: "COVID-19"

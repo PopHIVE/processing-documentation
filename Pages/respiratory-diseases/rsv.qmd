@@ -1,7 +1,8 @@
 ---
-title: "Respiratory Syncytial Virus (RSV)"
-editor: source
+number-sections: false
 ---
+
+# Respiratory Syncytial Virus (RSV) {.unnumbered}
 
 ## National Syndromic Surveillance Program
 

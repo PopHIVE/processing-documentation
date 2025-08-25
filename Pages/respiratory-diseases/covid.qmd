@@ -1,4 +1,5 @@
 ---
-title: "COVID-19"
-editor: source
+number-sections: false
 ---
+
+# COVID-19 {.unnumbered}

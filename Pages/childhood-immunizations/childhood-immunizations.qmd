@@ -1,4 +1,0 @@
----
-title: "Childhood Immunizations"
-editor: source
----

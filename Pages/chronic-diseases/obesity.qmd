@@ -1,4 +1,5 @@
 ---
-title: "Obesity"
-editor: source
+number-sections: false
 ---
+
+# Obesity {.unnumbered}

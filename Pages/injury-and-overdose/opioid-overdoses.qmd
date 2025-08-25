@@ -1,4 +1,5 @@
 ---
-title: "Opioid Overdose"
-editor: source
+number-sections: false
 ---
+
+# Opioid Overdose {.unnumbered}

@@ -17,20 +17,22 @@ header-includes: |
 
 
 book:
-  title: "Documentation"
+  title: "Process Documentation"
   favicon: pophivelogo.png
   search: true
   repo-url: https://github.com/PopHIVE/processing-documentation
-  repo-actions: source
+  issue-url: https://github.com/PopHIVE/processing-documentation/issues
+  repo-actions: [source, issue]
+  bread-crumbs: false
   sidebar:
     style: "docked"
   date-format: long
   chapters:
     - index.qmd
-    - part: "Childhood Immunizations"
+    - part: "Immunizations"
       chapters: 
         - text: "Childhood Immunizations"
-          href: Pages/childhood-immunizations/childhood-immunizations.qmd
+          href: Pages/immunizations/childhood-immunizations.qmd
     - part: "Respiratory Diseases"
       chapters:
         - text: "COVID-19"
@@ -67,6 +69,7 @@ book:
 format:
   html:
     theme: sandstone
+    css: _styles/styles.css
     toc: true
     toc-depth: 3
     html-math-method: katex

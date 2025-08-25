@@ -1,7 +1,88 @@
 ---
-title: "Process Documentation"
+number-sections: false
 ---
 
+# Preface {.unnumbered}
+
+
+```{r}
+## ----------------------------------------------------------------
+## SET UP THE ENVIRONMENT
+
+# Initiate the package environment.
+# renv::init()
+renv::restore()
+
+suppressPackageStartupMessages({
+  library("jsonlite")
+})
+
+source("R/dcf_status_diagram_copied 08.25.2025.R")
+
+
+# URL of the gzipped JSON file
+url <- "https://raw.githubusercontent.com/PopHIVE/Ingest/main/report.json.gz"
+
+# Generate a temporary file path for the gzipped JSON file
+temp_file <- tempfile(fileext = ".json.gz")
+
+# Use tryCatch to handle potential errors during download and processing
+tryCatch({
+    # Download the file to the temporary file path
+    download.file(url, temp_file)
+    
+    # Decompress and read the gzip file content
+    con <- gzfile(temp_file, "rb")
+    decompressed_content <- readLines(con)
+    close(con)
+    
+    # Parse the JSON content
+    data <- fromJSON(paste(decompressed_content, collapse = "\n"))
+    
+    # Save the decompressed and parsed JSON content back to a gzip file named report.json.gz
+    report_file <- "R/report.json.gz"
+    gz_con <- gzfile(report_file, "w")
+    writeLines(toJSON(data, auto_unbox = TRUE, pretty = TRUE), gz_con)
+    close(gz_con)
+    
+    # Call dcf_status_diagram with necessary arguments
+    dcf_status_diagram(project_dir = "R/", out_file = "status.md")
+    
+    # Print a success message
+    print("Diagram generated successfully in status.md")
+    
+    # Clean up by deleting the temporary file
+    unlink(temp_file)
+}, error = function(e) {
+    cat("An error occurred:", conditionMessage(e), "\n")
+    # Clean up in case of error
+    if (file.exists(temp_file)) {
+        unlink(temp_file)
+    }
+    if (file.exists(report_file)) {
+        unlink(report_file)
+    }
+})
+
+```
+
+
+```{r}
+status_md <- readLines("R/status.md")
+cat(paste(status_md, collapse = "\n"))
+```
+
+
+## Embed
+
+```{=html}
+<iframe width="780" height="500" src="https://dissc-yale.github.io/dcf/report/?repo=PopHIVE/Ingest" title="Webpage example"></iframe>
+```
+
+
+
+
+## Copied diagram
 
 ```{mermaid}
 flowchart LR
@@ -183,4 +264,7 @@ flowchart LR
     nNA --> bundle_respiratory
     nNA --> bundle_respiratory
 ```
+
+
+
 
