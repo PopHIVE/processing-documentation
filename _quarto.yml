@@ -22,8 +22,6 @@ book:
   search: true
   repo-url: https://github.com/PopHIVE/processing-documentation
   repo-actions: [source, issue]
-  bread-crumbs: false
-  back-to-top-navigation: true
   sidebar:
     style: "docked"
   date-format: long
