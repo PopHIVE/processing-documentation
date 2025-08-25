@@ -23,7 +23,7 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v1
         with:
-          r-version: '4.4.3'  # Adjust based on the required R version
+          r-version: '4.1'  # Adjust based on the required R version
 
       - name: Install R packages
         run: |
