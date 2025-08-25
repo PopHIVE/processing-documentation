@@ -10,42 +10,58 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Fetch all history for all branches
 
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'  # Adjust the Python version as needed
 
+      # Step 3: Set up R
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.1'  # Use a stable R version
+          
+      # Step 4: Cache R packages
+      - name: Cache R packages
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/update_index.R') }}
+          restore-keys: ${{ runner.os }}-r-
 
+      # Step 5: Install necessary R packages
       - name: Install R packages
         run: |
           Rscript -e 'install.packages(c("quarto", "jsonlite"), repos = "https://cloud.r-project.org")'
 
+      # Step 6: Install Quarto
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.269/quarto-1.2.269-linux-amd64.deb
           sudo dpkg -i quarto-1.2.269-linux-amd64.deb
 
+      # Step 7: Run the Python script to update the index.qmd
       - name: Update Index Page
         run: |
           # Custom script to update the index.qmd
           python update_index.py
 
+      # Step 8: Render the Quarto book (index.qmd only)
       - name: Render Quarto Book
         run: |
           quarto render
 
+      # Step 9: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
-          publish_dir: ./_site  # Adjust if your build output directory is different
-          publish_branch: gh-pages  # gh-pages branch for GitHub Pages"
+          publish_dir: ./_site
+          publish_branch: gh-pages
