@@ -30,7 +30,7 @@ jobs:
           
       # Step 4: Cache R packages
       - name: Cache R packages
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-r-${{ hashFiles('**/update_index.R') }}
