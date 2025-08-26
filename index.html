@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -105,24 +71,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
-</head><body class="nav-sidebar docked">'<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">'
-'<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>'
-'<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>'
-|
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      })
-    });
-  </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  });
+</script>
 
 
 <link rel="stylesheet" href="_styles/styles.css">
+</head>
 
-
-
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -131,9 +96,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Process Documentation</h1>
+        </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -267,11 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#embed" id="toc-embed" class="nav-link" data-scroll-target="#embed">Embed</a></li>
-  <li><a href="#copied-diagram" id="toc-copied-diagram" class="nav-link" data-scroll-target="#copied-diagram">Copied diagram</a></li>
-  </ul></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/PopHIVE/processing-documentation/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/PopHIVE/processing-documentation/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -280,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Process Documentation</h1>
+<h1 class="title d-none d-lg-block">Process Documentation</h1>
 </div>
 
 
@@ -299,256 +260,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## ----------------------------------------------------------------</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## SET UP THE ENVIRONMENT</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>({</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(<span class="st">"jsonlite"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/dcf_status_diagram_copied 08.25.2025.R"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># URL of the gzipped JSON file</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/PopHIVE/Ingest/main/report.json.gz"</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a temporary file path for the gzipped JSON file</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>temp_file <span class="ot">&lt;-</span> <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">".json.gz"</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Use tryCatch to handle potential errors during download and processing</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">tryCatch</span>({</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Download the file to the temporary file path</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">download.file</span>(url, temp_file)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Decompress and read the gzip file content</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    con <span class="ot">&lt;-</span> <span class="fu">gzfile</span>(temp_file, <span class="st">"rb"</span>)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    decompressed_content <span class="ot">&lt;-</span> <span class="fu">readLines</span>(con)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">close</span>(con)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parse the JSON content</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    data <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">paste</span>(decompressed_content, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>))</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Save the decompressed and parsed JSON content back to a gzip file named report.json.gz</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    report_file <span class="ot">&lt;-</span> <span class="st">"R/report.json.gz"</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    gz_con <span class="ot">&lt;-</span> <span class="fu">gzfile</span>(report_file, <span class="st">"w"</span>)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(<span class="fu">toJSON</span>(data, <span class="at">auto_unbox =</span> <span class="cn">TRUE</span>, <span class="at">pretty =</span> <span class="cn">TRUE</span>), gz_con)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">close</span>(gz_con)</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Call dcf_status_diagram with necessary arguments</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">dcf_status_diagram</span>(<span class="at">project_dir =</span> <span class="st">"R/"</span>, <span class="at">out_file =</span> <span class="st">"status.md"</span>)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print a success message</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="st">"Diagram generated successfully in status.md"</span>)</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Clean up by deleting the temporary file</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unlink</span>(temp_file)</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>}, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"An error occurred:"</span>, <span class="fu">conditionMessage</span>(e), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Clean up in case of error</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">file.exists</span>(temp_file)) {</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unlink</span>(temp_file)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">file.exists</span>(report_file)) {</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unlink</span>(report_file)</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Diagram generated successfully in status.md"</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>status_md <span class="ot">&lt;-</span> <span class="fu">readLines</span>(<span class="st">"R/status.md"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">paste</span>(status_md, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>```{mermaid}
-flowchart LR
-    classDef pass stroke:#66bb6a
-    classDef warn stroke:#ffa726
-    classDef fail stroke:#f44336
-    s0("`&lt;h4&gt;&lt;a href="https://data.cdc.gov" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/qvzb-qs6p/" target="_blank" rel="noreferrer"&gt;Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/3cxc-4k8q" target="_blank" rel="noreferrer"&gt;Percent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region, National Respiratory and Enteric Virus Surveillance System&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s1("`&lt;h4&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Streptococcus pneumoniae Serotype Distribution Among US Adults Hospitalized With Community-Acquired Pneumonia, 2019-2020&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Open Forum for Infectious Diseases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s2("`&lt;h4&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/" target="_blank" rel="noreferrer"&gt;CMU Delphi&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/doctor-visits.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Doctor Visits&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hospital-admissions.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Hospital Admissions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nhsn.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; National Healthcare Safety Network Respiratory Hospitalizations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s3("`&lt;h4&gt;&lt;a href="https://cosmos.epic.com/" target="_blank" rel="noreferrer"&gt;Epic Cosmos&lt;/a&gt;&lt;/h4&gt;`")
-    s4("`&lt;h4&gt;&lt;a href="https://trends.google.com" target="_blank" rel="noreferrer"&gt;Google Trends&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://github.com/DISSC-yale/gtrends_collection" target="_blank" rel="noreferrer"&gt;Yale Data-Intensive Social Sciences, Google Trends Collection Framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s5("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention (NCHS)&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death Counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s6("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;National Immunization Survey&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;About the National Immunization Surveys (NIS)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s7("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nwss" target="_blank" rel="noreferrer"&gt;National Wastewater Surveillance System&lt;/a&gt;&lt;/h4&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/COVID19-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater COVID-19 State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/InfluenzaA-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater Influenza A State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/RSV-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater RSV State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    subgraph abcs["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/abcs" target="_blank" rel="noreferrer"&gt;abcs&lt;/a&gt;`"]
-        direction LR
-        n1["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-        n2["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/uad.csv.gz" target="_blank" rel="noreferrer"&gt;uad.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph brfss["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/brfss" target="_blank" rel="noreferrer"&gt;brfss&lt;/a&gt;`"]
-        direction LR
-        n3["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/brfss/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph delphi_doctors_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_doctors_claims" target="_blank" rel="noreferrer"&gt;delphi_doctors_claims&lt;/a&gt;`"]
-        direction LR
-        n4["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_doctors_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph delphi_hospital_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_hospital_claims" target="_blank" rel="noreferrer"&gt;delphi_hospital_claims&lt;/a&gt;`"]
-        direction LR
-        n5["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_hospital_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph delphi_nhsn["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_nhsn" target="_blank" rel="noreferrer"&gt;delphi_nhsn&lt;/a&gt;`"]
-        direction LR
-        n6["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_nhsn/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph epic["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/epic" target="_blank" rel="noreferrer"&gt;epic&lt;/a&gt;`"]
-        direction LR
-        n7["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/children.csv.gz" target="_blank" rel="noreferrer"&gt;children.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n8["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/county_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;county_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n9["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/no_geo.csv.gz" target="_blank" rel="noreferrer"&gt;no_geo.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: positive_rsv_tests_(%)&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: n_self_harm&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n10["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/state_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;state_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: n_patients&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: epic_positive_rsv_tests_(%)&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: epic_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: epic_n_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-    end
-    subgraph gtrends["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/gtrends" target="_blank" rel="noreferrer"&gt;gtrends&lt;/a&gt;`"]
-        direction LR
-        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;geography_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: fips&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: term&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n13["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: gtrends_rsv_adjusted&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-    end
-    subgraph nchs_mortality["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nchs_mortality" target="_blank" rel="noreferrer"&gt;nchs_mortality&lt;/a&gt;`"]
-        direction LR
-        n14["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data_county.csv.gz" target="_blank" rel="noreferrer"&gt;data_county.csv.gz&lt;/a&gt;`"]:::pass
-        n15["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph nis["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nis" target="_blank" rel="noreferrer"&gt;nis&lt;/a&gt;`"]
-        direction LR
-        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: insurance&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: urban&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n17["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_urban.csv.gz" target="_blank" rel="noreferrer"&gt;data_urban.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: birth_year&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: age&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-    end
-    subgraph NREVSS["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/NREVSS" target="_blank" rel="noreferrer"&gt;NREVSS&lt;/a&gt;`"]
-        direction LR
-        n19["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/NREVSS/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph nssp["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nssp" target="_blank" rel="noreferrer"&gt;nssp&lt;/a&gt;`"]
-        direction LR
-        n20["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nssp/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph respnet["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/respnet" target="_blank" rel="noreferrer"&gt;respnet&lt;/a&gt;`"]
-        direction LR
-        n21["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/respnet/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph schoolvaxview["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/schoolvaxview" target="_blank" rel="noreferrer"&gt;schoolvaxview&lt;/a&gt;`"]
-        direction LR
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;geography_nas&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: grade&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: N&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: vax&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: percent_surveyed&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: survey_type&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;geography_nas&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: grade&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: N&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: vax&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: value&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: percent_surveyed&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-        n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;br/&gt;&lt;li&gt;missing_info: survey_type&lt;/li&gt;&lt;/ul&gt;`"]:::warn
-    end
-    subgraph wastewater["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/wastewater" target="_blank" rel="noreferrer"&gt;wastewater&lt;/a&gt;`"]
-        direction LR
-        n24["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/wastewater/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
-    end
-    subgraph bundle_childhood_immunizations["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_childhood_immunizations" target="_blank" rel="noreferrer"&gt;bundle_childhood_immunizations&lt;/a&gt;`"]
-        direction LR
-        n25["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/mmr_rates_epic.parquet" target="_blank" rel="noreferrer"&gt;mmr_rates_epic.parquet&lt;/a&gt;`"]
-        n26["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_insurance.parquet" target="_blank" rel="noreferrer"&gt;nis_insurance.parquet&lt;/a&gt;`"]
-        n27["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_overall.parquet" target="_blank" rel="noreferrer"&gt;nis_overall.parquet&lt;/a&gt;`"]
-        n28["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_urban.parquet" target="_blank" rel="noreferrer"&gt;nis_urban.parquet&lt;/a&gt;`"]
-        n29["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/schoolvaxview_exemptions.parquet" target="_blank" rel="noreferrer"&gt;schoolvaxview_exemptions.parquet&lt;/a&gt;`"]
-        n30["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/schoolvaxview_overall.parquet" target="_blank" rel="noreferrer"&gt;schoolvaxview_overall.parquet&lt;/a&gt;`"]
-        n31["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/state_compare.parquet" target="_blank" rel="noreferrer"&gt;state_compare.parquet&lt;/a&gt;`"]
-    end
-    subgraph bundle_chronic_diseases["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_chronic_diseases" target="_blank" rel="noreferrer"&gt;bundle_chronic_diseases&lt;/a&gt;`"]
-        direction LR
-        n32["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/brfss_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;brfss_prevalence_by_geography.parquet&lt;/a&gt;`"]
-        n33["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography_county.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography_county.parquet&lt;/a&gt;`"]
-        n34["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography.parquet&lt;/a&gt;`"]
-        n35["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/prevalence_by_geography_and_source.parquet" target="_blank" rel="noreferrer"&gt;prevalence_by_geography_and_source.parquet&lt;/a&gt;`"]
-    end
-    subgraph bundle_respiratory["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_respiratory" target="_blank" rel="noreferrer"&gt;bundle_respiratory&lt;/a&gt;`"]
-        direction LR
-        n36["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;covid_ed_visits_by_county.parquet&lt;/a&gt;`"]
-        n37["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;covid_overall_trends.parquet&lt;/a&gt;`"]
-        n38["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;covid_trends_by_age.parquet&lt;/a&gt;`"]
-        n39["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;flu_ed_visits_by_county.parquet&lt;/a&gt;`"]
-        n40["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;flu_overall_trends.parquet&lt;/a&gt;`"]
-        n41["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/flu_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;flu_trends_by_age.parquet&lt;/a&gt;`"]
-        n42["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_by_geography.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_by_geography.parquet&lt;/a&gt;`"]
-        n43["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_comparison.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_comparison.parquet&lt;/a&gt;`"]
-        n44["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/pneumococcus_serotype_trends.parquet" target="_blank" rel="noreferrer"&gt;pneumococcus_serotype_trends.parquet&lt;/a&gt;`"]
-        n45["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;rsv_ed_visits_by_county.parquet&lt;/a&gt;`"]
-        n46["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_google_dma.parquet" target="_blank" rel="noreferrer"&gt;rsv_google_dma.parquet&lt;/a&gt;`"]
-        n47["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;rsv_overall_trends.parquet&lt;/a&gt;`"]
-        n48["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_positive_tests.parquet" target="_blank" rel="noreferrer"&gt;rsv_positive_tests.parquet&lt;/a&gt;`"]
-        n49["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_testing_pct.parquet" target="_blank" rel="noreferrer"&gt;rsv_testing_pct.parquet&lt;/a&gt;`"]
-        n50["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/rsv_trends_by_age.parquet" target="_blank" rel="noreferrer"&gt;rsv_trends_by_age.parquet&lt;/a&gt;`"]
-    end
-    s0 --&gt; n1
-    s0 --&gt; n2
-    s1 --&gt; n2
-    s2 --&gt; n4
-    s2 --&gt; n5
-    s2 --&gt; n6
-    s3 --&gt; n7
-    s3 --&gt; n8
-    s3 --&gt; n9
-    s3 --&gt; n10
-    s3 --&gt; n11
-    s4 --&gt; n13
-    s5 --&gt; n14
-    s5 --&gt; n15
-    s6 --&gt; n16
-    s6 --&gt; n17
-    s6 --&gt; n18
-    s0 --&gt; n19
-    s7 --&gt; n24
-    n23 --&gt; bundle_childhood_immunizations
-    n22 --&gt; bundle_childhood_immunizations
-    n18 --&gt; bundle_childhood_immunizations
-    n17 --&gt; bundle_childhood_immunizations
-    n16 --&gt; bundle_childhood_immunizations
-    n7 --&gt; bundle_childhood_immunizations
-    n3 --&gt; bundle_chronic_diseases
-    n10 --&gt; bundle_chronic_diseases
-    n11 --&gt; bundle_respiratory
-    n13 --&gt; bundle_respiratory
-    n24 --&gt; bundle_respiratory
-    n1 --&gt; bundle_respiratory
-    n2 --&gt; bundle_respiratory
-    n19 --&gt; bundle_respiratory
-    n20 --&gt; bundle_respiratory
-    n21 --&gt; bundle_respiratory
-    nNA --&gt; bundle_respiratory
-    nNA --&gt; bundle_respiratory
-    nNA --&gt; bundle_respiratory
-```</code></pre>
-</div>
-</div>
-<section id="embed" class="level2">
-<h2 class="anchored" data-anchor-id="embed">Embed</h2>
-<iframe width="780" height="500" src="https://dissc-yale.github.io/dcf/report/?repo=PopHIVE/Ingest" title="Webpage example"></iframe>
-</section>
-<section id="copied-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="copied-diagram">Copied diagram</h2>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.2.3/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -558,36 +273,36 @@ flowchart LR
     classDef pass stroke:#66bb6a
     classDef warn stroke:#ffa726
     classDef fail stroke:#f44336
-    s0("`&lt;h4&gt;&lt;a href="https://data.cdc.gov" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/qvzb-qs6p/" target="_blank" rel="noreferrer"&gt;Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/3cxc-4k8q" target="_blank" rel="noreferrer"&gt;Percent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region, National Respiratory and Enteric Virus Surveillance System&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s1("`&lt;h4&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Streptococcus pneumoniae Serotype Distribution Among US Adults Hospitalized With Community-Acquired Pneumonia, 2019-2020&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Open Forum for Infectious Diseases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s2("`&lt;h4&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/" target="_blank" rel="noreferrer"&gt;CMU Delphi&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/doctor-visits.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Doctor Visits&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hospital-admissions.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Hospital Admissions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nhsn.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; National Healthcare Safety Network Respiratory Hospitalizations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s3("`&lt;h4&gt;&lt;a href="https://cosmos.epic.com/" target="_blank" rel="noreferrer"&gt;Epic Cosmos&lt;/a&gt;&lt;/h4&gt;`")
-    s4("`&lt;h4&gt;&lt;a href="https://trends.google.com" target="_blank" rel="noreferrer"&gt;Google Trends&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/DISSC-yale/gtrends_collection" target="_blank" rel="noreferrer"&gt;Yale Data-Intensive Social Sciences, Google Trends Collection Framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s5("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention (NCHS)&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death Counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s6("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;National Immunization Survey&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;About the National Immunization Surveys (NIS)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    s7("`&lt;h4&gt;&lt;a href="https://www.cdc.gov/nwss" target="_blank" rel="noreferrer"&gt;National Wastewater Surveillance System&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/COVID19-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater COVID-19 State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/InfluenzaA-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater Influenza A State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/RSV-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater RSV State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
-    subgraph abcs["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/abcs" target="_blank" rel="noreferrer"&gt;abcs&lt;/a&gt;`"]
+    s0("`&lt;h4 class="graph-title"&gt;&lt;a href="https://data.cdc.gov" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/qvzb-qs6p/" target="_blank" rel="noreferrer"&gt;Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/resource/3cxc-4k8q" target="_blank" rel="noreferrer"&gt;Percent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region, National Respiratory and Enteric Virus Surveillance System&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s1("`&lt;h4 class="graph-title"&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Streptococcus pneumoniae Serotype Distribution Among US Adults Hospitalized With Community-Acquired Pneumonia, 2019-2020&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/39758745/" target="_blank" rel="noreferrer"&gt;Open Forum for Infectious Diseases&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s2("`&lt;h4 class="graph-title"&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/" target="_blank" rel="noreferrer"&gt;CMU Delphi&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/doctor-visits.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Doctor Visits&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hospital-admissions.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; Hospital Admissions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nhsn.html" target="_blank" rel="noreferrer"&gt;COVIDcast &gt; National Healthcare Safety Network Respiratory Hospitalizations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s3("`&lt;h4 class="graph-title"&gt;&lt;a href="https://cosmos.epic.com/" target="_blank" rel="noreferrer"&gt;Epic Cosmos&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;`")
+    s4("`&lt;h4 class="graph-title"&gt;&lt;a href="https://trends.google.com" target="_blank" rel="noreferrer"&gt;Google Trends&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/DISSC-yale/gtrends_collection" target="_blank" rel="noreferrer"&gt;Yale Data-Intensive Social Sciences, Google Trends Collection Framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s5("`&lt;h4 class="graph-title"&gt;&lt;a href="https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm" target="_blank" rel="noreferrer"&gt;Center for Disease Control and Prevention (NCHS)&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death Counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://data.cdc.gov/National-Center-for-Health-Statistics/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a/about_data" target="_blank" rel="noreferrer"&gt;VSRR Provisional Drug Overdose Death counts&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s6("`&lt;h4 class="graph-title"&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;National Immunization Survey&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nis/about/index.html" target="_blank" rel="noreferrer"&gt;About the National Immunization Surveys (NIS)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    s7("`&lt;h4 class="graph-title"&gt;&lt;a href="https://www.cdc.gov/nwss" target="_blank" rel="noreferrer"&gt;National Wastewater Surveillance System&lt;/a&gt;&lt;/h4&gt;&lt;/br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/COVID19-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater COVID-19 State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/InfluenzaA-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater Influenza A State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cdc.gov/nwss/rv/RSV-statetrend.html" target="_blank" rel="noreferrer"&gt;Wastewater RSV State and Territory Trends&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;`")
+    subgraph abcs["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/abcs" target="_blank" rel="noreferrer"&gt;abcs&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n1["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
         n2["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/abcs/standard/uad.csv.gz" target="_blank" rel="noreferrer"&gt;uad.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph brfss["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/brfss" target="_blank" rel="noreferrer"&gt;brfss&lt;/a&gt;`"]
+    subgraph brfss["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/brfss" target="_blank" rel="noreferrer"&gt;brfss&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n3["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/brfss/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph delphi_doctors_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_doctors_claims" target="_blank" rel="noreferrer"&gt;delphi_doctors_claims&lt;/a&gt;`"]
+    subgraph delphi_doctors_claims["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_doctors_claims" target="_blank" rel="noreferrer"&gt;delphi_doctors_claims&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n4["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_doctors_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph delphi_hospital_claims["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_hospital_claims" target="_blank" rel="noreferrer"&gt;delphi_hospital_claims&lt;/a&gt;`"]
+    subgraph delphi_hospital_claims["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_hospital_claims" target="_blank" rel="noreferrer"&gt;delphi_hospital_claims&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n5["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_hospital_claims/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph delphi_nhsn["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_nhsn" target="_blank" rel="noreferrer"&gt;delphi_nhsn&lt;/a&gt;`"]
+    subgraph delphi_nhsn["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/delphi_nhsn" target="_blank" rel="noreferrer"&gt;delphi_nhsn&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n6["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/delphi_nhsn/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph epic["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/epic" target="_blank" rel="noreferrer"&gt;epic&lt;/a&gt;`"]
+    subgraph epic["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/epic" target="_blank" rel="noreferrer"&gt;epic&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n7["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/children.csv.gz" target="_blank" rel="noreferrer"&gt;children.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n8["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/county_no_time.csv.gz" target="_blank" rel="noreferrer"&gt;county_no_time.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
@@ -599,7 +314,7 @@ flowchart LR
         n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: epic_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n11["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/epic/standard/weekly.csv.gz" target="_blank" rel="noreferrer"&gt;weekly.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: epic_n_rsv_tests&lt;/li&gt;&lt;/ul&gt;`"]:::warn
     end
-    subgraph gtrends["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/gtrends" target="_blank" rel="noreferrer"&gt;gtrends&lt;/a&gt;`"]
+    subgraph gtrends["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/gtrends" target="_blank" rel="noreferrer"&gt;gtrends&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;geography_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: fips&lt;/li&gt;&lt;/ul&gt;`"]:::warn
@@ -607,12 +322,12 @@ flowchart LR
         n12["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data_dma.csv.gz" target="_blank" rel="noreferrer"&gt;data_dma.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: term&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n13["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/gtrends/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: gtrends_rsv_adjusted&lt;/li&gt;&lt;/ul&gt;`"]:::warn
     end
-    subgraph nchs_mortality["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nchs_mortality" target="_blank" rel="noreferrer"&gt;nchs_mortality&lt;/a&gt;`"]
+    subgraph nchs_mortality["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nchs_mortality" target="_blank" rel="noreferrer"&gt;nchs_mortality&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n14["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data_county.csv.gz" target="_blank" rel="noreferrer"&gt;data_county.csv.gz&lt;/a&gt;`"]:::pass
         n15["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nchs_mortality/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph nis["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nis" target="_blank" rel="noreferrer"&gt;nis&lt;/a&gt;`"]
+    subgraph nis["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nis" target="_blank" rel="noreferrer"&gt;nis&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;time_missing&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n16["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data_insurance.csv.gz" target="_blank" rel="noreferrer"&gt;data_insurance.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: insurance&lt;/li&gt;&lt;/ul&gt;`"]:::warn
@@ -626,19 +341,19 @@ flowchart LR
         n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: age&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n18["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nis/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: vaccine&lt;/li&gt;&lt;/ul&gt;`"]:::warn
     end
-    subgraph NREVSS["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/NREVSS" target="_blank" rel="noreferrer"&gt;NREVSS&lt;/a&gt;`"]
+    subgraph NREVSS["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/NREVSS" target="_blank" rel="noreferrer"&gt;NREVSS&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n19["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/NREVSS/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph nssp["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nssp" target="_blank" rel="noreferrer"&gt;nssp&lt;/a&gt;`"]
+    subgraph nssp["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/nssp" target="_blank" rel="noreferrer"&gt;nssp&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n20["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/nssp/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph respnet["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/respnet" target="_blank" rel="noreferrer"&gt;respnet&lt;/a&gt;`"]
+    subgraph respnet["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/respnet" target="_blank" rel="noreferrer"&gt;respnet&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n21["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/respnet/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph schoolvaxview["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/schoolvaxview" target="_blank" rel="noreferrer"&gt;schoolvaxview&lt;/a&gt;`"]
+    subgraph schoolvaxview["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/schoolvaxview" target="_blank" rel="noreferrer"&gt;schoolvaxview&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;geography_nas&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n22["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data_exemptions.csv.gz" target="_blank" rel="noreferrer"&gt;data_exemptions.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: grade&lt;/li&gt;&lt;/ul&gt;`"]:::warn
@@ -655,11 +370,11 @@ flowchart LR
         n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: percent_surveyed&lt;/li&gt;&lt;/ul&gt;`"]:::warn
         n23["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/schoolvaxview/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;&lt;ul&gt;&lt;li&gt;missing_info: survey_type&lt;/li&gt;&lt;/ul&gt;`"]:::warn
     end
-    subgraph wastewater["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/wastewater" target="_blank" rel="noreferrer"&gt;wastewater&lt;/a&gt;`"]
+    subgraph wastewater["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/wastewater" target="_blank" rel="noreferrer"&gt;wastewater&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n24["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/wastewater/standard/data.csv.gz" target="_blank" rel="noreferrer"&gt;data.csv.gz&lt;/a&gt;`"]:::pass
     end
-    subgraph bundle_childhood_immunizations["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_childhood_immunizations" target="_blank" rel="noreferrer"&gt;bundle_childhood_immunizations&lt;/a&gt;`"]
+    subgraph bundle_childhood_immunizations["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_childhood_immunizations" target="_blank" rel="noreferrer"&gt;bundle_childhood_immunizations&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n25["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/mmr_rates_epic.parquet" target="_blank" rel="noreferrer"&gt;mmr_rates_epic.parquet&lt;/a&gt;`"]
         n26["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/nis_insurance.parquet" target="_blank" rel="noreferrer"&gt;nis_insurance.parquet&lt;/a&gt;`"]
@@ -669,14 +384,14 @@ flowchart LR
         n30["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/schoolvaxview_overall.parquet" target="_blank" rel="noreferrer"&gt;schoolvaxview_overall.parquet&lt;/a&gt;`"]
         n31["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_childhood_immunizations/dist/state_compare.parquet" target="_blank" rel="noreferrer"&gt;state_compare.parquet&lt;/a&gt;`"]
     end
-    subgraph bundle_chronic_diseases["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_chronic_diseases" target="_blank" rel="noreferrer"&gt;bundle_chronic_diseases&lt;/a&gt;`"]
+    subgraph bundle_chronic_diseases["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_chronic_diseases" target="_blank" rel="noreferrer"&gt;bundle_chronic_diseases&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n32["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/brfss_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;brfss_prevalence_by_geography.parquet&lt;/a&gt;`"]
         n33["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography_county.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography_county.parquet&lt;/a&gt;`"]
         n34["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/epic_prevalence_by_geography.parquet" target="_blank" rel="noreferrer"&gt;epic_prevalence_by_geography.parquet&lt;/a&gt;`"]
         n35["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_chronic_diseases/dist/prevalence_by_geography_and_source.parquet" target="_blank" rel="noreferrer"&gt;prevalence_by_geography_and_source.parquet&lt;/a&gt;`"]
     end
-    subgraph bundle_respiratory["`&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_respiratory" target="_blank" rel="noreferrer"&gt;bundle_respiratory&lt;/a&gt;`"]
+    subgraph bundle_respiratory["`&lt;p class="subgraph-title"&gt;&lt;a href="https://github.com/PopHIVE/Ingest/tree/main/data/bundle_respiratory" target="_blank" rel="noreferrer"&gt;bundle_respiratory&lt;/a&gt;&lt;/p&gt;`"]
         direction LR
         n36["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_ed_visits_by_county.parquet" target="_blank" rel="noreferrer"&gt;covid_ed_visits_by_county.parquet&lt;/a&gt;`"]
         n37["`&lt;a href="https://github.com/PopHIVE/Ingest/blob/main/data/bundle_respiratory/dist/covid_overall_trends.parquet" target="_blank" rel="noreferrer"&gt;covid_overall_trends.parquet&lt;/a&gt;`"]
@@ -740,7 +455,6 @@ flowchart LR
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
