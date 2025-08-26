@@ -183,7 +183,7 @@ dcf_status_diagram <- function(project_dir = ".", out_file = "status.md") {
         paste0(
           "subgraph ",
           name,
-          '["`',
+          '["`<p class="subgraph-title">',
           if (is.null(repo)) name else
             make_link(
               paste0(
@@ -198,7 +198,7 @@ dcf_status_diagram <- function(project_dir = ".", out_file = "status.md") {
               ),
               name
             ),
-          '`"]'
+          '</p>`"]'
         ),
         paste0(indent, c("direction LR", contents)),
         "end"
@@ -206,7 +206,7 @@ dcf_status_diagram <- function(project_dir = ".", out_file = "status.md") {
     )
   }
   out <- c(
-    "```{mermaid}",
+    "```mermaid",
     "flowchart LR",
     paste0(
       indent,
@@ -218,10 +218,10 @@ dcf_status_diagram <- function(project_dir = ".", out_file = "status.md") {
             paste(
               c(
                 s$id,
-                '("`<h4>',
+                '("`<h4 class="graph-title">',
                 s$general,
-                "</h4>",
-                if (length(s$specific)) paste0("<br/>", make_list(s$specific)),
+                "</h4></br>",
+                if (length(s$specific)) make_list(s$specific),
                 '`")'
               ),
               collapse = ""
@@ -253,7 +253,7 @@ make_link <- function(url, name = NULL) {
 make_list <- function(items) {
   paste0(
     "<ul>",
-    vapply(items, function(i) paste0("<br/><li>", i, "</li>"), ""),
+    vapply(items, function(i) paste0("<li>", i, "</li>"), ""),
     "</ul>"
   )
 }
