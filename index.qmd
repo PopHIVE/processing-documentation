@@ -21,7 +21,6 @@ number-sections: false
 
 suppressPackageStartupMessages({
   library("jsonlite")
-  library("htmltools")
 })
 
 source("R/dcf_status_diagram_copied 08.25.2025.R")
