@@ -2,7 +2,7 @@ name: Update Quarto Pages
 
 on:
   schedule:
-    - cron: '15 * * * *'  # Runs at midnight every day in EST
+    - cron: '0 4 * * *'  # Runs at midnight every day in EST
   workflow_dispatch:
   push:
     branches: main
