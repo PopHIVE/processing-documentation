@@ -1,5 +1,8 @@
 ---
-number-sections: false
+  number-sections: false
+  editor: source
+  bibliography: references.bib
+  csl: nature.csl
 ---
 
 # Respiratory Syncytial Virus (RSV) {.unnumbered}
