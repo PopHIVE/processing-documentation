@@ -1,4 +1,4 @@
-name: Update Quarto Index Page
+name: Update Quarto Pages
 
 on:
   schedule:
@@ -7,11 +7,9 @@ on:
   push:
     branches: main
 
-# Divided into two event names:
-#   - Schedule will update the index.qmd page only.
-#   - Push will update the entire webpage.
 jobs:
-  build_index:
+  update_index_page:
+    name: Scheduled Update Index Page
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
 
@@ -59,7 +57,8 @@ jobs:
           publish_dir: ./_site
           publish_branch: gh-pages
 
-  build_all:
+  update_all_pages:
+    name: Push Update All Pages
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
 
