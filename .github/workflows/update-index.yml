@@ -2,7 +2,7 @@ name: Update Quarto Pages
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # Runs at midnight every day in EST
+    - cron: '15 * * * *'  # Runs at midnight every day in EST
   workflow_dispatch:
   push:
     branches: main
@@ -47,7 +47,7 @@ jobs:
       # Step 6: Render index.qmd
       - name: Render Quarto Page
         run: |
-          quarto render index.qmd
+          quarto render index.qmd --to html --output-dir _book
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
