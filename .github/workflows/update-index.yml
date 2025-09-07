@@ -38,16 +38,16 @@ jobs:
         with:
           cache-version: 1
 
-      # Step 5: Install Quarto
+      # Step 5: Install Quarto (amd64)
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
           sudo dpkg -i quarto-1.8.24-linux-amd64.deb
 
-      # Step 6: Render index.qmd # quarto render index.qmd --to html --output-dir _book
+      # Step 6: Render just the index.qmd file within the full site context
       - name: Render Quarto Page
         run: |
-          quarto render index.qmd
+          quarto render index.qmd --execute
 
       # Step 7: Check output directory
       - name: List _book directory
@@ -92,17 +92,17 @@ jobs:
         with:
           cache-version: 1
 
-      # Step 5: Install Quarto
+      # Step 5: Install Quarto (amd64)
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
           sudo dpkg -i quarto-1.8.24-linux-amd64.deb
 
-      # Step 6: Render all Quarto pages
+      # Step 6: Render all Quarto pages into the default output directory
       - name: Render Quarto Book
         run: |
-          quarto render index.qmd
-          
+          quarto render index.qmd --execute
+
       # Step 7: Check output directory
       - name: List _book directory
         run: |
