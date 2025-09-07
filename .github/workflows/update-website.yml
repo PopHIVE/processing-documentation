@@ -1,13 +1,15 @@
-name: Build and Deploy Full Site
+name: Update Index Page
 
 on:
+  schedule:
+    - cron: '15 * * * *'  # Runs at midnight every day in EST
   push:
     branches:
       - main
   workflow_dispatch:
 
 jobs:
-  build_and_deploy:
+  update_index_page:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,12 +43,12 @@ jobs:
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
           sudo dpkg -i quarto-1.8.24-linux-amd64.deb
 
-      # Step 6: Render the entire site into the output directory
-      - name: Render full site
+      # Step 6: Render all webpages
+      - name: Render webpage
         run: |
-          quarto render --output-dir _book
+          quarto render
 
-      # Step 7: Check output directory
+      # Step 7: Check output directory for index.qmd
       - name: List _book directory
         run: |
           ls -l _book
