@@ -1,117 +1,48 @@
-name: Update Quarto Pages
+name: Update Index Page
 
 on:
   schedule:
-    - cron: '15 * * * *'  # Runs at midnight every day in EST
+    - cron: '0 4 * * *'  # Runs at midnight every day in EST
   workflow_dispatch:
-  push:
-    branches: main
 
 jobs:
   update_index_page:
-    name: Scheduled Update Index Page
-    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Fetch all history for all branches
+          fetch-depth: 0
 
-      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # Adjust the Python version as needed
+          python-version: '3.9'
 
-      # Step 3: Set up R
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.1'  # Use a stable R version
+          r-version: '4.1'
 
-      # Step 4: Cache R packages
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
 
-      # Step 5: Install Quarto (amd64)
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
           sudo dpkg -i quarto-1.8.24-linux-amd64.deb
 
-      # Step 6: Render just the index.qmd file within the full site context
-      - name: Render Quarto Page
+      - name: Render index.qmd
         run: |
-          quarto render index.qmd --execute
+          quarto render index.qmd --output-dir _book
 
-      # Step 7: Check output directory
-      - name: List _book directory
+      - name: Commit output and push to update-index
         run: |
-          ls -l _book
-
-      # Step 8: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
-          publish_dir: ./_book
-          publish_branch: gh-pages
-
-  update_all_pages:
-    name: Push Update All Pages
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-
-    steps:
-      # Step 1: Check out the repository
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Fetch all history for all branches
-
-      # Step 2: Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'  # Adjust the Python version as needed
-
-      # Step 3: Set up R
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.1'  # Use a stable R version
-
-      # Step 4: Cache R packages
-      - name: Install R Dependencies
-        uses: r-lib/actions/setup-renv@v2
-        with:
-          cache-version: 1
-
-      # Step 5: Install Quarto (amd64)
-      - name: Install Quarto
-        run: |
-          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
-          sudo dpkg -i quarto-1.8.24-linux-amd64.deb
-
-      # Step 6: Render all Quarto pages into the default output directory
-      - name: Render Quarto Book
-        run: |
-          quarto render index.qmd --execute
-
-      # Step 7: Check output directory
-      - name: List _book directory
-        run: |
-          ls -l _book
-
-      # Step 8: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
-          publish_dir: ./_book
-          publish_branch: gh-pages
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _book
+          git commit -m "Update index.qmd"
+          git push origin HEAD:update-index --force
