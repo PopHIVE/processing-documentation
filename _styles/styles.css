@@ -1,1 +1,82 @@
-/* css styles */
+:root {
+    --mermaid-fg-color--lightest: #ece5e1;
+    --mermaid-fg-color--lighter: #2c3136;
+}
+
+
+#mermaid-1 .nodeLabel {
+    color: var(--mermaid-fg-color--lighter) !important;
+}
+
+#mermaid-1 .cluster rect {
+    fill: var(--mermaid-fg-color--lightest);
+    stroke: var(--mermaid-fg-color--lighter);
+}
+
+#mermaid-1 a {
+    color: var(--mermaid-fg-color--lighter);
+    text-decoration: none;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;
+    -ms-text-decoration: underline;
+    -o-text-decoration: underline;
+}
+
+#mermaid-1 ul {
+  text-align: left;
+  padding-left: 10px;
+}
+#mermaid-1 ul li {
+  list-style: initial;
+  margin-left: 1em;
+}
+#mermaid-1 h4 {
+  color: var(--mermaid-fg-color--lighter);
+}
+
+.graph-title a {
+  color: var(--mermaid-fg-color--lighter);
+  text-decoration: none;
+}
+
+.subgraph-title {
+  margin-top: 10em;
+  margin-bottom: 2em;
+  font-size: 1.25rem;
+}
+.subgraph-title a {
+  color: var(--mermaid-fg-color--lighter);
+  text-decoration: none;
+}
+
+
+/* Custom CSS to adjust the width of the quarto sidebar and ensure content adjusts accordingly */
+
+/* Adjust the sidebar width */
+#quarto-sidebar {
+    width: 270px !important; /* Expand the sidebar width */
+}
+
+/* Adjust the content margin */
+#quarto-document-content {
+    margin-left: 60px !important; /* Align main content to the right of the expanded sidebar */
+}
+
+.nav-page.nav-page-previous {
+    margin-left: 60px !important; /* Adjust to align with the rest of the content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #quarto-sidebar {
+        width: auto !important; /* Adapt sidebar width for smaller screens */
+    }
+    #quarto-document-content {
+        margin-left: 0 !important;
+        width: 100% !important; /* Full width on smaller screens */
+    }
+    .nav-page.nav-page-previous, .nav-page.nav-page-next {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
