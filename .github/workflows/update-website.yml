@@ -1,8 +1,8 @@
-name: Update Index Page
+name: Update the Website
 
 on:
   schedule:
-    - cron: '15 * * * *'  # Runs at midnight every day in EST
+    - cron: '0 4 * * *'  # Runs at midnight every day in EST
   push:
     branches:
       - main
