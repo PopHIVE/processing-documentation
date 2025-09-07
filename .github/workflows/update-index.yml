@@ -51,16 +51,16 @@ jobs:
           quarto render index.qmd
 
       # Step 6b: Check output directory
-      - name: List output directory
+      - name: List _book directory
         run: |
-          ls -l
+          ls -l _book
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
-          publish_dir: ./_site
+          publish_dir: ./_book
           publish_branch: gh-pages
 
   update_all_pages:
@@ -102,12 +102,12 @@ jobs:
       # Step 6: Render all Quarto pages
       - name: Render Quarto Book
         run: |
-          quarto render index.qmd --to html --output-dir _book
+          quarto render index.qmd
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY2 }}
-          publish_dir: ./_site
+          publish_dir: ./_book
           publish_branch: gh-pages
