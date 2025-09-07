@@ -3,7 +3,7 @@ name: Build and Deploy Full Site
 on:
   push:
     branches:
-      - update-index
+      - main
   workflow_dispatch:
 
 jobs:
@@ -11,48 +11,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Fetch all history for all branches
 
-      - name: Merge changes from update-index to main
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git checkout main
-          git pull origin update-index
-          git merge update-index --no-ff --commit -m "Merge update-index into main"
-          git push origin main
-
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.9'  # Adjust the Python version as needed
 
+      # Step 3: Set up R
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.1'
+          r-version: '4.1'  # Use a stable R version
 
+      # Step 4: Cache R packages
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
 
+      # Step 5: Install Quarto (amd64)
       - name: Install Quarto
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.24/quarto-1.8.24-linux-amd64.deb
           sudo dpkg -i quarto-1.8.24-linux-amd64.deb
 
+      # Step 6: Render the entire site into the output directory
       - name: Render full site
         run: |
           quarto render --output-dir _book
 
-      - name: Check output directory
+      # Step 7: Check output directory
+      - name: List _book directory
         run: |
           ls -l _book
 
+      # Step 8: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
