@@ -1,8 +1,83 @@
 :root {
     --mermaid-fg-color--lightest: #ece5e1;
     --mermaid-fg-color--lighter: #2c3136;
+    --sidebar-text: #545352;
 }
 
+
+/* CMU-Delphi table CSS */
+/* source: https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nchs-mortality.html */
+
+.table-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+thead th {
+    border-bottom: 1px solid var(--quarto-scss-export-gray-500) !important;
+}
+th:first-child, td:first-child {
+    width: 300px;
+}
+table {
+    display: table;
+    min-width: 100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center !important;
+    unicode-bidi: isolate;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+th:first-of-type, td:first-of-type {
+    border-left: 0;
+}
+tbody tr:last-of-type td {
+    border-bottom: 0;
+}
+th, td {
+    min-width: 7.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--quarto-scss-export-gray-500);
+    border-left: 1px solid var(--quarto-scss-export-gray-500);
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+:not(pre,figure)>code {
+    padding: 0.2em 0.15em;
+    font-weight: 400;
+    background-color: #f5f6fa;
+    border: 1px solid #eeebee;
+    border-radius: 4px;
+}
+
+@media (min-width: 31.25rem) {
+    th, td {
+        font-size: 0.875rem !important;
+    }
+}
+
+
+/* Custom CSS for the Mermaid diagram */
 
 #mermaid-1 .nodeLabel {
     color: var(--mermaid-fg-color--lighter) !important;
@@ -50,20 +125,89 @@
 }
 
 
+/* Click to zoom into the image */
+
+.container {
+  position: relative;
+  display: inline-block;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.container img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1000px;
+  max-height: 80%;
+  transform-origin: center center;
+  object-fit: contain;
+  cursor: move; /* Indicate the image is draggable */
+  transition: transform 0.25s ease;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.caption {
+  padding-bottom: 20px; /* Padding below the caption */
+  font-size: 0.8rem;
+  color: #555;
+  text-align: left;
+}
+
+
 /* Custom CSS to adjust the width of the quarto sidebar and ensure content adjusts accordingly */
 
 /* Adjust the sidebar width */
 #quarto-sidebar {
-    width: 270px !important; /* Expand the sidebar width */
+    width: 310px !important;
+    padding-left: 30px;
 }
 
 /* Adjust the content margin */
 #quarto-document-content {
-    margin-left: 60px !important; /* Align main content to the right of the expanded sidebar */
+    margin-left: 90px !important; /* Align main content to the right of the expanded sidebar */
 }
-
 .nav-page.nav-page-previous {
-    margin-left: 60px !important; /* Adjust to align with the rest of the content */
+    margin-left: 90px !important; /* Adjust to align with the rest of the content */
 }
 
 /* Responsive adjustments */
