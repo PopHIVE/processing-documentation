@@ -3,19 +3,148 @@
   editor: source
   bibliography: references.bib
   csl: nature.csl
+  toc-depth: 4
 ---
 
 # Respiratory Syncytial Virus (RSV) {.unnumbered}
 
 ## National Syndromic Surveillance Program
 
-The National Syndromic Surveillance Program (NSSP) provides data on emergency department visits for influenza, respiratory syncytial virus, and COVID-19 each week, organized by state and county, where available. The numbers are based on recorded diagnoses. NSSP data are made available by the CDC.
+The National Syndromic Surveillance Program (NSSP) consolidates data from many sources and on a wide range of subjects to provide timely, complete, and accurate information in partnership with federal agencies, local and state health departments, and academic and private sector partners. Among these data sources, emergency department (ED) visit data resulting from influenza, respiratory syncytial virus, and COVID-19 respiratory infections are available on data.gov. 83\% of United States ED departments provide data to NSSP within 24 hours, and percentage occurrences at the state and county level are released weekly\ [@main_page_nssp; @data_source_nssp].
 
--   Percent of ED visits recorded as being due to RSV across all age groups, obtained from jurisdictions and emergency departments participating in the National Syndromic Surveillance Program. County-level data are shown where available; otherwise state-level data are presented.
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
 
--   These measures are based on diagnoses recorded in the electronic health records and not based directly on viral test results
+**data.gov API Source:**
+:::
 
--   For Missouri, CDC does not report values for NSSP, and the values can be filled with state-level data from Epic Cosmos.
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+The [National Syndromic Surveillance Program (NSSP)](https://www.cdc.gov/nssp/index.html)
+
+_[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- COVID-19, Flu, RSV, Combined](https://data.cdc.gov/Public-Health-Surveillance/NSSP-Emergency-Department-Visit-Trajectories-by-St/rdmq-nq56/about_data)_
+:::
+::::::
+
+
+### Data Dictionary
+
+
+
+<div class="table-wrapper">
+  <table>
+    <thread>
+      <tr>
+        <th>Signal</th>
+        <th>Description</th>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">geography</code></td>
+        <td>State and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics' definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period.
+        <br>
+        <br>
+        Here, geolocation is coded in <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a>\ [@fips_codes]. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute's Surveillance, Epidemiology, and End Results (SEER) Program _[Health Service Areas (HSA)](https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html)_ webpage: [NCI Modified Table](https://seer.cancer.gov/seerstat/variables/countyattribs/Health.Service.Areas.pdf)\ [@hsa_fips_modifier; @hsa_codes].</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">time</code></td>
+        <td>
+          Qualifying emergency department visits related to a specific pathogen observed in a given Morbidity and Mortality Weekly Report (MMWR) week and reported by participating sites.
+          <br>
+          <br>
+          <strong>New data releases from source:</strong> once per week on Fridays
+          <br>
+          <strong>Earliest date available:</strong> 2022-10-01
+        </td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">percent_visits_rsv</code></td>
+        <td>
+          Percent of emergency department visits coded as being caused by RSV identified using the following DD and clinical terms.
+          <br>
+          <br>
+          <strong>ICD-10-CM:</strong> _B97.4	Respiratory syncytial virus (RSV) as the cause of diseases classified elsewhere_ (B97.4), _Respiratory syncytial virus pneumonia_ (J12.1), _Acute bronchitis due to respiratory syncytial virus_ (J20.5), and _Acute bronchiolitis due to respiratory syncytial virus_ (J21.0).
+          <br>
+          <br>
+          <strong>ICD-9-CM:</strong> _Acute bronchiolitis due to respiratory syncytial virus_ (466.11), _Pneumonia due to respiratory syncytial virus_ (480.1), and _Respiratory syncytial virus_ (079.6).
+          <br>
+          <br>
+          <strong>SNOMED CT:</strong> _Respiratory syncytial virus infection_ (55735004), _Healthcare associated respiratory syncytial virus disease_ (408684006), _Pneumonia caused by respiratory syncytial virus_ (195881003), _Bronchopneumonia caused by respiratory syncytial virus_ (10625551000119103), _Respiratory syncytial virus bronchiolitis_ (57089007), _Acute bronchiolitis caused by respiratory syncytial virus_ (195739001), _Respiratory syncytial virus bronchitis_ (79479005), _Acute respiratory syncytial virus bronchitis_ (195727009), _Respiratory syncytial virus laryngotracheobronchitis_ (72204002), and _Respiratory syncytial virus pharyngitis_ (31309002).
+        </td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">percent_visits_flu</code></td>
+        <td>
+          Percent of emergency department visits coded as being caused by influenza identified using the following DD and clinical terms.
+          <br>
+          <br>
+          <strong>ICD-10-CM:</strong> _Influenza due to certain identified influenza viruses_ (J09), _Influenza due to other identified influenza viruses_ (J10), and _Influenza due to unidentified influenza virus_ (J11).
+          <br>
+          <br>
+          <strong>ICD-9-CM:</strong> _Influenza with pneumonia_ (487.0), _Influenza with other respiratory manifestations_ (487.1), _Influenza with other manifestations_ (487.8), _Influenza due to identified avian influenza virus with pneumonia_ (488.01), _Influenza due to identified avian influenza virus with other manifestations_ (488.09), _Influenza due to identified 2009 H1N1 influenza virus with pneumonia_ (488.11), _Influenza due to identified 2009 H1N1 influenza virus with other manifestations_ (488.19), _Influenza due to identified novel influenza A virus with pneumonia_ (488.81), _Influenza due to identified novel influenza A virus with other manifestations_ (488.89).
+          <br>
+          <br>
+          <strong>SNOMED CT:</strong> _Influenza caused by influenza A virus subtype H1N1_ (442696006), _Influenza caused by Influenza A virus_ (442438000), _Influenza_ (6142004), and _Pneumonia and influenza_ (195878008).
+        </td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">percent_visits_covid</code></td>
+        <td>
+          Percent of emergency department visits coded as being caused by COVID-19 identified using the following DD and clinical terms.
+          <br>
+          <br>
+          <strong>ICD-10-CM:</strong> _Pneumonia due to coronavirus disease 2019_ (J12.82) and _COVID-19_ (U07.1).
+          <br>
+          <br>
+          <strong>SNOMED CT:</strong> _Disease caused by severe acute respiratory syndrome coronavirus 2_ (840539006), _Suspected disease caused by severe acute respiratory coronavirus 2_ (840544004), and _Severe acute respiratory syndrome coronavirus 2_ (840533007).
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Coverage Map
+
+Emergency departments located in HSA counties across the entire United States, including the District of Columbia and Guam, can submit their data to NSSP, as well as to their local and state health departments. The map below illustrates the representation of this data\ [@ed_data_guide].
+
+```{=html}
+<div class="container" data-min-scale="1" data-max-scale="3" style="width: 75%;">
+  <img id="myImage" src="https://www.cdc.gov/nssp/media/images/2024/04/Participation-with-date.png" alt="Zoomable Image" title="Click to zoom in">
+  <figcaption class="caption">
+    Data coverage for HSA regions in all 50 states, the District of Columbia, and Guam.
+  </figcaption>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script src="zoom.js"></script>
+```
+
+### Limitations
+
+The following summarizes specific data collection, processing, and reporting characteristics that might impact the interpretation of results. These reflect source limitations provided by the _[Companion Guide: NSSP ED Data on Respiratory Illness](https://www.cdc.gov/nssp/php/onboarding-resources/companion-guide-ed-data-respir)_ and internal PopHIVE data processing methods\ [@ed_data_guide]. Relevant PopHIVE data processing scripts are directly linked to as needed.
+
+- To comply with data use and sharing agreements, county-level data are suppressed from New Hampshire, South Dakota, and Washington.
+
+- If the proportion of records with a discharge diagnosis is low or the counts of observed events are sufficiently low, reports are suppressed to ensure data privacy. This suppression can impact the resolution at both the county and state levels.
+
+- Data are reported based on the electronic diagnostic codes (listed above) generated during an emergency department visit, rather than directly from the viral detection assay. Testing practices, and code assignment standards, are also expected to differ for the viruses, hospital systems, and for specific age groups.
+
+- Data are updated by NSSP as qualifying discharge diagnoses (DD) codes are added and changed.
+
+- Percent occurrence is calculated as the percentage of respiratory illness out of all emergency department visits for the applicable group stratification.
+
+- During data processing, where available, county-level values are shown; otherwise, they are replaced with state-level values ([`ingest.R`](https://github.com/PopHIVE/Ingest/blob/main/data/nssp/ingest.R))
 
 ## Epic Cosmos
 
@@ -48,3 +177,8 @@ Google Trends data represent scaled Google search volume by week and state or me
 ## National Respiratory and Enteric Virus Surveillance System (NREVSS).
 
 Select laboratories around the United States participate in this system and report the number of positive tests for a virus and the number of tests performed. These data are made available by the CDC.
+
+## References
+
+::: {#refs}
+:::
