@@ -33,8 +33,6 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
 
 ### Data Dictionary
 
-
-
 <div class="table-wrapper">
   <table>
     <thread>
@@ -44,6 +42,7 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
       </tr>
     </thread>
     <tbody>
+      <!-- First Row -->
       <tr>
         <td><code class="language-plaintext highlighter-rouge">geography</code></td>
         <td>State and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics' definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period.
@@ -51,6 +50,7 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
         <br>
         Here, geolocation is coded in <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a>\ [@fips_codes]. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute's Surveillance, Epidemiology, and End Results (SEER) Program _[Health Service Areas (HSA)](https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html)_ webpage: [NCI Modified Table](https://seer.cancer.gov/seerstat/variables/countyattribs/Health.Service.Areas.pdf)\ [@hsa_fips_modifier; @hsa_codes].</td>
       </tr>
+      <!-- Second Row -->
       <tr>
         <td><code class="language-plaintext highlighter-rouge">time</code></td>
         <td>
@@ -62,10 +62,11 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
           <strong>Earliest date available:</strong> 2022-10-01
         </td>
       </tr>
+      <!-- Third Row -->
       <tr>
         <td><code class="language-plaintext highlighter-rouge">percent_visits_rsv</code></td>
         <td>
-          Percent of emergency department visits coded as being caused by RSV identified using the following DD and clinical terms.
+          Percent of emergency department visits coded as being caused by RSV identified using the following DD and clinical terms. Calculated as qualifying rsv diagnoses out of all emergency department visits for the applicable group stratification.
           <br>
           <br>
           <strong>ICD-10-CM:</strong> _B97.4	Respiratory syncytial virus (RSV) as the cause of diseases classified elsewhere_ (B97.4), _Respiratory syncytial virus pneumonia_ (J12.1), _Acute bronchitis due to respiratory syncytial virus_ (J20.5), and _Acute bronchiolitis due to respiratory syncytial virus_ (J21.0).
@@ -80,7 +81,7 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
       <tr>
         <td><code class="language-plaintext highlighter-rouge">percent_visits_flu</code></td>
         <td>
-          Percent of emergency department visits coded as being caused by influenza identified using the following DD and clinical terms.
+          Percent of emergency department visits coded as being caused by influenza identified using the following DD and clinical terms. Calculated as qualifying influenza diagnoses out of all emergency department visits for the applicable group stratification.
           <br>
           <br>
           <strong>ICD-10-CM:</strong> _Influenza due to certain identified influenza viruses_ (J09), _Influenza due to other identified influenza viruses_ (J10), and _Influenza due to unidentified influenza virus_ (J11).
@@ -92,10 +93,11 @@ _[NSSP Emergency Department Visit Trajectories by State and Sub State Regions- C
           <strong>SNOMED CT:</strong> _Influenza caused by influenza A virus subtype H1N1_ (442696006), _Influenza caused by Influenza A virus_ (442438000), _Influenza_ (6142004), and _Pneumonia and influenza_ (195878008).
         </td>
       </tr>
+      <!-- Fourth Row -->
       <tr>
         <td><code class="language-plaintext highlighter-rouge">percent_visits_covid</code></td>
         <td>
-          Percent of emergency department visits coded as being caused by COVID-19 identified using the following DD and clinical terms.
+          Percent of emergency department visits coded as being caused by COVID-19 identified using the following DD and clinical terms. Calculated as qualifying COVID-19 diagnoses out of all emergency department visits for the applicable group stratification.
           <br>
           <br>
           <strong>ICD-10-CM:</strong> _Pneumonia due to coronavirus disease 2019_ (J12.82) and _COVID-19_ (U07.1).
@@ -142,9 +144,7 @@ The following summarizes specific data collection, processing, and reporting cha
 
 - Data are updated by NSSP as qualifying discharge diagnoses (DD) codes are added and changed.
 
-- Percent occurrence is calculated as the percentage of respiratory illness out of all emergency department visits for the applicable group stratification.
-
-- During data processing, where available, county-level values are shown; otherwise, they are replaced with state-level values ([`ingest.R`](https://github.com/PopHIVE/Ingest/blob/main/data/nssp/ingest.R))
+- During data processing, where available, county-level values are shown; otherwise, they are replaced with state-level values ([`ingest.R`](https://github.com/PopHIVE/Ingest/blob/main/data/nssp/ingest.R)).
 
 ## Epic Cosmos
 
@@ -154,11 +154,256 @@ Cosmos is a dataset created in collaboration with a community of Epic health sys
 
 -   Where there are fewer than 10 cases per time period, the data are suppressed. These values are filled in with a value halfway between 0 and the minimum reported value on the time series. These values are noted with suppressed_flag=1
 
+
 ## RESP-NET
 
-The CDC’s Respiratory Virus Hospitalization Surveillance Network (RESP-NET) monitors laboratory-confirmed hospitalizations associated with influenza, COVID-19, and respiratory syncytial virus (RSV) among children and adults. The data are collected from hospitals in selected counties and county equivalents. This dataset has several important advantages: the area around the hospitals is well described, so rates of disease adjusted for population size can be accurately reported. The selected counties include \~10% of the US population and are demographically representative of the country. Detailed patient demographic information is available, and officials actively search for cases to ensure they capture all cases in the data. A limitation is that the network relies on the clinicians to perform viral tests as part of their routine clinical practice, so they likely miss cases that are not tested
+The CDC’s Respiratory Virus Hospitalization Surveillance Network (RESP-NET) monitors laboratory-confirmed hospitalizations associated with influenza, COVID-19, and respiratory syncytial virus (RSV) among children and adults. Pathogen-specific installments of the surveillance program (COVID-NET, RSV-NET, and FluSurv-NET) operate distinctly, yet together they contribute to RESP-NET’s surveillance and data collection efforts.
+
+Data are collected from hospitals in select counties and county equivalents across up to 14 states, representing more than 30 million people, approximately 10\% of the U.S. population\ [@resp_net_docs]. RESP-NET defines pathogen-specific surveillance areas around participating hospitals, allowing rates to be accurately reported. Each program collects data on age, sex, and race and ethnicity demographics. Officials strive to capture all cases within the catchment area to ensure a representative understanding of who is impacted by the disease burden\ [@resp_net_docs].
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Respiratory Virus Hospitalization Surveillance Network (RESP-NET)](https://www.cdc.gov/resp-net/dashboard/index.html)
+
+_[Rates of Laboratory-Confirmed RSV, COVID-19, and Flu Hospitalizations from the RESP-NET Surveillance Systems](https://data.cdc.gov/Public-Health-Surveillance/Rates-of-Laboratory-Confirmed-RSV-COVID-19-and-Flu/kvib-3txy/about_data)_
+:::
+::::::
+
+
+### Data Dictionary
+
+<div class="table-wrapper">
+  <table>
+    <thread>
+      <tr>
+        <th>Signal</th>
+        <th>Description</th>
+      </tr>
+    </thread>
+    <tbody>
+      <!-- First Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">rate_covid</code></td>
+        <td>A qualifying event is defined as an individual within the catchment area who tests positive for SARS-CoV-2 through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization\ [@covid_net_dashboard]. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons.
+        </br>
+        </br>
+        The type of respiratory illness was extrapolated from the `Surveillance Network = COVID-NET` column and reshaped into a standalone column using values reported in the `Weekly Rate` column.</td>
+      </tr>
+      <!-- Second Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">rate_rsv</code></td>
+        <td>A qualifying event is defined as an individual within the catchment area who tests positive for respiratory syncytial virus (RSV) through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization\ [@rsv_net_dashboard]. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons.
+        </br>
+        </br>
+        The type of respiratory illness was extrapolated from the `Surveillance Network = RSV-NET` column and reshaped into a standalone column using values reported in the `Weekly Rate` column.</td>
+      </tr>
+      <!-- Third Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">rate_flu</code></td>
+        <td>A qualifying event is defined as an individual within the catchment area who tests positive for influenza through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization. A positive result can be obtained from any of the following laboratory assays: viral culture, direct or indirect fluorescent antibody staining, rapid antigen test, or molecular assay\ [@flusurv_net_docs]. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons.
+        </br>
+        </br>
+        The type of respiratory illness was extrapolated from the `Surveillance Network = FluSurv-NET` column and reshaped into a standalone column using values reported in the `Weekly Rate` column.</td>
+      </tr>
+      <!-- Fourth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Season</code></td>
+        <td>Active surveillance dates within a season begin in October (MMWR Week 40) and end either at the end of April (MMWR Week 17), June (MMWR Week 16), or September (MMWR Week 39) of the following year. In some seasons, programs concluded surveillance in different months\ [@resp_net_docs; @covid_net_dashboard; @rsv_net_dashboard]. Refer to page 6 of the embedded PowerBI dashboard provided below for specific details about the date ranges captured in each season by surveillance program.</td>
+      </tr>
+      <!-- Fifth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">MMWR Year</code></td>
+        <td>The Morbidity and Mortality Weekly Report (MMWR) reflects the epidemiologic year to which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned. MMWR weeks range from 1 to 53, although most years only have 52 weeks. The MMWR week starts on Sunday, and MMWR Week 1 is defined as the first week of the year that contains at least four days in the new calendar year\ [@mmwr].</td>
+      </tr>
+      <!-- Sixth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">MMWR Week</code></td>
+        <td>The Morbidity and Mortality Weekly Report (MMWR) reflects the epidemiologic year to which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned. MMWR weeks range from 1 to 53, although most years only have 52 weeks. The MMWR week starts on Sunday, and MMWR Week 1 is defined as the first week of the year that contains at least four days in the new calendar year\ [@mmwr].</td>
+      </tr>
+      <!-- Seventh Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">age</code></td>
+        <td>Stratification includes `0-<1 yr`, `0-4 yr`, `12-17 yr`, `1-4 yr`, `18-29 yr`, `18-49 yr`, `30-39 yr`, `40-49 yr`, `50-64 yr`, `5-11 yr`, `5-17 yr`, `65-74 yr`, `65+ yr`, `75-84 yr`, `75+ yr`, `85+ yr`, `Adults`, and `Pediatrics`. `Overall` represents the combined results for all stratifiers. 
+        </br>
+        </br>
+        Formatting was modified to display `* Years`, and `Overall` entries were renamed `Total`. Only the age ranges `<1 Years`, `1-4 Years`, `5-17 Years`, `18-49 Years`, `50-64 Years`, and `65+ Years` were retained, while all other entries were coded as either `Total` or `other`. These values were originally reported under the `Age group` column.</td>
+      </tr>
+      <!-- Eighth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">geography</code></td>
+        <td>Participating network sites consist of acute-care hospitals spanning 185 counties across up to 14 states. This represents more than 30 million people, approximately 10% of the U.S. population. The RESP-NET dashboard, embedded below, under the _About Our Data_ tab, provides further details about geographical representation for all seasons recorded since 2018. These values were originally reported under the `Site` column and were translated from state names to corresponding <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a> codes\ [@fips_codes].</td>
+      </tr>
+      <!-- Ninth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Sex</code></td>
+        <td>Stratification includes `Male` and `Female`, with `Overall` representing the combined results. Only the `Overall` outcome was retained; all other outcomes were filtered out.</td>
+      </tr>
+      <!-- Tenth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Race/Ethnicity</code></td>
+        <td>Stratification includes `American Indian/Alaska Native, NH`, `AI/AN, non-Hispanic`, `Asian/Pacific Islander, NH`, `A/PI, non-Hispanic`, `Black, NH` `Black, non-Hispanic`, `Hispanic`, `White, NH`, `White, non-Hispanic`. `Overall` represents the combined results for all stratifiers. Only the `Overall` outcome was retained; all other outcomes were filtered out.</td>
+      </tr>
+      <!-- Eleventh Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Cumulative Rate</code></td>
+        <td>Cases detected throughout the span of an infectious season, starting with the first week of October (MMWR Week 40), were summed cumulatively until the end of the surveillance period. Rate calculations used the cumulative value for the numerator, while the denominator remains the same as that for non-cumulative rates. Rates are reported per 100,000 persons.</td>
+      </tr>
+      <!-- Twelfth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">time</code></td>
+        <td>The date of hospital admission is recorded to the nearest week and standardized to report the date as the last day of the week, which is Saturday, on which the event occurred\ [@flusurv_net_docs]. These values were originally reported under the `Week Ending Date` column.</td>
+      </tr>
+      <!-- Thirteenth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Type</code></td>
+        <td>Differentiates metrics as `Age-Adjusted Rate` and `Unadjusted Rate`. Only the `Unadjusted Rate` metric was retained; all other outcomes were filtered out.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+### Limitations
+
+The following summarizes specific data collection, processing, and reporting characteristics that might impact the interpretation of results. These reflect source limitations provided by the _[Respiratory Virus Hospitalization Surveillance Network (RESP-NET)](https://www.cdc.gov/resp-net/dashboard/index.html)_ and internal PopHIVE data processing methods, unless otherwise noted\ [@resp_net_docs]. Relevant PopHIVE data processing scripts are directly linked to as needed.
+
+- The participating surveillance sites have experienced changes over time, resulting in the addition or removal of counties represented in new surveillance years. RESP-NET adjusts the total population estimates to account for these variations.
+
+- During the 2020-21 season, the case counts from FluSurv-NET were insufficient to report stratified cumulative or weekly rates. Consequently, only the overall rates were reported.
+
+- The RSV-NET data was marked as incomplete from May to June 2022.
+
+- The COVID-NET program began in March 2020 and has continued to the present day. Both the FluSurv-NET and RSV-NET programs started in October 2018 and also continue to the present day.
+
+- Active surveillance dates within a season begin in October (MMWR Week 40) and end either at the end of April (MMWR Week 17), June (MMWR Week 16), or September (MMWR Week 39) of the following year. In some seasons, programs concluded surveillance in different months\ [@resp_net_docs; @covid_net_dashboard; @rsv_net_dashboard]. Refer to page 6 of the embedded PowerBI dashboard provided below for specific details about the date ranges captured in each season by surveillance program.
+
+- The number of hospitals participating in each respiratory illness surveillance program varies, but all platforms have overlapping surveillance areas. Fourteen states submit data for influenza surveillance, while thirteen states submit data for COVID-19 and RSV surveillance.
+
+- Although the areas surrounding the hospitals are well described, these regions are pathogen-specific and may not directly correspond between the three programs represented in RESP-NET.
+
+- Prior to the 2020-21 season, population estimates utilized NCHS bridge-race estimates. Starting with the 2020-21 season, unbridged estimates from the 2020-22 Special Tabulation vintage have been used as denominators.
+
+- Data reported within a season are considered to be preliminary and are subject to updates, as reports are received from participating sites. This reporting lag is expected to increase around holidays and during periods of increased hospitalization\ [@flusurv_net_docs; @covid_net_dashboard].
+
+- Surveillance relies on clinical testing ordered by healthcare providers and reported rates do not account for any resulting undertesting, differences between facilities, or diagnostic test sensitivity.
+
+
+### Coverage Map
+
+RESP-NET provides summary tables and visualizations showing the participating states and the date ranges for active surveillance for every season, organized by surveillance program. The [RESP-NET PowerBI dashboard](https://www.cdc.gov/resp-net/dashboard/index.html) displaying this information has been embedded below\ [@resp_net_docs].
+
+For more details, navigate to page 6, titled _About Our Data_.
+
+<body>
+    <iframe width="800" height="600" src="https://app.powerbigov.us/view?r=eyJrIjoiMDQwODFjZWMtNzM0ZS00MDFmLTkyOWYtZDhlYTFhZTdkNDc1IiwidCI6IjljZTcwODY5LTYwZGItNDRmZC1hYmU4LWQyNzY3MDc3ZmM4ZiJ9&pageName=ReportSection0cb4e9ac52aa7dc2ec39" frameborder="0" allowFullScreen="true"></iframe>
+</body>
+
+
+## RSV-NET
+
+The Respiratory Syncytial Virus Hospitalization Surveillance Network (RSV-NET) is a network that conducts active, population-based surveillance for laboratory-confirmed RSV-associated hospitalizations in children younger than 18 years of age and adults. RSV-NET, along with the Coronavirus Disease 2019 (COVID-19) Hospitalization Surveillance Network (COVID-NET) an the Influenza Hospitalization Surveillance network (FluSuv-NET), comprise the Respiratory Virus Hospitalization Surveillance Network (RESP-NET).  The RESP-NET platforms have overlapping surveillance areas and use similar methods to collect data. Because the surveillance areas and age groups included in surveillance have changed over time, trends should be interpreted with caution. RSV-NET is CDC’s source for important data on rates of hospitalizations associated with RSV. Hospitalization rates show how many people in the surveillance area are hospitalized with RSV, compared to the total number of people residing in that area. \n\nData are preliminary and subject to change as more data become available. Data will be updated weekly.
+
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[RSV-NET](https://www.cdc.gov/rsv/php/surveillance/rsv-net.html)
+
+_[Weekly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Rates-of-Laboratory-Confirmed-RSV-Hospitali/29hc-w46k/about_data)_
+:::
+::::::
+
+
+### Data Dictionary
+
+<div class="table-wrapper">
+  <table>
+    <thread>
+      <tr>
+        <th>Signal</th>
+        <th>Description</th>
+      </tr>
+    </thread>
+    <tbody>
+    <!-- First Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">geography</code></td>
+        <td>State and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics' definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period.
+        <br>
+        <br>
+        Here, geolocation is coded in <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a>\ [@fips_codes]. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute's Surveillance, Epidemiology, and End Results (SEER) Program _[Health Service Areas (HSA)](https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html)_ webpage: [NCI Modified Table](https://seer.cancer.gov/seerstat/variables/countyattribs/Health.Service.Areas.pdf)\ [@hsa_fips_modifier; @hsa_codes].</td>
+      </tr>
+      <!-- Second Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">time</code></td>
+        <td>
+          Qualifying emergency department visits related to a specific pathogen observed in a given Morbidity and Mortality Weekly Report (MMWR) week and reported by participating sites.
+          <br>
+          <br>
+          <strong>New data releases from source:</strong> once per week on Fridays
+          <br>
+          <strong>Earliest date available:</strong> 2022-10-01
+        </td>
+      </tr>
+      <!-- Ninth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Sex</code></td>
+        <td>Stratification includes `Male` and `Female`, with `All` representing the combined results.</td>
+      </tr>
+      <!-- Tenth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Race/Ethnicity</code></td>
+        <td>Stratification includes `A/PI, non-Hispanic`, `AI/AN, non-Hispanic`, `Black, non-Hispanic`, `White, non-Hispanic`, and `Hispanic`. `All` represents the combined results for all stratifiers.</td>
+      </tr>
+      <!-- Eleventh Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Cumulative Rate</code></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+State, Season, Week ending date, Age category, Sex, Race, Rate, Cumulative Rate, Type
+
+### Limitations
+
+Many of the same limitations apply here.
 
 -   Number of laboratory-confirmed cases of the virus per 100,000 people. RESP-NET is an active surveillance system with a well-defined population, so it is possible to obtain estimates of incidence (cases/population). This indicator is only available for certain states. The data comes from certain counties within the state and does not capture the entire population.
+
+- The populations for children under 6 months and those aged 6-12 months are each estimated to be half of the population of children aged 0-1 years.
+
+
+### Coverage Map
+
+RSV-NET provides summary visualizations showing the participating states and an estimate of the percentage of the population represented for each season. The [RSV-NET PowerBI dashboard](https://www.cdc.gov/rsv/php/surveillance/rsv-net.html) displaying this information has been embedded below\ [@rsv_net_dashboard].
+
+For more details, navigate to page 8, titled _About Our Data_.
+
+<body>
+    <iframe width="800" height="600" src="https://app.powerbigov.us/view?r=eyJrIjoiMzgxNzBhNDItYTg1Ni00ZjMyLWFjOWEtZjRkZTg1ZGQzNmFmIiwidCI6IjljZTcwODY5LTYwZGItNDRmZC1hYmU4LWQyNzY3MDc3ZmM4ZiJ9" frameborder="0" allowFullScreen="true"></iframe>
+</body>
+
 
 ## National Wastewater Surveillance program 
 
