@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -53,17 +53,15 @@ div.csl-indent {
 <link href="../../Pages/chronic-diseases/diabetes.html" rel="next">
 <link href="../../Pages/respiratory-diseases/pneumococcus.html" rel="prev">
 <link href="../../pophivelogo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cb9e2ff2c2f9bc4a685f1a65532a945b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1c78f593f7a3797158ec1e77ba7553a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -100,7 +98,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../../_styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,9 +120,7 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Process Documentation</a> 
         <div class="sidebar-tools-main">
@@ -254,7 +250,18 @@ div.csl-indent {
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   </ul></li>
   <li><a href="#epic-cosmos" id="toc-epic-cosmos" class="nav-link" data-scroll-target="#epic-cosmos">Epic Cosmos</a></li>
-  <li><a href="#resp-net" id="toc-resp-net" class="nav-link" data-scroll-target="#resp-net">RESP-NET</a></li>
+  <li><a href="#resp-net" id="toc-resp-net" class="nav-link" data-scroll-target="#resp-net">RESP-NET</a>
+  <ul>
+  <li><a href="#data-dictionary-1" id="toc-data-dictionary-1" class="nav-link" data-scroll-target="#data-dictionary-1">Data Dictionary</a></li>
+  <li><a href="#limitations-1" id="toc-limitations-1" class="nav-link" data-scroll-target="#limitations-1">Limitations</a></li>
+  <li><a href="#coverage-map-1" id="toc-coverage-map-1" class="nav-link" data-scroll-target="#coverage-map-1">Coverage Map</a></li>
+  </ul></li>
+  <li><a href="#rsv-net" id="toc-rsv-net" class="nav-link" data-scroll-target="#rsv-net">RSV-NET</a>
+  <ul>
+  <li><a href="#data-dictionary-2" id="toc-data-dictionary-2" class="nav-link" data-scroll-target="#data-dictionary-2">Data Dictionary</a></li>
+  <li><a href="#limitations-2" id="toc-limitations-2" class="nav-link" data-scroll-target="#limitations-2">Limitations</a></li>
+  <li><a href="#coverage-map-2" id="toc-coverage-map-2" class="nav-link" data-scroll-target="#coverage-map-2">Coverage Map</a></li>
+  </ul></li>
   <li><a href="#national-wastewater-surveillance-program" id="toc-national-wastewater-surveillance-program" class="nav-link" data-scroll-target="#national-wastewater-surveillance-program">National Wastewater Surveillance program</a></li>
   <li><a href="#google-trends-api" id="toc-google-trends-api" class="nav-link" data-scroll-target="#google-trends-api">Google Trends API</a></li>
   <li><a href="#national-respiratory-and-enteric-virus-surveillance-system-nrevss." id="toc-national-respiratory-and-enteric-virus-surveillance-system-nrevss." class="nav-link" data-scroll-target="#national-respiratory-and-enteric-virus-surveillance-system-nrevss.">National Respiratory and Enteric Virus Surveillance System (NREVSS).</a></li>
@@ -313,6 +320,7 @@ Description
 </tr>
 
 </tbody><tbody>
+<!-- First Row -->
 <tr>
 <td>
 <code class="language-plaintext highlighter-rouge">geography</code>
@@ -321,6 +329,7 @@ Description
 State and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics’ definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period. <br> <br> Here, geolocation is coded in <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a>&nbsp;<span class="citation" data-cites="fips_codes"><sup><a href="rsv.html#ref-fips_codes" role="doc-biblioref">3</a></sup></span>. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute’s Surveillance, Epidemiology, and End Results (SEER) Program <em><a href="https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html">Health Service Areas (HSA)</a></em> webpage: <a href="https://seer.cancer.gov/seerstat/variables/countyattribs/Health.Service.Areas.pdf">NCI Modified Table</a>&nbsp;<span class="citation" data-cites="hsa_fips_modifier hsa_codes"><sup><a href="rsv.html#ref-hsa_fips_modifier" role="doc-biblioref">4</a>,<a href="rsv.html#ref-hsa_codes" role="doc-biblioref">5</a></sup></span>.
 </td>
 </tr>
+<!-- Second Row -->
 <tr>
 <td>
 <code class="language-plaintext highlighter-rouge">time</code>
@@ -329,12 +338,13 @@ State and county-level information on participating healthcare facilities within
 Qualifying emergency department visits related to a specific pathogen observed in a given Morbidity and Mortality Weekly Report (MMWR) week and reported by participating sites. <br> <br> <strong>New data releases from source:</strong> once per week on Fridays <br> <strong>Earliest date available:</strong> 2022-10-01
 </td>
 </tr>
+<!-- Third Row -->
 <tr>
 <td>
 <code class="language-plaintext highlighter-rouge">percent_visits_rsv</code>
 </td>
 <td>
-Percent of emergency department visits coded as being caused by RSV identified using the following DD and clinical terms. <br> <br> <strong>ICD-10-CM:</strong> <em>B97.4 Respiratory syncytial virus (RSV) as the cause of diseases classified elsewhere</em> (B97.4), <em>Respiratory syncytial virus pneumonia</em> (J12.1), <em>Acute bronchitis due to respiratory syncytial virus</em> (J20.5), and <em>Acute bronchiolitis due to respiratory syncytial virus</em> (J21.0). <br> <br> <strong>ICD-9-CM:</strong> <em>Acute bronchiolitis due to respiratory syncytial virus</em> (466.11), <em>Pneumonia due to respiratory syncytial virus</em> (480.1), and <em>Respiratory syncytial virus</em> (079.6). <br> <br> <strong>SNOMED CT:</strong> <em>Respiratory syncytial virus infection</em> (55735004), <em>Healthcare associated respiratory syncytial virus disease</em> (408684006), <em>Pneumonia caused by respiratory syncytial virus</em> (195881003), <em>Bronchopneumonia caused by respiratory syncytial virus</em> (10625551000119103), <em>Respiratory syncytial virus bronchiolitis</em> (57089007), <em>Acute bronchiolitis caused by respiratory syncytial virus</em> (195739001), <em>Respiratory syncytial virus bronchitis</em> (79479005), <em>Acute respiratory syncytial virus bronchitis</em> (195727009), <em>Respiratory syncytial virus laryngotracheobronchitis</em> (72204002), and <em>Respiratory syncytial virus pharyngitis</em> (31309002).
+Percent of emergency department visits coded as being caused by RSV identified using the following DD and clinical terms. Calculated as qualifying rsv diagnoses out of all emergency department visits for the applicable group stratification. <br> <br> <strong>ICD-10-CM:</strong> <em>B97.4 Respiratory syncytial virus (RSV) as the cause of diseases classified elsewhere</em> (B97.4), <em>Respiratory syncytial virus pneumonia</em> (J12.1), <em>Acute bronchitis due to respiratory syncytial virus</em> (J20.5), and <em>Acute bronchiolitis due to respiratory syncytial virus</em> (J21.0). <br> <br> <strong>ICD-9-CM:</strong> <em>Acute bronchiolitis due to respiratory syncytial virus</em> (466.11), <em>Pneumonia due to respiratory syncytial virus</em> (480.1), and <em>Respiratory syncytial virus</em> (079.6). <br> <br> <strong>SNOMED CT:</strong> <em>Respiratory syncytial virus infection</em> (55735004), <em>Healthcare associated respiratory syncytial virus disease</em> (408684006), <em>Pneumonia caused by respiratory syncytial virus</em> (195881003), <em>Bronchopneumonia caused by respiratory syncytial virus</em> (10625551000119103), <em>Respiratory syncytial virus bronchiolitis</em> (57089007), <em>Acute bronchiolitis caused by respiratory syncytial virus</em> (195739001), <em>Respiratory syncytial virus bronchitis</em> (79479005), <em>Acute respiratory syncytial virus bronchitis</em> (195727009), <em>Respiratory syncytial virus laryngotracheobronchitis</em> (72204002), and <em>Respiratory syncytial virus pharyngitis</em> (31309002).
 </td>
 </tr>
 <tr>
@@ -342,15 +352,16 @@ Percent of emergency department visits coded as being caused by RSV identified u
 <code class="language-plaintext highlighter-rouge">percent_visits_flu</code>
 </td>
 <td>
-Percent of emergency department visits coded as being caused by influenza identified using the following DD and clinical terms. <br> <br> <strong>ICD-10-CM:</strong> <em>Influenza due to certain identified influenza viruses</em> (J09), <em>Influenza due to other identified influenza viruses</em> (J10), and <em>Influenza due to unidentified influenza virus</em> (J11). <br> <br> <strong>ICD-9-CM:</strong> <em>Influenza with pneumonia</em> (487.0), <em>Influenza with other respiratory manifestations</em> (487.1), <em>Influenza with other manifestations</em> (487.8), <em>Influenza due to identified avian influenza virus with pneumonia</em> (488.01), <em>Influenza due to identified avian influenza virus with other manifestations</em> (488.09), <em>Influenza due to identified 2009 H1N1 influenza virus with pneumonia</em> (488.11), <em>Influenza due to identified 2009 H1N1 influenza virus with other manifestations</em> (488.19), <em>Influenza due to identified novel influenza A virus with pneumonia</em> (488.81), <em>Influenza due to identified novel influenza A virus with other manifestations</em> (488.89). <br> <br> <strong>SNOMED CT:</strong> <em>Influenza caused by influenza A virus subtype H1N1</em> (442696006), <em>Influenza caused by Influenza A virus</em> (442438000), <em>Influenza</em> (6142004), and <em>Pneumonia and influenza</em> (195878008).
+Percent of emergency department visits coded as being caused by influenza identified using the following DD and clinical terms. Calculated as qualifying influenza diagnoses out of all emergency department visits for the applicable group stratification. <br> <br> <strong>ICD-10-CM:</strong> <em>Influenza due to certain identified influenza viruses</em> (J09), <em>Influenza due to other identified influenza viruses</em> (J10), and <em>Influenza due to unidentified influenza virus</em> (J11). <br> <br> <strong>ICD-9-CM:</strong> <em>Influenza with pneumonia</em> (487.0), <em>Influenza with other respiratory manifestations</em> (487.1), <em>Influenza with other manifestations</em> (487.8), <em>Influenza due to identified avian influenza virus with pneumonia</em> (488.01), <em>Influenza due to identified avian influenza virus with other manifestations</em> (488.09), <em>Influenza due to identified 2009 H1N1 influenza virus with pneumonia</em> (488.11), <em>Influenza due to identified 2009 H1N1 influenza virus with other manifestations</em> (488.19), <em>Influenza due to identified novel influenza A virus with pneumonia</em> (488.81), <em>Influenza due to identified novel influenza A virus with other manifestations</em> (488.89). <br> <br> <strong>SNOMED CT:</strong> <em>Influenza caused by influenza A virus subtype H1N1</em> (442696006), <em>Influenza caused by Influenza A virus</em> (442438000), <em>Influenza</em> (6142004), and <em>Pneumonia and influenza</em> (195878008).
 </td>
 </tr>
+<!-- Fourth Row -->
 <tr>
 <td>
 <code class="language-plaintext highlighter-rouge">percent_visits_covid</code>
 </td>
 <td>
-Percent of emergency department visits coded as being caused by COVID-19 identified using the following DD and clinical terms. <br> <br> <strong>ICD-10-CM:</strong> <em>Pneumonia due to coronavirus disease 2019</em> (J12.82) and <em>COVID-19</em> (U07.1). <br> <br> <strong>SNOMED CT:</strong> <em>Disease caused by severe acute respiratory syndrome coronavirus 2</em> (840539006), <em>Suspected disease caused by severe acute respiratory coronavirus 2</em> (840544004), and <em>Severe acute respiratory syndrome coronavirus 2</em> (840533007).
+Percent of emergency department visits coded as being caused by COVID-19 identified using the following DD and clinical terms. Calculated as qualifying COVID-19 diagnoses out of all emergency department visits for the applicable group stratification. <br> <br> <strong>ICD-10-CM:</strong> <em>Pneumonia due to coronavirus disease 2019</em> (J12.82) and <em>COVID-19</em> (U07.1). <br> <br> <strong>SNOMED CT:</strong> <em>Disease caused by severe acute respiratory syndrome coronavirus 2</em> (840539006), <em>Suspected disease caused by severe acute respiratory coronavirus 2</em> (840544004), and <em>Severe acute respiratory syndrome coronavirus 2</em> (840533007).
 </td>
 </tr>
 </tbody>
@@ -384,8 +395,7 @@ Percent of emergency department visits coded as being caused by COVID-19 identif
 <li><p>If the proportion of records with a discharge diagnosis is low or the counts of observed events are sufficiently low, reports are suppressed to ensure data privacy. This suppression can impact the resolution at both the county and state levels.</p></li>
 <li><p>Data are reported based on the electronic diagnostic codes (listed above) generated during an emergency department visit, rather than directly from the viral detection assay. Testing practices, and code assignment standards, are also expected to differ for the viruses, hospital systems, and for specific age groups.</p></li>
 <li><p>Data are updated by NSSP as qualifying discharge diagnoses (DD) codes are added and changed.</p></li>
-<li><p>Percent occurrence is calculated as the percentage of respiratory illness out of all emergency department visits for the applicable group stratification.</p></li>
-<li><p>During data processing, where available, county-level values are shown; otherwise, they are replaced with state-level values (<a href="https://github.com/PopHIVE/Ingest/blob/main/data/nssp/ingest.R"><code>ingest.R</code></a>)</p></li>
+<li><p>During data processing, where available, county-level values are shown; otherwise, they are replaced with state-level values (<a href="https://github.com/PopHIVE/Ingest/blob/main/data/nssp/ingest.R"><code>ingest.R</code></a>).</p></li>
 </ul>
 </section>
 </section>
@@ -399,10 +409,276 @@ Percent of emergency department visits coded as being caused by COVID-19 identif
 </section>
 <section id="resp-net" class="level2">
 <h2 class="anchored" data-anchor-id="resp-net">RESP-NET</h2>
-<p>The CDC’s Respiratory Virus Hospitalization Surveillance Network (RESP-NET) monitors laboratory-confirmed hospitalizations associated with influenza, COVID-19, and respiratory syncytial virus (RSV) among children and adults. The data are collected from hospitals in selected counties and county equivalents. This dataset has several important advantages: the area around the hospitals is well described, so rates of disease adjusted for population size can be accurately reported. The selected counties include ~10% of the US population and are demographically representative of the country. Detailed patient demographic information is available, and officials actively search for cases to ensure they capture all cases in the data. A limitation is that the network relies on the clinicians to perform viral tests as part of their routine clinical practice, so they likely miss cases that are not tested</p>
+<p>The CDC’s Respiratory Virus Hospitalization Surveillance Network (RESP-NET) monitors laboratory-confirmed hospitalizations associated with influenza, COVID-19, and respiratory syncytial virus (RSV) among children and adults. Pathogen-specific installments of the surveillance program (COVID-NET, RSV-NET, and FluSurv-NET) operate distinctly, yet together they contribute to RESP-NET’s surveillance and data collection efforts.</p>
+<p>Data are collected from hospitals in select counties and county equivalents across up to 14 states, representing more than 30 million people, approximately 10% of the U.S. population&nbsp;<span class="citation" data-cites="resp_net_docs"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a></sup></span>. RESP-NET defines pathogen-specific surveillance areas around participating hospitals, allowing rates to be accurately reported. Each program collects data on age, sex, and race and ethnicity demographics. Officials strive to capture all cases within the catchment area to ensure a representative understanding of who is impacted by the disease burden&nbsp;<span class="citation" data-cites="resp_net_docs"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a></sup></span>.</p>
+<div class="columns">
+<div class="column" style="text-align:right; width:25%">
+<p><strong>Program Landing Page:</strong></p>
+<p><strong>data.gov API Source:</strong></p>
+</div><div class="column" style="width:3%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:72%;">
+<p><a href="https://www.cdc.gov/resp-net/dashboard/index.html">Respiratory Virus Hospitalization Surveillance Network (RESP-NET)</a></p>
+<p><em><a href="https://data.cdc.gov/Public-Health-Surveillance/Rates-of-Laboratory-Confirmed-RSV-COVID-19-and-Flu/kvib-3txy/about_data">Rates of Laboratory-Confirmed RSV, COVID-19, and Flu Hospitalizations from the RESP-NET Surveillance Systems</a></em></p>
+</div>
+</div>
+<section id="data-dictionary-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-dictionary-1">Data Dictionary</h3>
+<div class="table-wrapper">
+<thread>
+</thread><table>
+<tbody><tr>
+<th>
+Signal
+</th>
+<th>
+Description
+</th>
+</tr>
+
+</tbody><tbody>
+<!-- First Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">rate_covid</code>
+</td>
+<td>
+A qualifying event is defined as an individual within the catchment area who tests positive for SARS-CoV-2 through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization&nbsp;<span class="citation" data-cites="covid_net_dashboard"><sup><a href="rsv.html#ref-covid_net_dashboard" role="doc-biblioref">8</a></sup></span>. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons. <br> <br> The type of respiratory illness was extrapolated from the <code>Surveillance Network = COVID-NET</code> column and reshaped into a standalone column using values reported in the <code>Weekly Rate</code> column.
+</td>
+</tr>
+<!-- Second Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">rate_rsv</code>
+</td>
+<td>
+A qualifying event is defined as an individual within the catchment area who tests positive for respiratory syncytial virus (RSV) through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization&nbsp;<span class="citation" data-cites="rsv_net_dashboard"><sup><a href="rsv.html#ref-rsv_net_dashboard" role="doc-biblioref">9</a></sup></span>. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons. <br> <br> The type of respiratory illness was extrapolated from the <code>Surveillance Network = RSV-NET</code> column and reshaped into a standalone column using values reported in the <code>Weekly Rate</code> column.
+</td>
+</tr>
+<!-- Third Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">rate_flu</code>
+</td>
+<td>
+A qualifying event is defined as an individual within the catchment area who tests positive for influenza through a laboratory test ordered by a healthcare professional within 14 days prior to, or during, hospitalization. A positive result can be obtained from any of the following laboratory assays: viral culture, direct or indirect fluorescent antibody staining, rapid antigen test, or molecular assay&nbsp;<span class="citation" data-cites="flusurv_net_docs"><sup><a href="rsv.html#ref-flusurv_net_docs" role="doc-biblioref">10</a></sup></span>. Hospitalization rates are defined as the number of residents within a defined area who test positive, divided by the total population of that area, and are reported per 100,000 persons. <br> <br> The type of respiratory illness was extrapolated from the <code>Surveillance Network = FluSurv-NET</code> column and reshaped into a standalone column using values reported in the <code>Weekly Rate</code> column.
+</td>
+</tr>
+<!-- Fourth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Season</code>
+</td>
+<td>
+Active surveillance dates within a season begin in October (MMWR Week 40) and end either at the end of April (MMWR Week 17), June (MMWR Week 16), or September (MMWR Week 39) of the following year. In some seasons, programs concluded surveillance in different months&nbsp;<span class="citation" data-cites="resp_net_docs covid_net_dashboard rsv_net_dashboard"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a>–<a href="rsv.html#ref-rsv_net_dashboard" role="doc-biblioref">9</a></sup></span>. Refer to page 6 of the embedded PowerBI dashboard provided below for specific details about the date ranges captured in each season by surveillance program.
+</td>
+</tr>
+<!-- Fifth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">MMWR Year</code>
+</td>
+<td>
+The Morbidity and Mortality Weekly Report (MMWR) reflects the epidemiologic year to which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned. MMWR weeks range from 1 to 53, although most years only have 52 weeks. The MMWR week starts on Sunday, and MMWR Week 1 is defined as the first week of the year that contains at least four days in the new calendar year&nbsp;<span class="citation" data-cites="mmwr"><sup><a href="rsv.html#ref-mmwr" role="doc-biblioref">11</a></sup></span>.
+</td>
+</tr>
+<!-- Sixth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">MMWR Week</code>
+</td>
+<td>
+The Morbidity and Mortality Weekly Report (MMWR) reflects the epidemiologic year to which the National Notifiable Diseases Surveillance System (NNDSS) disease report is assigned. MMWR weeks range from 1 to 53, although most years only have 52 weeks. The MMWR week starts on Sunday, and MMWR Week 1 is defined as the first week of the year that contains at least four days in the new calendar year&nbsp;<span class="citation" data-cites="mmwr"><sup><a href="rsv.html#ref-mmwr" role="doc-biblioref">11</a></sup></span>.
+</td>
+</tr>
+<!-- Seventh Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">age</code>
+</td>
+<td>
+Stratification includes <code>0-&lt;1 yr</code>, <code>0-4 yr</code>, <code>12-17 yr</code>, <code>1-4 yr</code>, <code>18-29 yr</code>, <code>18-49 yr</code>, <code>30-39 yr</code>, <code>40-49 yr</code>, <code>50-64 yr</code>, <code>5-11 yr</code>, <code>5-17 yr</code>, <code>65-74 yr</code>, <code>65+ yr</code>, <code>75-84 yr</code>, <code>75+ yr</code>, <code>85+ yr</code>, <code>Adults</code>, and <code>Pediatrics</code>. <code>Overall</code> represents the combined results for all stratifiers. <br> <br> Formatting was modified to display <code>* Years</code>, and <code>Overall</code> entries were renamed <code>Total</code>. Only the age ranges <code>&lt;1 Years</code>, <code>1-4 Years</code>, <code>5-17 Years</code>, <code>18-49 Years</code>, <code>50-64 Years</code>, and <code>65+ Years</code> were retained, while all other entries were coded as either <code>Total</code> or <code>other</code>. These values were originally reported under the <code>Age group</code> column.
+</td>
+</tr>
+<!-- Eighth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">geography</code>
+</td>
+<td>
+Participating network sites consist of acute-care hospitals spanning 185 counties across up to 14 states. This represents more than 30 million people, approximately 10% of the U.S. population. The RESP-NET dashboard, embedded below, under the <em>About Our Data</em> tab, provides further details about geographical representation for all seasons recorded since 2018. These values were originally reported under the <code>Site</code> column and were translated from state names to corresponding <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a> codes&nbsp;<span class="citation" data-cites="fips_codes"><sup><a href="rsv.html#ref-fips_codes" role="doc-biblioref">3</a></sup></span>.
+</td>
+</tr>
+<!-- Ninth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Sex</code>
+</td>
+<td>
+Stratification includes <code>Male</code> and <code>Female</code>, with <code>Overall</code> representing the combined results. Only the <code>Overall</code> outcome was retained; all other outcomes were filtered out.
+</td>
+</tr>
+<!-- Tenth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Race/Ethnicity</code>
+</td>
+<td>
+Stratification includes <code>American Indian/Alaska Native, NH</code>, <code>AI/AN, non-Hispanic</code>, <code>Asian/Pacific Islander, NH</code>, <code>A/PI, non-Hispanic</code>, <code>Black, NH</code> <code>Black, non-Hispanic</code>, <code>Hispanic</code>, <code>White, NH</code>, <code>White, non-Hispanic</code>. <code>Overall</code> represents the combined results for all stratifiers. Only the <code>Overall</code> outcome was retained; all other outcomes were filtered out.
+</td>
+</tr>
+<!-- Eleventh Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Cumulative Rate</code>
+</td>
+<td>
+Cases detected throughout the span of an infectious season, starting with the first week of October (MMWR Week 40), were summed cumulatively until the end of the surveillance period. Rate calculations used the cumulative value for the numerator, while the denominator remains the same as that for non-cumulative rates. Rates are reported per 100,000 persons.
+</td>
+</tr>
+<!-- Twelfth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">time</code>
+</td>
+<td>
+The date of hospital admission is recorded to the nearest week and standardized to report the date as the last day of the week, which is Saturday, on which the event occurred&nbsp;<span class="citation" data-cites="flusurv_net_docs"><sup><a href="rsv.html#ref-flusurv_net_docs" role="doc-biblioref">10</a></sup></span>. These values were originally reported under the <code>Week Ending Date</code> column.
+</td>
+</tr>
+<!-- Thirteenth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Type</code>
+</td>
+<td>
+Differentiates metrics as <code>Age-Adjusted Rate</code> and <code>Unadjusted Rate</code>. Only the <code>Unadjusted Rate</code> metric was retained; all other outcomes were filtered out.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="limitations-1" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-1">Limitations</h3>
+<p>The following summarizes specific data collection, processing, and reporting characteristics that might impact the interpretation of results. These reflect source limitations provided by the <em><a href="https://www.cdc.gov/resp-net/dashboard/index.html">Respiratory Virus Hospitalization Surveillance Network (RESP-NET)</a></em> and internal PopHIVE data processing methods, unless otherwise noted&nbsp;<span class="citation" data-cites="resp_net_docs"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a></sup></span>. Relevant PopHIVE data processing scripts are directly linked to as needed.</p>
 <ul>
-<li>Number of laboratory-confirmed cases of the virus per 100,000 people. RESP-NET is an active surveillance system with a well-defined population, so it is possible to obtain estimates of incidence (cases/population). This indicator is only available for certain states. The data comes from certain counties within the state and does not capture the entire population.</li>
+<li><p>The participating surveillance sites have experienced changes over time, resulting in the addition or removal of counties represented in new surveillance years. RESP-NET adjusts the total population estimates to account for these variations.</p></li>
+<li><p>During the 2020-21 season, the case counts from FluSurv-NET were insufficient to report stratified cumulative or weekly rates. Consequently, only the overall rates were reported.</p></li>
+<li><p>The RSV-NET data was marked as incomplete from May to June 2022.</p></li>
+<li><p>The COVID-NET program began in March 2020 and has continued to the present day. Both the FluSurv-NET and RSV-NET programs started in October 2018 and also continue to the present day.</p></li>
+<li><p>Active surveillance dates within a season begin in October (MMWR Week 40) and end either at the end of April (MMWR Week 17), June (MMWR Week 16), or September (MMWR Week 39) of the following year. In some seasons, programs concluded surveillance in different months&nbsp;<span class="citation" data-cites="resp_net_docs covid_net_dashboard rsv_net_dashboard"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a>–<a href="rsv.html#ref-rsv_net_dashboard" role="doc-biblioref">9</a></sup></span>. Refer to page 6 of the embedded PowerBI dashboard provided below for specific details about the date ranges captured in each season by surveillance program.</p></li>
+<li><p>The number of hospitals participating in each respiratory illness surveillance program varies, but all platforms have overlapping surveillance areas. Fourteen states submit data for influenza surveillance, while thirteen states submit data for COVID-19 and RSV surveillance.</p></li>
+<li><p>Although the areas surrounding the hospitals are well described, these regions are pathogen-specific and may not directly correspond between the three programs represented in RESP-NET.</p></li>
+<li><p>Prior to the 2020-21 season, population estimates utilized NCHS bridge-race estimates. Starting with the 2020-21 season, unbridged estimates from the 2020-22 Special Tabulation vintage have been used as denominators.</p></li>
+<li><p>Data reported within a season are considered to be preliminary and are subject to updates, as reports are received from participating sites. This reporting lag is expected to increase around holidays and during periods of increased hospitalization&nbsp;<span class="citation" data-cites="flusurv_net_docs covid_net_dashboard"><sup><a href="rsv.html#ref-covid_net_dashboard" role="doc-biblioref">8</a>,<a href="rsv.html#ref-flusurv_net_docs" role="doc-biblioref">10</a></sup></span>.</p></li>
+<li><p>Surveillance relies on clinical testing ordered by healthcare providers and reported rates do not account for any resulting undertesting, differences between facilities, or diagnostic test sensitivity.</p></li>
 </ul>
+</section>
+<section id="coverage-map-1" class="level3">
+<h3 class="anchored" data-anchor-id="coverage-map-1">Coverage Map</h3>
+<p>RESP-NET provides summary tables and visualizations showing the participating states and the date ranges for active surveillance for every season, organized by surveillance program. The <a href="https://www.cdc.gov/resp-net/dashboard/index.html">RESP-NET PowerBI dashboard</a> displaying this information has been embedded below&nbsp;<span class="citation" data-cites="resp_net_docs"><sup><a href="rsv.html#ref-resp_net_docs" role="doc-biblioref">7</a></sup></span>.</p>
+<p>For more details, navigate to page 6, titled <em>About Our Data</em>.</p>
+
+<iframe width="800" height="600" src="https://app.powerbigov.us/view?r=eyJrIjoiMDQwODFjZWMtNzM0ZS00MDFmLTkyOWYtZDhlYTFhZTdkNDc1IiwidCI6IjljZTcwODY5LTYwZGItNDRmZC1hYmU4LWQyNzY3MDc3ZmM4ZiJ9&amp;pageName=ReportSection0cb4e9ac52aa7dc2ec39" frameborder="0" allowfullscreen="true">
+</iframe>
+
+</section>
+</section>
+<section id="rsv-net" class="level2">
+<h2 class="anchored" data-anchor-id="rsv-net">RSV-NET</h2>
+<p>The Respiratory Syncytial Virus Hospitalization Surveillance Network (RSV-NET) is a network that conducts active, population-based surveillance for laboratory-confirmed RSV-associated hospitalizations in children younger than 18 years of age and adults. RSV-NET, along with the Coronavirus Disease 2019 (COVID-19) Hospitalization Surveillance Network (COVID-NET) an the Influenza Hospitalization Surveillance network (FluSuv-NET), comprise the Respiratory Virus Hospitalization Surveillance Network (RESP-NET). The RESP-NET platforms have overlapping surveillance areas and use similar methods to collect data. Because the surveillance areas and age groups included in surveillance have changed over time, trends should be interpreted with caution. RSV-NET is CDC’s source for important data on rates of hospitalizations associated with RSV. Hospitalization rates show how many people in the surveillance area are hospitalized with RSV, compared to the total number of people residing in that area. are preliminary and subject to change as more data become available. Data will be updated weekly.</p>
+<div class="columns">
+<div class="column" style="text-align:right; width:25%">
+<p><strong>Program Landing Page:</strong></p>
+<p><strong>data.gov API Source:</strong></p>
+</div><div class="column" style="width:3%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:72%;">
+<p><a href="https://www.cdc.gov/rsv/php/surveillance/rsv-net.html">RSV-NET</a></p>
+<p><em><a href="https://data.cdc.gov/Public-Health-Surveillance/Weekly-Rates-of-Laboratory-Confirmed-RSV-Hospitali/29hc-w46k/about_data">Weekly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System</a></em></p>
+</div>
+</div>
+<section id="data-dictionary-2" class="level3">
+<h3 class="anchored" data-anchor-id="data-dictionary-2">Data Dictionary</h3>
+<div class="table-wrapper">
+<thread>
+</thread><table>
+<tbody><tr>
+<th>
+Signal
+</th>
+<th>
+Description
+</th>
+</tr>
+
+</tbody><tbody>
+<!-- First Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">geography</code>
+</td>
+<td>
+State and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics’ definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period. <br> <br> Here, geolocation is coded in <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt">Federal Information Processing System (FIPS)</a>&nbsp;<span class="citation" data-cites="fips_codes"><sup><a href="rsv.html#ref-fips_codes" role="doc-biblioref">3</a></sup></span>. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute’s Surveillance, Epidemiology, and End Results (SEER) Program <em><a href="https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html">Health Service Areas (HSA)</a></em> webpage: <a href="https://seer.cancer.gov/seerstat/variables/countyattribs/Health.Service.Areas.pdf">NCI Modified Table</a>&nbsp;<span class="citation" data-cites="hsa_fips_modifier hsa_codes"><sup><a href="rsv.html#ref-hsa_fips_modifier" role="doc-biblioref">4</a>,<a href="rsv.html#ref-hsa_codes" role="doc-biblioref">5</a></sup></span>.
+</td>
+</tr>
+<!-- Second Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">time</code>
+</td>
+<td>
+Qualifying emergency department visits related to a specific pathogen observed in a given Morbidity and Mortality Weekly Report (MMWR) week and reported by participating sites. <br> <br> <strong>New data releases from source:</strong> once per week on Fridays <br> <strong>Earliest date available:</strong> 2022-10-01
+</td>
+</tr>
+<!-- Ninth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Sex</code>
+</td>
+<td>
+Stratification includes <code>Male</code> and <code>Female</code>, with <code>All</code> representing the combined results.
+</td>
+</tr>
+<!-- Tenth Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Race/Ethnicity</code>
+</td>
+<td>
+Stratification includes <code>A/PI, non-Hispanic</code>, <code>AI/AN, non-Hispanic</code>, <code>Black, non-Hispanic</code>, <code>White, non-Hispanic</code>, and <code>Hispanic</code>. <code>All</code> represents the combined results for all stratifiers.
+</td>
+</tr>
+<!-- Eleventh Row -->
+<tr>
+<td>
+<code class="language-plaintext highlighter-rouge">Cumulative Rate</code>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>State, Season, Week ending date, Age category, Sex, Race, Rate, Cumulative Rate, Type</p>
+</section>
+<section id="limitations-2" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-2">Limitations</h3>
+<p>Many of the same limitations apply here.</p>
+<ul>
+<li><p>Number of laboratory-confirmed cases of the virus per 100,000 people. RESP-NET is an active surveillance system with a well-defined population, so it is possible to obtain estimates of incidence (cases/population). This indicator is only available for certain states. The data comes from certain counties within the state and does not capture the entire population.</p></li>
+<li><p>The populations for children under 6 months and those aged 6-12 months are each estimated to be half of the population of children aged 0-1 years.</p></li>
+</ul>
+</section>
+<section id="coverage-map-2" class="level3">
+<h3 class="anchored" data-anchor-id="coverage-map-2">Coverage Map</h3>
+<p>RSV-NET provides summary visualizations showing the participating states and an estimate of the percentage of the population represented for each season. The <a href="https://www.cdc.gov/rsv/php/surveillance/rsv-net.html">RSV-NET PowerBI dashboard</a> displaying this information has been embedded below&nbsp;<span class="citation" data-cites="rsv_net_dashboard"><sup><a href="rsv.html#ref-rsv_net_dashboard" role="doc-biblioref">9</a></sup></span>.</p>
+<p>For more details, navigate to page 8, titled <em>About Our Data</em>.</p>
+
+<iframe width="800" height="600" src="https://app.powerbigov.us/view?r=eyJrIjoiMzgxNzBhNDItYTg1Ni00ZjMyLWFjOWEtZjRkZTg1ZGQzNmFmIiwidCI6IjljZTcwODY5LTYwZGItNDRmZC1hYmU4LWQyNzY3MDc3ZmM4ZiJ9" frameborder="0" allowfullscreen="true">
+</iframe>
+
+</section>
 </section>
 <section id="national-wastewater-surveillance-program" class="level2">
 <h2 class="anchored" data-anchor-id="national-wastewater-surveillance-program">National Wastewater Surveillance program</h2>
@@ -433,243 +709,236 @@ Percent of emergency department visits coded as being caused by COVID-19 identif
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -677,161 +946,185 @@ Percent of emergency department visits coded as being caused by COVID-19 identif
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../Pages/respiratory-diseases/pneumococcus.html" class="pagination-link" aria-label="Pneumococcus">
