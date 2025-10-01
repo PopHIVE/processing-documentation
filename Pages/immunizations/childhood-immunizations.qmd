@@ -3,3 +3,120 @@ number-sections: false
 ---
 
 # Childhood Immunizations {.unnumbered}
+
+## National Immunization Survey (NIS)
+
+The NIS are a group of phone surveys used to monitor vaccination coverage among children 19–35 months and teens 13–17 years, flu vaccinations for children 6 months–17 years, and COVID-19 vaccination for children and teens in eligible age groups and for adults 18 years and older. The surveys are sponsored and conducted by the National Center for Immunization and Respiratory Diseases (NCIRD) of the Centers for Disease Control and Prevention (CDC) and authorized by the Public Health Service Act [Sections 306].
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[ChildVaxView](https://www.cdc.gov/childvaxview/index.html)
+
+_[Vaccination Coverage among Young Children (0-35 Months)](https://data.cdc.gov/Child-Vaccinations/Vaccination-Coverage-among-Young-Children-0-35-Mon/fhky-rtsk/about_data)_
+:::
+::::::
+
+### Data Dictionary
+
+Municipality:
+
+- Larger City: This is the largest city in a Metropolitan Statistical Area. This is referred to as an “MSA principal city”
+- Smaller City: Other cities within a Metropolitan Statistical Area. This is referred to as an “MSA non-principal city”
+- Rural: These are counties that are not part of a large urban cluster and can include small urban and rural areas. There are referred to as “non-MSA”
+
+Insurance: 
+
+- Private: Covered by private insurance
+- Medicaid: Covered by Medicaid insurance
+- Other: Other insurance coverage
+- Uninsured: No insurance coverage
+
+
+### Notes
+- Adjusted percentage of survey respondents who were immunized with the selected vaccine by the indicated age.
+- Survey respondents might not be representative of the general population, so estimates of vaccine uptake could be biased higher even after statistical adjustments.
+- From the NIS: 
+
+    > “Each survey within NIS is a nationwide telephone sample survey of households with age-eligible children that uses a two-phase sample design. First, a random-digit-dialing sample of telephone numbers is drawn. When a household with at least one age-eligible child (or adolescent) is contacted, the interviewer collects demographic and access-related information on all children aged 19–35 months or one randomly selected adolescent aged 13–17 years, the mother, and the household, and obtains permission to contact the children’s vaccination providers. Second, identified providers are sent vaccination history questionnaires by mail. Final weighted estimates are adjusted for households without telephones and for nonresponse. All vaccination coverage estimates are based on provider-reported vaccination histories.…. Children’s health insurance status was reported by the parent/guardian. ‘Other insurance’ includes the Children’s Health Insurance Program (CHIP), military insurance, coverage via the Indian Health Service, and any other type of health insurance not mentioned elsewhere.”
+
+- The ‘Combined 7 series’ refers to the receipt of seven important vaccines for children:  ≥4 doses of DTaP vaccine against diptheria, tetanus, and pertussis; ≥3 doses of poliovirus vaccine; ≥1 dose of measles vaccine (i.e.., MMR); ≥3 or ≥4 doses of Hib vaccine against Haemophilus influenzae, type B; ≥3 doses of Hepatitis B vaccine; ≥1 dose of varicella; and ≥4 doses of pneumococcal conjugate vaccine
+
+
+## SchoolVaxView
+
+Vaccination Coverage and Exemptions among Kindergartners Data on school vaccination coverage and exemptions from the School Vaccination Assessment Program for kindergartners at the national and state levels. Additional information available at https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/index.html
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[SchoolVaxView](https://www.cdc.gov/schoolvaxview/)
+
+_[Vaccination Coverage and Exemptions among Kindergartners](https://data.cdc.gov/Vaccinations/Vaccination-Coverage-and-Exemptions-among-Kinderga/ijqb-a7ye/about_data)_
+:::
+::::::
+
+## Vaccine Adverse Event Reporting System (VAERS)
+
+Established in 1990, the Vaccine Adverse Event Reporting System (VAERS) is a national early warning system to detect possible safety problems in U.S.-licensed vaccines. VAERS is co-managed by the Centers for Disease Control and Prevention (CDC) and the U.S. Food and Drug Administration (FDA). VAERS accepts and analyzes reports of adverse events (possible side effects) after a person has received a vaccination. Anyone can report an adverse event to VAERS. Healthcare professionals are required to report certain adverse events and vaccine manufacturers are required to report all adverse events that come to their attention.
+
+VAERS is a passive reporting system, meaning it relies on individuals to send in reports of their experiences to CDC and FDA. VAERS is not designed to determine if a vaccine caused a health problem, but is especially useful for detecting unusual or unexpected patterns of adverse event reporting that might indicate a possible safety problem with a vaccine. This way, VAERS can provide CDC and FDA with valuable information that additional work and evaluation is necessary to further assess a possible safety concern.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Vaccine Adverse Event Reporting System](https://vaers.hhs.gov/index.html)
+
+_[VAERS Data Sets](https://vaers.hhs.gov/data/datasets.html)_
+:::
+::::::
+
+
+## Epic Cosmos
+
+Cosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epic Session ID:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Epic Cosmos](https://cosmos.epic.com/)
+
+2732640 for _"Number of Patients and Percentage with Immunizations: MMR receipt v2 by Age in Years (Current) Range and State of Residence (U.S.)"_
+:::
+::::::

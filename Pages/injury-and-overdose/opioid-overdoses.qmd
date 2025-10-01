@@ -3,3 +3,263 @@ number-sections: false
 ---
 
 # Opioid Overdose {.unnumbered}
+
+## Google Trends API
+
+Google Trends data represent scaled Google search volume by week and state or metropolitan area and are obtained from the Google Health Trends API for non-commercial purposes.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Terms Searched:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Google Trends](https://trends.google.com/trends/)
+
+"Naloxone", "overdose", "narcan", and "drug+overdose"
+:::
+::::::
+
+
+## Harmonization Notes
+
+In the initial prototypes of the project, three datasets representing opioid overdoses were harmonized with one another: the Healthcare Cost & Utilization Project (HCUP), the State Unintentional Drug Overdose Reporting System (SUDORS), and the CDC Wide-ranging ONline Data for Epidemiologic Research (CDC WONDER).
+
+### Healthcare Cost & Utilization Project (HCUP)
+
+Description from their page:
+
+> The Healthcare Cost and Utilization Project (HCUP, pronounced "H-Cup") is a family of healthcare databases and related software tools and products developed through a Federal-State-Industry partnership and sponsored by the Agency for Healthcare Research and Quality (AHRQ). HCUP databases bring together the data collection efforts of State data organizations, hospital associations, private data organizations, and the Federal government to create a national information resource of encounter-level healthcare data (HCUP Partners). HCUP includes the largest collection of longitudinal hospital care data in the United States, with all-payer, encounter-level information beginning in 1988. These databases enable research on a broad range of health policy issues, including cost and quality of health services, medical practice patterns, access to healthcare programs, and outcomes of treatments at the national, State, and local market levels.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**hcup-us.ahrq.gov:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Healthcare Cost & Utilization Project (HCUP)](https://hcup-us.ahrq.gov/)
+
+_[Quarterly and Annual Rates for Opioid-Related Hospital Use](https://datatools.ahrq.gov/hcup-fast-stats/#downloads)_
+:::
+::::::
+
+
+### State Unintentional Drug Overdose Reporting System (SUDORS)
+
+Description from their page:
+
+> CDC's Overdose Data to Action in States (OD2A-S) program supports 49 states and the District of Columbia to provide comprehensive data to the State Unintentional Drug Overdose Reporting System (SUDORS). Each of these 50 funded jurisdictions collects and abstracts data on drug overdose deaths from death certificates, coroner/medical examiner reports, and postmortem toxicology reports for entry into a web-based CDC platform that is shared with the National Violent Death Reporting System (NVDRS). States and local jurisdictions are increasingly better informed by systems like SUDORS, which presents comprehensive information on the characteristics and circumstances surrounding drug overdose deaths.
+    
+> The overall goal of SUDORS is to inform overdose prevention and response efforts by:
+1. Providing a better understanding of the circumstances that surround overdose deaths
+2. Identifying specific substances causing or contributing to overdose deaths, as well as emerging and polysubstance overdose trends
+3. Improving fatal overdose data timeliness and accuracy
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**cdc.gov:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[About the State Unintentional Drug Overdose Reporting System (SUDORS)](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/about-sudors.html)
+
+_[SUDORS Dashboard: Fatal Drug Overdose Data](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/sudors-dashboard-fatal-overdose-data.html)_
+:::
+::::::
+
+### CDC Wide-ranging ONline Data for Epidemiologic Research (CDC WONDER)
+
+Description from their page:
+
+> The Multiple Cause of Death data available on WONDER are county-level national mortality and population data spanning the years 1999-2023. Data are based on death certificates for U.S. residents. Each death certificate contains a single underlying cause of death, up to twenty additional multiple causes, and demographic data. The number of deaths, crude death rates, age-adjusted death rates and 95% confidence intervals for death rates can be obtained by cause of death (4 digit ICD-10 codes, 113 selected causes of death, 130 selected causes of infant death, drug and alcohol related causes of death, injury intent and injury mechanism categories), place of residence (national, region, division, state, and county), age (single-year-of age, 5-year age groups, 10-year age groups and infant age groups), race (American Indian or Alaskan Native, Asian/Pacific Islander, Black or African American, White), Hispanic ethnicity, sex and year. Data are also available by place of death, month and week day of death, and whether an autopsy was performed.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**wonder.cdc.gov:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[CDC WONDER](https://wonder.cdc.gov/)
+
+_[Multiple Cause of Death by Single Race 2018-2023](https://wonder.cdc.gov/wonder/help/mcd-expanded.html)_
+:::
+::::::
+
+### Data Dictionary
+
+<div class="table-wrapper">
+  <table>
+    <thread>
+      <tr>
+        <th>Signal</th>
+        <th>Description</th>
+      </tr>
+    </thread>
+    <tbody>
+    <!-- First Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Dataset</code></td>
+        <td>Indicates the dataset from which the values are derived.</td>
+      </tr>
+      <!-- Second Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">State</code></td>
+        <td>Data are aggregated at the state level. Coverage depends on the reach of the respective programs.</td>
+      </tr>
+      <!-- Third Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Year</code></td>
+        <td>Observations are accurate to the nearest quarter unless <code class="language-plaintext highlighter-rouge">Quarter = NA</code>, in which case the values reflect the annual rate. The time span captured is from 2016 to 2023.</td>
+      </tr>
+      <!-- Fourth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Quarter</code></td>
+        <td>Each three-month span starts at the beginning of January, April, July, and October, respectively.</td>
+      </tr>
+      <!-- Fifth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Setting</code></td>
+        <td> All places, Medical Facility – Inpatient (IP), or Medical Facility - Outpatient or ER (ED).
+          </br>
+          </br>
+          CDC WONDER <a href="https://wonder.cdc.gov/wonder/help/mcd-expanded.html#Place%20of%20Death">Place of Death Description</a>
+          </br>
+          </br>
+          HCUP draws inpatient data from the <a href="www.hcup-us.ahrq.gov/sidoverview.jsp">State Inpatient Databases (SID)</a>. The SID are limited to patients treated in community hospitals in the State. Community hospitals are defined as short-term, non-Federal, general, and other hospitals, excluding hospital units of other institutions (e.g., prisons). Included among community hospitals are obstetrics and gynecology, otolaryngology, orthopedic, cancer, pediatric, public, and academic medical hospitals. Excluded are community hospitals that are also long-term care facilities such as rehabilitation, psychiatric, and alcoholism and chemical dependency hospitals.
+        </td>
+      </tr>
+      <!-- Sixth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Underlying Cause of Death</code></td>
+        <td>All Causes of Death and Unintentional (ICD -10 codes X40-X44 and Y10-Y14 together). Selected from subset ICD codes by Drug/Alcohol Induced cases.
+        </td>
+      </tr>
+      <!-- Seventh Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Drug</code></td>
+        <td>Each coding listed below is provided separately and grouped: "All opioids (T40.0 - T40.4, T40.6, F11.0)", "All opioids + Benzodiazepines", "All opioids + Cocaine"
+          </br>
+          </br>
+          <strong>Opioids:</strong> ICD-10 T40.0 (Opium), T40.1 (Heroin), T40.2 (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic narcotics), T40.6 (Other and unspecified narcotics), F11.0 (Mental and behavioural disorders due to use of opioids, acute intoxication).
+          </br>
+          </br>
+          <strong>Stimulants:</strong> T40.5 (Cocaine) and general stimulants (as defined by SUDORS).
+          </br>
+          </br>
+          <strong>Depressants:</strong> T42 (Benzodiazepines) and general depressants (as defined by SUDORS).
+          </br>
+          </br>
+          <strong>Polysubstance:</strong> Combinations of opioids with Cocaine or Benzodiazepines.
+          </br>
+          </br>
+          For the SUDORS data sets, ICD codes were not required. Data could reflect coronary toxicology results not explicitly categorized the same as ICD.
+      </td>
+      </tr>
+      <!-- Eighth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Characteristic</code></td>
+        <td>Not Stratified, Age, Sex, or Race/Ethnicity.</td>
+      </tr>
+      <!-- Ninth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Level</code></td>
+        <td>Characteristics are further broken down into the following groupings relevant to their characteristic stratification:
+          </br>
+          - Age: <24, 25-44, 45-64, and 65+
+          </br>
+          - Sex: Male, Female
+          </br>
+          - Race/Ethnicity: AIAN, Asian, Black, Hispanic, NHPI, and White.
+          </br>
+          </br>
+          For CDC WONDER, the Not Hispanic or Latino with <a href="https://wonder.cdc.gov/wonder/help/mcd-expanded.html#Single%20Race%206">Single Race - 6 Race Categories</a> (“3. Select demographics” and “1. Organize table layout”, respectively) was selected. Single Race description link. Hispanic Origin (“1. Organize table layout” only). Hispanic Origin <a href="https://wonder.cdc.gov/wonder/help/mcd-expanded.html#Hispanic%20Origin">description link</a>.
+        </td>
+      </tr>
+      <!-- Tenth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Count</code></td>
+        <td>Raw counts of qualifying events. Counts < 20 drug overdose deaths are suppressed for confidentiality or to limit the reporting of unstable rates.
+        </td>
+      </tr>
+      <!-- Eleventh Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Age Adjusted Rate</code></td>
+        <td>Rates are age-adjusted for  drug-, sex-, and race/ethnicity-specific rates using the 2010 U.S. Census population. The numerator represents the occurrent population with the residency population as the denominator. To clarify these rate differences, they will be split between two columns. Rates are multiplied by the constant per 100,000 persons.
+        </br>
+        </br>
+        Outcomes representing age group levels are not age-adjusted.
+        </br>
+        </br>
+        Numerical placeholders are adjusted to adhere to the nomeclature used in the CDC WONDER data cleaning steps.
+        </br>
+        - Not Applicable = NA
+        </br>
+        - Unreliable = 0.888 or 8888
+        </br>
+        - Suppressed = 0.999 or 9999
+        </br>
+        - Incomplete = 0.777 (for generating the quarters) or 7777
+        </td>
+      </tr>
+      <!-- Twelth Row -->
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">Population</code></td>
+        <td>Population values used to generate rates were recalculated directly from the provided rates and counts to improve data continuity by dataset when aggregating characteristic groupings.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Limitations
+
+The following summarizes specific data collection, processing, and reporting characteristics that might impact the interpretation of results. Efforts were made to find opportunities for cross-source comparison, but some data collection processes differ significantly, making direct comparison unwarranted.
+
+Additional data processing notes have been recorded in the code: [Harmonizing Script_Opioid OD Data.R](https://github.com/PopHIVE/data-gov/blob/main/Opioid%20OD%20Data/Harmonizing%20Script_Opioid%20OD%20Data.R) and [Compile CDC Wonder TXT Output.R
+](https://github.com/PopHIVE/data-gov/blob/main/Opioid%20OD%20Data/Raw%20Download/Compile%20CDC%20Wonder%20TXT%20Output.R) for notes specific to data export and compilation for CDC WONDER. Notes summarizing the data export process from CDC WONDER can be found here: [Opioid Overdose Harmonization_Query Methods, Plots, and Notes.pdf](https://github.com/PopHIVE/data-gov/blob/main/Opioid%20OD%20Data/Opioid%20Overdose%20Harmonization_Query%20Methods%2C%20Plots%2C%20and%20Notes.pdf).
+
+- All rates reflect events per 100,000 persons.
+
+- Coded numerical values were introduced to denote suppressed, missing, or unreliable values.
+    - NA: “Not Available” or ”Not Applicable”, depending on the situation ([CDC WONDER Documentation](http://wonder.cdc.gov/wonder/help/mcd-expanded.html#NotApplicableRates)). Aggregated NA’s imply all components were NA.
+    
+    - 7777: Incomplete information. This was introduced during aggregation of age-groups or dates and indicates at least component was missing, NA, 8888, or 9999.
+    
+    - 8888: Rates are unreliable as the numerator is 20 or less.
+    
+    - 9999: Suppressed counts to ensure the criteria for confidentiality constraints ([CDC WONDER Documentation](http://wonder.cdc.gov/wonder/help/mcd-expanded.html#Assurance of Confidentiality)). Aggregated 9999 imply all components were suppressed.
+    
+- HCUP’s documentation did not imply that the rates were age-adjusted, justifying all of them being labeled as crude rates, only.
+
+- Age-adjusted rates are available for entries that have not been stratified by age. CDC WONDER used the 2000 Census population for age-adjustments, and SUDORS used the 2010 U.S. Census population.
+
+- Underlying Cause of Death outcomes are defined by the CDC WONDER definition for that variable, and selections were made based on the UCD - Drug/Alcohol Induced Causes subset of ICD-10 codes ([Step 6. Select underlying cause of death](https://wonder.cdc.gov/wonder/help/mcd-expanded.html#UCD%20-%20Drug/Alcohol%20Induced%20Causes)). “All” means any available underlying cause of death code, and “Unintentional” selects Drug poisonings (overdose) Unintentional (X40-X44) and only Drug poisonings (overdose) Undetermined (Y10-Y14).
+
+- Drug outcomes indicated as “All” are only present in the SUDORS dataset. These are drug overdose/poisoning events involving opioids, stimulants, depressants, or polysubstances.
+
+- “All Opioids” is defined by the HCUP documentation, including ICD-10 codes T40.0 (Opium), T40.1 (Heroin), T40.2 (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic narcotics), T40.6 (Other and unspecified narcotics), F11.0 (Mental and behavioural disorders due to use of opioids, acute intoxication). 
+
+- Overdose events involving multiple drug types (polysubstances) were included for the SUDORS and CDC WONDER datasets. SUDORS batches opioid plus any stimulants (including Cocaine) or depressants (including Benzodiazepines). CDC WONDER only included the ICD-10 codes T42.4 (Benzodiazepines) and T40.5 (Cocaine).

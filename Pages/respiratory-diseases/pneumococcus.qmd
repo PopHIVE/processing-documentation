@@ -3,3 +3,30 @@ number-sections: false
 ---
 
 # Pneumococcus {.unnumbered}
+
+## Active Bacterial Core surveillance  (ABCs)
+
+The CDC’s Active Bacterial Core surveillance  (ABCs) network monitors severe bacterial infections in 10 sites around the US, covering >45 million people.  The system produces high-quality data on rates of infections for a number of bacterial infections, including the specific strains causing infection, antimicrobial resistance profiles, and demographics. The system has been in place for >25 years. Methods and surveillance areas for reporting cases has changed over time and should be used with caution.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[The National Respiratory and Enteric Virus Surveillance System (NREVSS)](https://www.cdc.gov/nrevss/php/dashboard/index.html)
+
+_[1998-2023 Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance](https://data.cdc.gov/Public-Health-Surveillance/1998-2023-Serotype-Data-for-Invasive-Pneumococcal-/qvzb-qs6p/about_data)_
+:::
+::::::
+
+
+
+
+

@@ -1,0 +1,51 @@
+---
+number-sections: false
+---
+
+# Other {.unnumbered}
+
+## Behavioral Risk Factor Surveillance System (BRFSS)
+
+2011 to present. BRFSS combined land line and cell phone prevalence data. BRFSS is a continuous, state-based surveillance system that collects information about modifiable risk factors for chronic diseases and other leading causes of death. Data will be updated annually as it becomes available. Detailed information on sampling methodology and quality assurance can be found on the BRFSS website. [Methodology](http://www.cdc.gov/brfss/factsheets/pdf/DBS_BRFSS_survey.pdf) and [glossary](https://data.cdc.gov/Behavioral-Risk-Factors/Behavioral-Risk-Factor-Surveillance-System-BRFSS-H/iuq5-y9ct).
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Behavioral Risk Factor Surveillance System](http://www.cdc.gov/brfss)
+
+_[Behavioral Risk Factor Surveillance System (BRFSS) Prevalence Data (2011 to present)](https://data.cdc.gov/Behavioral-Risk-Factors/Behavioral-Risk-Factor-Surveillance-System-BRFSS-P/dttw-5yxu/about_data)_
+:::
+::::::
+
+
+## Medicaid and the Children’s Health Insurance Program (CHIP)
+
+Data.Medicaid.gov is a public platform offering open access to a diverse range of datasets related to Medicaid and the Children’s Health Insurance Program (CHIP). It is tailored to support policymakers, researchers, and the general public by providing critical data for research, reporting, and analysis. The platform covers various topics, including state Medicaid and CHIP programs, enrollment statistics, spending trends, and quality metrics. With data presented in multiple formats, it promotes transparency, allowing users to track program performance and make informed decisions based on reliable insights.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**data.medicaid.gov API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[The home of Medicaid & CHIP Open Data](https://data.medicaid.gov/)
+
+_Metastore: dataset_ at /api/1/metastore/schemas/dataset/items
+:::
+::::::
+

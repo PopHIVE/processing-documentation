@@ -1,0 +1,28 @@
+---
+number-sections: false
+---
+
+# Infection {.unnumbered}
+
+## BEAM (Bacteria, Enterics, Ameba, and Mycotics)
+
+The BEAM (Bacteria, Enterics, Amoeba, and Mycotics) Dashboard is an interactive tool to access and visualize data from the System for Enteric Disease Response, Investigation, and Coordination (SEDRIC). The BEAM Dashboard provides timely data on pathogen trends and serotype details to inform work to prevent illnesses from food and animal contact.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**cdc.gov API:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[BEAM Dashboard](https://www.cdc.gov/ncezid/dfwed/BEAM-dashboard.html)
+
+_[BEAM Dashboard - Report Data]https://data.cdc.gov/Foodborne-Waterborne-and-Related-Diseases/BEAM-Dashboard-Report-Data/jbhn-e8xn/about_data)_
+:::
+::::::
+

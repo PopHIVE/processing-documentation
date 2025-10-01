@@ -3,3 +3,51 @@ number-sections: false
 ---
 
 # Influenza {.unnumbered}
+
+## National Wastewater Surveillance Program (NWSS)
+
+Testing for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**cdc.gov API:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Influenza A National Wastewater Data](https://www.cdc.gov/nwss/rv/InfluenzaA-national-data.html)
+
+_[Wastewater Influenza A State and Territory Trends](https://www.cdc.gov/nwss/rv/InfluenzaA-statetrend.html)_
+:::
+::::::
+
+## Epic Cosmos
+
+Cosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Epic Cosmos](https://cosmos.epic.com/)
+
+2726822 for _"Number of FLU ED Encounters by State and Age"_
+
+2726769 for _"Number of ED Encounters by State of Residence (U.S.) and Age at Time of Visit Range"_
+:::
+::::::

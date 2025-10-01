@@ -3,3 +3,131 @@ number-sections: false
 ---
 
 # COVID-19 {.unnumbered}
+
+## National Wastewater Surveillance Program (NWSS)
+
+Testing for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**cdc.gov API:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[COVID-19 National Wastewater Data](https://www.cdc.gov/nwss/rv/COVID19-national-data.html)
+
+_[Wastewater COVID-19 State and Territory Trends](https://www.cdc.gov/nwss/rv/COVID19-statetrend.html)_
+:::
+::::::
+
+## Delphi’s Epidata API: Doctor Visits
+
+This data source is based on information about outpatient visits, provided to us by health system partners. Using this outpatient data, we estimate the percentage of COVID-related doctor’s visits in a given location, on a given day.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epidata API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Delphi’s Epidata API](https://cmu-delphi.github.io/delphi-epidata/)
+
+_[Doctor Visits](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/doctor-visits.html)_
+:::
+::::::
+
+
+## Delphi’s Epidata API: Hospital Admissions
+
+This data source is based on electronic medical records and claims data about hospital admissions, provided to us by health system partners. We use this inpatient data to estimate the percentage of new hospital admissions with a COVID-associated diagnosis code in a given location, on a given day.
+
+See also our Health & Human Services data source for official COVID hospitalization reporting from the Department of Health & Human Services.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epidata API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Delphi’s Epidata API](https://cmu-delphi.github.io/delphi-epidata/)
+
+_[Hospital Admissions](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hospital-admissions.html)_
+:::
+::::::
+
+
+## Delphi’s Epidata API: National Healthcare Safety Network Respiratory Hospitalizations (NHSN)
+
+The National Healthcare Safety Network (NHSN) is the nation’s most widely used healthcare-associated infection tracking system. This dataset reports preliminary and finalized weekly hospital respiratory data and metrics aggregated to national and state/territory levels reported to the CDC’s National Health Safety Network (NHSN). Values are available for reference dates beginning August 2020.
+
+Each signal below is derived from one of the two following datasets:
+
+- Main: [Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN)](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy/about_data)
+- Preliminary: [Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN) (Preliminary)](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data). Signals derived from the preliminary dataset have suffix _prelim in their signal names.
+Both datasets started reporting data in late 2024. For reference dates in May 2024, NHSN received data from 78% of US EDs.
+
+State and nation-level values are pulled directly from the source; HHS-level values are aggregated up from the state level.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epidata API Source:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Delphi’s Epidata API](https://cmu-delphi.github.io/delphi-epidata/)
+
+_[Hospital Admissions](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nhsn.html)_
+:::
+::::::
+
+
+## Epic Cosmos
+
+Cosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Epic Cosmos](https://cosmos.epic.com/)
+
+2726769 for _"Number of ED Encounters by State of Residence (U.S.) and Age at Time of Visit Range"_
+
+2726824 for _"COVID ICD10s in ED in 2023-2025"_
+:::
+::::::
+

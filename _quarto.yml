@@ -47,10 +47,16 @@ book:
           href: Pages/chronic-diseases/diabetes.qmd
         - text: "Obesity"
           href: Pages/chronic-diseases/obesity.qmd
+        - text: "Other"
+          href: Pages/chronic-diseases/other.qmd
     - part: "Injury & Overdose"
       chapters:
+        - text: "Any Drug Overdoses"
+          href: Pages/injury-and-overdose/any-overdoses.qmd
         - text: "Opioid Overdoses"
           href: Pages/injury-and-overdose/opioid-overdoses.qmd
+        - text: "Infections"
+          href: Pages/injury-and-overdose/infection.qmd
   page-footer:
     background: dark
     left: |

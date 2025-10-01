@@ -1,0 +1,32 @@
+---
+number-sections: false
+---
+
+# Any Drug Overdose {.unnumbered}
+
+## National Vital Statistics System (NVSS)
+
+Provisional drug overdose death counts are based on death records received and processed by the National Center for Health Statistics (NCHS) as of a specified cutoff date. The cutoff date is generally the first Sunday of each month. National provisional estimates include deaths occurring within the 50 states and the District of Columbia. NCHS receives the death records from the state vital registration offices through the Vital Statistics Cooperative Program.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**cdc.gov API:**
+
+**cdc.gov API:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[National Vital Statistics System (NVSS)](https://www.cdc.gov/nchs/nvss/)
+
+_[Provisional County-Level Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/prov-county-drug-overdose.htm)_
+
+_[Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)_
+:::
+::::::
+

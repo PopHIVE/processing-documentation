@@ -3,3 +3,42 @@ number-sections: false
 ---
 
 # Obesity {.unnumbered}
+
+## Epic Cosmos
+
+Cosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.
+
+:::::: columns
+::: {.column style="text-align:right; width:25%"}
+**Program Landing Page:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+
+**Epic Session ID:**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="72%"}
+[Epic Cosmos](https://cosmos.epic.com/)
+
+2748555 for _"Base Patients, % with HbA1c 6.5+, % with BMI 30+, by state and BRFSS age"_
+
+2732946 for _"HA1C 6.5+ and Percentage w/BMI 30.0+ by BRFSS Age and County"_
+
+2733054 for _"HA1C % or more and BMI by Age and County"_
+
+2748255 for _"HA1C 6.5+ and Percentage w/BMI 30+ by Age and County"_
+
+2733047 for _"HA1C 6.5+ and Percentage w/ BMI 30.0+ by Age and "_
+:::
+::::::
+
