@@ -10,6 +10,182 @@
     ]
   },
   {
+    "objectID": "Pages/immunizations/childhood-immunizations.html",
+    "href": "Pages/immunizations/childhood-immunizations.html",
+    "title": "Childhood Immunizations",
+    "section": "",
+    "text": "National Immunization Survey (NIS)\nThe NIS are a group of phone surveys used to monitor vaccination coverage among children 19–35 months and teens 13–17 years, flu vaccinations for children 6 months–17 years, and COVID-19 vaccination for children and teens in eligible age groups and for adults 18 years and older. The surveys are sponsored and conducted by the National Center for Immunization and Respiratory Diseases (NCIRD) of the Centers for Disease Control and Prevention (CDC) and authorized by the Public Health Service Act [Sections 306].",
+    "crumbs": [
+      "Immunizations",
+      "Childhood Immunizations"
+    ]
+  },
+  {
+    "objectID": "Pages/immunizations/childhood-immunizations.html#national-immunization-survey-nis",
+    "href": "Pages/immunizations/childhood-immunizations.html#national-immunization-survey-nis",
+    "title": "Childhood Immunizations",
+    "section": "",
+    "text": "Program Landing Page:\ndata.gov API Source:\n\n\n\nChildVaxView\nVaccination Coverage among Young Children (0-35 Months)\n\n\n\nData Dictionary\nMunicipality:\n\nLarger City: This is the largest city in a Metropolitan Statistical Area. This is referred to as an “MSA principal city”\nSmaller City: Other cities within a Metropolitan Statistical Area. This is referred to as an “MSA non-principal city”\nRural: These are counties that are not part of a large urban cluster and can include small urban and rural areas. There are referred to as “non-MSA”\n\nInsurance:\n\nPrivate: Covered by private insurance\nMedicaid: Covered by Medicaid insurance\nOther: Other insurance coverage\nUninsured: No insurance coverage\n\n\n\nNotes\n\nAdjusted percentage of survey respondents who were immunized with the selected vaccine by the indicated age.\nSurvey respondents might not be representative of the general population, so estimates of vaccine uptake could be biased higher even after statistical adjustments.\nFrom the NIS:\n\n“Each survey within NIS is a nationwide telephone sample survey of households with age-eligible children that uses a two-phase sample design. First, a random-digit-dialing sample of telephone numbers is drawn. When a household with at least one age-eligible child (or adolescent) is contacted, the interviewer collects demographic and access-related information on all children aged 19–35 months or one randomly selected adolescent aged 13–17 years, the mother, and the household, and obtains permission to contact the children’s vaccination providers. Second, identified providers are sent vaccination history questionnaires by mail. Final weighted estimates are adjusted for households without telephones and for nonresponse. All vaccination coverage estimates are based on provider-reported vaccination histories.…. Children’s health insurance status was reported by the parent/guardian. ‘Other insurance’ includes the Children’s Health Insurance Program (CHIP), military insurance, coverage via the Indian Health Service, and any other type of health insurance not mentioned elsewhere.”\n\nThe ‘Combined 7 series’ refers to the receipt of seven important vaccines for children: ≥4 doses of DTaP vaccine against diptheria, tetanus, and pertussis; ≥3 doses of poliovirus vaccine; ≥1 dose of measles vaccine (i.e.., MMR); ≥3 or ≥4 doses of Hib vaccine against Haemophilus influenzae, type B; ≥3 doses of Hepatitis B vaccine; ≥1 dose of varicella; and ≥4 doses of pneumococcal conjugate vaccine",
+    "crumbs": [
+      "Immunizations",
+      "Childhood Immunizations"
+    ]
+  },
+  {
+    "objectID": "Pages/immunizations/childhood-immunizations.html#schoolvaxview",
+    "href": "Pages/immunizations/childhood-immunizations.html#schoolvaxview",
+    "title": "Childhood Immunizations",
+    "section": "SchoolVaxView",
+    "text": "SchoolVaxView\nVaccination Coverage and Exemptions among Kindergartners Data on school vaccination coverage and exemptions from the School Vaccination Assessment Program for kindergartners at the national and state levels. Additional information available at https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/index.html\n\n\nProgram Landing Page:\ndata.gov API Source:\n\n\n\nSchoolVaxView\nVaccination Coverage and Exemptions among Kindergartners",
+    "crumbs": [
+      "Immunizations",
+      "Childhood Immunizations"
+    ]
+  },
+  {
+    "objectID": "Pages/immunizations/childhood-immunizations.html#vaccine-adverse-event-reporting-system-vaers",
+    "href": "Pages/immunizations/childhood-immunizations.html#vaccine-adverse-event-reporting-system-vaers",
+    "title": "Childhood Immunizations",
+    "section": "Vaccine Adverse Event Reporting System (VAERS)",
+    "text": "Vaccine Adverse Event Reporting System (VAERS)\nEstablished in 1990, the Vaccine Adverse Event Reporting System (VAERS) is a national early warning system to detect possible safety problems in U.S.-licensed vaccines. VAERS is co-managed by the Centers for Disease Control and Prevention (CDC) and the U.S. Food and Drug Administration (FDA). VAERS accepts and analyzes reports of adverse events (possible side effects) after a person has received a vaccination. Anyone can report an adverse event to VAERS. Healthcare professionals are required to report certain adverse events and vaccine manufacturers are required to report all adverse events that come to their attention.\nVAERS is a passive reporting system, meaning it relies on individuals to send in reports of their experiences to CDC and FDA. VAERS is not designed to determine if a vaccine caused a health problem, but is especially useful for detecting unusual or unexpected patterns of adverse event reporting that might indicate a possible safety problem with a vaccine. This way, VAERS can provide CDC and FDA with valuable information that additional work and evaluation is necessary to further assess a possible safety concern.\n\n\nProgram Landing Page:\ndata.gov API Source:\n\n\n\nVaccine Adverse Event Reporting System\nVAERS Data Sets",
+    "crumbs": [
+      "Immunizations",
+      "Childhood Immunizations"
+    ]
+  },
+  {
+    "objectID": "Pages/immunizations/childhood-immunizations.html#epic-cosmos",
+    "href": "Pages/immunizations/childhood-immunizations.html#epic-cosmos",
+    "title": "Childhood Immunizations",
+    "section": "Epic Cosmos",
+    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.\n\n\nProgram Landing Page:\nEpic Session ID:\n\n\n\nEpic Cosmos\n2732640 for “Number of Patients and Percentage with Immunizations: MMR receipt v2 by Age in Years (Current) Range and State of Residence (U.S.)”",
+    "crumbs": [
+      "Immunizations",
+      "Childhood Immunizations"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html",
+    "href": "Pages/respiratory-diseases/covid.html",
+    "title": "COVID-19",
+    "section": "",
+    "text": "National Wastewater Surveillance Program (NWSS)\nTesting for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html#national-wastewater-surveillance-program-nwss",
+    "href": "Pages/respiratory-diseases/covid.html#national-wastewater-surveillance-program-nwss",
+    "title": "COVID-19",
+    "section": "",
+    "text": "Program Landing Page:\ncdc.gov API:\n\n\n\nCOVID-19 National Wastewater Data\nWastewater COVID-19 State and Territory Trends",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-doctor-visits",
+    "href": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-doctor-visits",
+    "title": "COVID-19",
+    "section": "Delphi’s Epidata API: Doctor Visits",
+    "text": "Delphi’s Epidata API: Doctor Visits\nThis data source is based on information about outpatient visits, provided to us by health system partners. Using this outpatient data, we estimate the percentage of COVID-related doctor’s visits in a given location, on a given day.\n\n\nProgram Landing Page:\nEpidata API Source:\n\n\n\nDelphi’s Epidata API\nDoctor Visits",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-hospital-admissions",
+    "href": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-hospital-admissions",
+    "title": "COVID-19",
+    "section": "Delphi’s Epidata API: Hospital Admissions",
+    "text": "Delphi’s Epidata API: Hospital Admissions\nThis data source is based on electronic medical records and claims data about hospital admissions, provided to us by health system partners. We use this inpatient data to estimate the percentage of new hospital admissions with a COVID-associated diagnosis code in a given location, on a given day.\nSee also our Health & Human Services data source for official COVID hospitalization reporting from the Department of Health & Human Services.\n\n\nProgram Landing Page:\nEpidata API Source:\n\n\n\nDelphi’s Epidata API\nHospital Admissions",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-national-healthcare-safety-network-respiratory-hospitalizations-nhsn",
+    "href": "Pages/respiratory-diseases/covid.html#delphis-epidata-api-national-healthcare-safety-network-respiratory-hospitalizations-nhsn",
+    "title": "COVID-19",
+    "section": "Delphi’s Epidata API: National Healthcare Safety Network Respiratory Hospitalizations (NHSN)",
+    "text": "Delphi’s Epidata API: National Healthcare Safety Network Respiratory Hospitalizations (NHSN)\nThe National Healthcare Safety Network (NHSN) is the nation’s most widely used healthcare-associated infection tracking system. This dataset reports preliminary and finalized weekly hospital respiratory data and metrics aggregated to national and state/territory levels reported to the CDC’s National Health Safety Network (NHSN). Values are available for reference dates beginning August 2020.\nEach signal below is derived from one of the two following datasets:\n\nMain: Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN)\nPreliminary: Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN) (Preliminary). Signals derived from the preliminary dataset have suffix _prelim in their signal names. Both datasets started reporting data in late 2024. For reference dates in May 2024, NHSN received data from 78% of US EDs.\n\nState and nation-level values are pulled directly from the source; HHS-level values are aggregated up from the state level.\n\n\nProgram Landing Page:\nEpidata API Source:\n\n\n\nDelphi’s Epidata API\nHospital Admissions",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/covid.html#epic-cosmos",
+    "href": "Pages/respiratory-diseases/covid.html#epic-cosmos",
+    "title": "COVID-19",
+    "section": "Epic Cosmos",
+    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.\n\n\nProgram Landing Page:\nEpic Session ID:\nEpic Session ID:\n\n\n\nEpic Cosmos\n2726769 for “Number of ED Encounters by State of Residence (U.S.) and Age at Time of Visit Range”\n2726824 for “COVID ICD10s in ED in 2023-2025”",
+    "crumbs": [
+      "Respiratory Diseases",
+      "COVID-19"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/influenza.html",
+    "href": "Pages/respiratory-diseases/influenza.html",
+    "title": "Influenza",
+    "section": "",
+    "text": "National Wastewater Surveillance Program (NWSS)\nTesting for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.",
+    "crumbs": [
+      "Respiratory Diseases",
+      "Influenza"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/influenza.html#national-wastewater-surveillance-program-nwss",
+    "href": "Pages/respiratory-diseases/influenza.html#national-wastewater-surveillance-program-nwss",
+    "title": "Influenza",
+    "section": "",
+    "text": "Program Landing Page:\ncdc.gov API:\n\n\n\nInfluenza A National Wastewater Data\nWastewater Influenza A State and Territory Trends",
+    "crumbs": [
+      "Respiratory Diseases",
+      "Influenza"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/influenza.html#epic-cosmos",
+    "href": "Pages/respiratory-diseases/influenza.html#epic-cosmos",
+    "title": "Influenza",
+    "section": "Epic Cosmos",
+    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.\n\n\nProgram Landing Page:\nEpic Session ID:\nEpic Session ID:\n\n\n\nEpic Cosmos\n2726822 for “Number of FLU ED Encounters by State and Age”\n2726769 for “Number of ED Encounters by State of Residence (U.S.) and Age at Time of Visit Range”",
+    "crumbs": [
+      "Respiratory Diseases",
+      "Influenza"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/pneumococcus.html",
+    "href": "Pages/respiratory-diseases/pneumococcus.html",
+    "title": "Pneumococcus",
+    "section": "",
+    "text": "Active Bacterial Core surveillance (ABCs)\nThe CDC’s Active Bacterial Core surveillance (ABCs) network monitors severe bacterial infections in 10 sites around the US, covering &gt;45 million people. The system produces high-quality data on rates of infections for a number of bacterial infections, including the specific strains causing infection, antimicrobial resistance profiles, and demographics. The system has been in place for &gt;25 years. Methods and surveillance areas for reporting cases has changed over time and should be used with caution.",
+    "crumbs": [
+      "Respiratory Diseases",
+      "Pneumococcus"
+    ]
+  },
+  {
+    "objectID": "Pages/respiratory-diseases/pneumococcus.html#active-bacterial-core-surveillance-abcs",
+    "href": "Pages/respiratory-diseases/pneumococcus.html#active-bacterial-core-surveillance-abcs",
+    "title": "Pneumococcus",
+    "section": "",
+    "text": "Program Landing Page:\ndata.gov API Source:\n\n\n\nThe National Respiratory and Enteric Virus Surveillance System (NREVSS)\n1998-2023 Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance",
+    "crumbs": [
+      "Respiratory Diseases",
+      "Pneumococcus"
+    ]
+  },
+  {
     "objectID": "Pages/respiratory-diseases/rsv.html",
     "href": "Pages/respiratory-diseases/rsv.html",
     "title": "Respiratory Syncytial Virus (RSV)",
@@ -36,7 +212,7 @@
     "href": "Pages/respiratory-diseases/rsv.html#epic-cosmos",
     "title": "Respiratory Syncytial Virus (RSV)",
     "section": "Epic Cosmos",
-    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.\n\nED visits: Percent of ED visits recorded as being due to RSV, obtained from facilities using the Epic electronic health records platform and participating in Epic Cosmos. Epic Cosmos captures varying amounts of the population in different regions, so the data might be a more representative measure of viral activity in the community in some areas than others.\nWhere there are fewer than 10 cases per time period, the data are suppressed. These values are filled in with a value halfway between 0 and the minimum reported value on the time series. These values are noted with suppressed_flag=1",
+    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.\n\n\nProgram Landing Page:\nEpic Session ID:\nEpic Session ID:\nEpic Session ID:\n\n\n\nEpic Cosmos\n2726769 for “Number of ED Encounters by State of Residence (U.S.) and Age at Time of Visit Range”\n2726803 for “RSV ED visits State Week Age”\n2747766 for “Positive RSV Tests and RSV tests and Number of Encounters by State of Residence (U.S.) and Age in Years Range”\n\n\n\nED visits: Percent of ED visits recorded as being due to RSV, obtained from facilities using the Epic electronic health records platform and participating in Epic Cosmos. Epic Cosmos captures varying amounts of the population in different regions, so the data might be a more representative measure of viral activity in the community in some areas than others.\nWhere there are fewer than 10 cases per time period, the data are suppressed. These values are filled in with a value halfway between 0 and the minimum reported value on the time series. These values are noted with suppressed_flag=1",
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
@@ -58,18 +234,18 @@
     "href": "Pages/respiratory-diseases/rsv.html#rsv-net",
     "title": "Respiratory Syncytial Virus (RSV)",
     "section": "RSV-NET",
-    "text": "RSV-NET\nThe Respiratory Syncytial Virus Hospitalization Surveillance Network (RSV-NET) is a network that conducts active, population-based surveillance for laboratory-confirmed RSV-associated hospitalizations in children younger than 18 years of age and adults. RSV-NET, along with the Coronavirus Disease 2019 (COVID-19) Hospitalization Surveillance Network (COVID-NET) an the Influenza Hospitalization Surveillance network (FluSuv-NET), comprise the Respiratory Virus Hospitalization Surveillance Network (RESP-NET). The RESP-NET platforms have overlapping surveillance areas and use similar methods to collect data. Because the surveillance areas and age groups included in surveillance have changed over time, trends should be interpreted with caution. RSV-NET is CDC’s source for important data on rates of hospitalizations associated with RSV. Hospitalization rates show how many people in the surveillance area are hospitalized with RSV, compared to the total number of people residing in that area. are preliminary and subject to change as more data become available. Data will be updated weekly.\n\n\nProgram Landing Page:\ndata.gov API Source:\n\n\n\nRSV-NET\nWeekly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System\n\n\n\nData Dictionary\n\n\n\n\n\nSignal\n\n\nDescription\n\n\n\n\n\n\n\ngeography\n\n\nState and county-level information on participating healthcare facilities within a given Health Service Area (HSA). The representation of sub-state regions aligns with the National Center for Health Statistics’ definition of an HSA, where regions align with patterns of care seeking in hospital systems. State boundaries correspond to the standard census boundaries applicable for that decennial period.   Here, geolocation is coded in Federal Information Processing System (FIPS) 3. Find the relationship between FIPS codes and HSA county codes from the National Cancer Institute’s Surveillance, Epidemiology, and End Results (SEER) Program Health Service Areas (HSA) webpage: NCI Modified Table 4,5.\n\n\n\n\n\ntime\n\n\nQualifying emergency department visits related to a specific pathogen observed in a given Morbidity and Mortality Weekly Report (MMWR) week and reported by participating sites.   New data releases from source: once per week on Fridays  Earliest date available: 2022-10-01\n\n\n\n\n\nSex\n\n\nStratification includes Male and Female, with All representing the combined results.\n\n\n\n\n\nRace/Ethnicity\n\n\nStratification includes A/PI, non-Hispanic, AI/AN, non-Hispanic, Black, non-Hispanic, White, non-Hispanic, and Hispanic. All represents the combined results for all stratifiers.\n\n\n\n\n\nCumulative Rate\n\n\n\n\n\n\n\nState, Season, Week ending date, Age category, Sex, Race, Rate, Cumulative Rate, Type\n\n\nLimitations\nMany of the same limitations apply here.\n\nNumber of laboratory-confirmed cases of the virus per 100,000 people. RESP-NET is an active surveillance system with a well-defined population, so it is possible to obtain estimates of incidence (cases/population). This indicator is only available for certain states. The data comes from certain counties within the state and does not capture the entire population.\nThe populations for children under 6 months and those aged 6-12 months are each estimated to be half of the population of children aged 0-1 years.\n\n\n\nCoverage Map\nRSV-NET provides summary visualizations showing the participating states and an estimate of the percentage of the population represented for each season. The RSV-NET PowerBI dashboard displaying this information has been embedded below 9.\nFor more details, navigate to page 8, titled About Our Data.",
+    "text": "RSV-NET\nThe Respiratory Syncytial Virus Hospitalization Surveillance Network (RSV-NET) is a network that conducts active, population-based surveillance for laboratory-confirmed RSV-associated hospitalizations in children younger than 18 years of age and adults. RSV-NET, along with the Coronavirus Disease 2019 (COVID-19) Hospitalization Surveillance Network (COVID-NET) an the Influenza Hospitalization Surveillance network (FluSuv-NET), comprise the Respiratory Virus Hospitalization Surveillance Network (RESP-NET). The RESP-NET platforms have overlapping surveillance areas and use similar methods to collect data. Because the surveillance areas and age groups included in surveillance have changed over time, trends should be interpreted with caution. RSV-NET is CDC’s source for important data on rates of hospitalizations associated with RSV. Hospitalization rates show how many people in the surveillance area are hospitalized with RSV, compared to the total number of people residing in that area. are preliminary and subject to change as more data become available. Data will be updated weekly.\n\n\nProgram Landing Page:\ndata.gov API Source:\n\n\n\nRSV-NET\nWeekly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System\n\n\n\nData Dictionary\n\n\n\n\n\nSignal\n\n\nDescription\n\n\n\n\n\n\n\nvariable\n\n\n\n\n\n\n\nvariable\n\n\n\n\n\n\n\n\n\nLimitations\nMany of the same limitations apply here.\n\nNumber of laboratory-confirmed cases of the virus per 100,000 people. RESP-NET is an active surveillance system with a well-defined population, so it is possible to obtain estimates of incidence (cases/population). This indicator is only available for certain states. The data comes from certain counties within the state and does not capture the entire population.\nThe populations for children under 6 months and those aged 6-12 months are each estimated to be half of the population of children aged 0-1 years.\n\n\n\nCoverage Map\nRSV-NET provides summary visualizations showing the participating states and an estimate of the percentage of the population represented for each season. The RSV-NET PowerBI dashboard displaying this information has been embedded below 9.\nFor more details, navigate to page 8, titled About Our Data.",
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
     ]
   },
   {
-    "objectID": "Pages/respiratory-diseases/rsv.html#national-wastewater-surveillance-program",
-    "href": "Pages/respiratory-diseases/rsv.html#national-wastewater-surveillance-program",
+    "objectID": "Pages/respiratory-diseases/rsv.html#national-wastewater-surveillance-program-nwss",
+    "href": "Pages/respiratory-diseases/rsv.html#national-wastewater-surveillance-program-nwss",
     "title": "Respiratory Syncytial Virus (RSV)",
-    "section": "National Wastewater Surveillance program",
-    "text": "National Wastewater Surveillance program\nTesting for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.\n\nWastewater virus activity level (WVAL) value is calculated by CDC as exp(# of standard deviations above baseline). The WVAL therefore represents a measure of relative intensity. The methods for calculating the baseline vary by virus.",
+    "section": "National Wastewater Surveillance Program (NWSS)",
+    "text": "National Wastewater Surveillance Program (NWSS)\nTesting for viruses in wastewater can provide an efficient way to identify the levels of virus circulation in the community. The CDC’s National Wastewater Surveillance program obtains samples from select communities around the US and presents the data aggregated by state. These data can provide an early indication of viral activity. Limitations include an inability to link detected back to particular groups of individuals and challenges in comparing viral levels across sites that use different methodologies. The sewage is not necessarily representative of the entire population. These data are made available by the CDC.\n\n\nProgram Landing Page:\ncdc.gov API:\n\n\n\nRSV National Wastewater Data\nWastewater RSV State and Territory Trends\n\n\n\nLimitations\n\nWastewater virus activity level (WVAL) value is calculated by CDC as exp(# of standard deviations above baseline). The WVAL therefore represents a measure of relative intensity. The methods for calculating the baseline vary by virus.",
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
@@ -80,18 +256,18 @@
     "href": "Pages/respiratory-diseases/rsv.html#google-trends-api",
     "title": "Respiratory Syncytial Virus (RSV)",
     "section": "Google Trends API",
-    "text": "Google Trends API\nGoogle Trends data represent scaled Google search volume by week and state or metropolitan area and are obtained from the Google Health Trends API for non-commercial purposes.\n\nThis represents the volume of Google searches for ‘RSV’, statistically adjusted to remove searches related to RSV immunizations. We obtained Google Search volume by week and state for ‘RSV’ and for the category ‘Respiratory syncytial virus vaccine’ (11j30ybfx6). We are interested in searches related to clinical activity, not due to searching for information on the vaccine. These two time series show distinct patterns. Searches for RSV vaccines surge in early-Fall. Searches for ‘rsv’ in general have a small hump in early fall that corresponds to the searches for vaccine information, and a second peak later in the fall and into the winter that corresponds to the seasonal epidemic.\nTo subtract out the signal of vaccination searches from the general RSV signal, we fit a mixed effects model where the outcome was search volume for RSV by state and week, the covariate was search volume for RSV vaccines by week and state in the summer months, and there was a random intercept for state. There was an interaction term for ‘season’, which allowed the effect of search volume to differ in July-October. Using the regression coefficients, we calculate the adjusted search volume as Adjusted volume = RSV_search_volume - season*2.72*vax_search_volume - (1-season)*3.41*search_volume_vax. The latest raw, unadjusted search volumes are available from here.",
+    "text": "Google Trends API\nGoogle Trends data represent scaled Google search volume by week and state or metropolitan area and are obtained from the Google Health Trends API for non-commercial purposes.\n\n\nProgram Landing Page:\nTerms Searched:\n\n\n\nGoogle Trends\n“rsv” and “%252Fg%252F11j30ybfx6”\n\n\n\nThis represents the volume of Google searches for ‘RSV’, statistically adjusted to remove searches related to RSV immunizations. We obtained Google Search volume by week and state for ‘RSV’ and for the category ‘Respiratory syncytial virus vaccine’ (11j30ybfx6). We are interested in searches related to clinical activity, not due to searching for information on the vaccine. These two time series show distinct patterns. Searches for RSV vaccines surge in early-Fall. Searches for ‘rsv’ in general have a small hump in early fall that corresponds to the searches for vaccine information, and a second peak later in the fall and into the winter that corresponds to the seasonal epidemic.\nTo subtract out the signal of vaccination searches from the general RSV signal, we fit a mixed effects model where the outcome was search volume for RSV by state and week, the covariate was search volume for RSV vaccines by week and state in the summer months, and there was a random intercept for state. There was an interaction term for ‘season’, which allowed the effect of search volume to differ in July-October. Using the regression coefficients, we calculate the adjusted search volume as Adjusted volume = RSV_search_volume - season*2.72*vax_search_volume - (1-season)*3.41*search_volume_vax. The latest raw, unadjusted search volumes are available from here.",
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
     ]
   },
   {
-    "objectID": "Pages/respiratory-diseases/rsv.html#national-respiratory-and-enteric-virus-surveillance-system-nrevss.",
-    "href": "Pages/respiratory-diseases/rsv.html#national-respiratory-and-enteric-virus-surveillance-system-nrevss.",
+    "objectID": "Pages/respiratory-diseases/rsv.html#national-respiratory-and-enteric-virus-surveillance-system-nrevss",
+    "href": "Pages/respiratory-diseases/rsv.html#national-respiratory-and-enteric-virus-surveillance-system-nrevss",
     "title": "Respiratory Syncytial Virus (RSV)",
-    "section": "National Respiratory and Enteric Virus Surveillance System (NREVSS).",
-    "text": "National Respiratory and Enteric Virus Surveillance System (NREVSS).\nSelect laboratories around the United States participate in this system and report the number of positive tests for a virus and the number of tests performed. These data are made available by the CDC.",
+    "section": "National Respiratory and Enteric Virus Surveillance System (NREVSS)",
+    "text": "National Respiratory and Enteric Virus Surveillance System (NREVSS)\nSelect laboratories around the United States participate in this system and report the number of positive tests for a virus and the number of tests performed. These data are made available by the CDC.\n\n\nProgram Landing Page:\ndata.gov API Source:\n\n\n\nActive Bacterial Core surveillance (ABCs)\nPercent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region, National Respiratory and Enteric Virus Surveillance System",
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
@@ -106,6 +282,138 @@
     "crumbs": [
       "Respiratory Diseases",
       "Respiratory Syncytial Virus"
+    ]
+  },
+  {
+    "objectID": "Pages/chronic-diseases/obesity.html",
+    "href": "Pages/chronic-diseases/obesity.html",
+    "title": "Obesity",
+    "section": "",
+    "text": "Epic Cosmos\nCosmos is a dataset created in collaboration with a community of Epic health systems representing more than 300 million patient records from over 1633 hospitals and 37,900 clinics from all 50 states, D.C., Canada, Lebanon, and Saudi Arabia. Summary statistics were obtained using the SlicerDicer tool in Epic Cosmos.",
+    "crumbs": [
+      "Chronic Diseases",
+      "Obesity"
+    ]
+  },
+  {
+    "objectID": "Pages/chronic-diseases/obesity.html#epic-cosmos",
+    "href": "Pages/chronic-diseases/obesity.html#epic-cosmos",
+    "title": "Obesity",
+    "section": "",
+    "text": "Program Landing Page:\nEpic Session ID:\nEpic Session ID:\nEpic Session ID:\nEpic Session ID:\nEpic Session ID:\n\n\n\nEpic Cosmos\n2748555 for “Base Patients, % with HbA1c 6.5+, % with BMI 30+, by state and BRFSS age”\n2732946 for “HA1C 6.5+ and Percentage w/BMI 30.0+ by BRFSS Age and County”\n2733054 for “HA1C % or more and BMI by Age and County”\n2748255 for “HA1C 6.5+ and Percentage w/BMI 30+ by Age and County”\n2733047 for “HA1C 6.5+ and Percentage w/ BMI 30.0+ by Age and”",
+    "crumbs": [
+      "Chronic Diseases",
+      "Obesity"
+    ]
+  },
+  {
+    "objectID": "Pages/chronic-diseases/other.html",
+    "href": "Pages/chronic-diseases/other.html",
+    "title": "Other",
+    "section": "",
+    "text": "Behavioral Risk Factor Surveillance System (BRFSS)\n2011 to present. BRFSS combined land line and cell phone prevalence data. BRFSS is a continuous, state-based surveillance system that collects information about modifiable risk factors for chronic diseases and other leading causes of death. Data will be updated annually as it becomes available. Detailed information on sampling methodology and quality assurance can be found on the BRFSS website. Methodology and glossary.",
+    "crumbs": [
+      "Chronic Diseases",
+      "Other"
+    ]
+  },
+  {
+    "objectID": "Pages/chronic-diseases/other.html#behavioral-risk-factor-surveillance-system-brfss",
+    "href": "Pages/chronic-diseases/other.html#behavioral-risk-factor-surveillance-system-brfss",
+    "title": "Other",
+    "section": "",
+    "text": "Program Landing Page:\ndata.gov API Source:\n\n\n\nBehavioral Risk Factor Surveillance System\nBehavioral Risk Factor Surveillance System (BRFSS) Prevalence Data (2011 to present)",
+    "crumbs": [
+      "Chronic Diseases",
+      "Other"
+    ]
+  },
+  {
+    "objectID": "Pages/chronic-diseases/other.html#medicaid-and-the-childrens-health-insurance-program-chip",
+    "href": "Pages/chronic-diseases/other.html#medicaid-and-the-childrens-health-insurance-program-chip",
+    "title": "Other",
+    "section": "Medicaid and the Children’s Health Insurance Program (CHIP)",
+    "text": "Medicaid and the Children’s Health Insurance Program (CHIP)\nData.Medicaid.gov is a public platform offering open access to a diverse range of datasets related to Medicaid and the Children’s Health Insurance Program (CHIP). It is tailored to support policymakers, researchers, and the general public by providing critical data for research, reporting, and analysis. The platform covers various topics, including state Medicaid and CHIP programs, enrollment statistics, spending trends, and quality metrics. With data presented in multiple formats, it promotes transparency, allowing users to track program performance and make informed decisions based on reliable insights.\n\n\nProgram Landing Page:\ndata.medicaid.gov API Source:\n\n\n\nThe home of Medicaid & CHIP Open Data\nMetastore: dataset at /api/1/metastore/schemas/dataset/items",
+    "crumbs": [
+      "Chronic Diseases",
+      "Other"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/any-overdoses.html",
+    "href": "Pages/injury-and-overdose/any-overdoses.html",
+    "title": "Any Drug Overdose",
+    "section": "",
+    "text": "National Vital Statistics System (NVSS)\nProvisional drug overdose death counts are based on death records received and processed by the National Center for Health Statistics (NCHS) as of a specified cutoff date. The cutoff date is generally the first Sunday of each month. National provisional estimates include deaths occurring within the 50 states and the District of Columbia. NCHS receives the death records from the state vital registration offices through the Vital Statistics Cooperative Program.",
+    "crumbs": [
+      "Injury & Overdose",
+      "Any Drug Overdoses"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/any-overdoses.html#national-vital-statistics-system-nvss",
+    "href": "Pages/injury-and-overdose/any-overdoses.html#national-vital-statistics-system-nvss",
+    "title": "Any Drug Overdose",
+    "section": "",
+    "text": "Program Landing Page:\ncdc.gov API:\ncdc.gov API:\n\n\n\nNational Vital Statistics System (NVSS)\nProvisional County-Level Drug Overdose Death Counts\nProvisional Drug Overdose Death Counts",
+    "crumbs": [
+      "Injury & Overdose",
+      "Any Drug Overdoses"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/opioid-overdoses.html",
+    "href": "Pages/injury-and-overdose/opioid-overdoses.html",
+    "title": "Opioid Overdose",
+    "section": "",
+    "text": "Google Trends API\nGoogle Trends data represent scaled Google search volume by week and state or metropolitan area and are obtained from the Google Health Trends API for non-commercial purposes.",
+    "crumbs": [
+      "Injury & Overdose",
+      "Opioid Overdoses"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/opioid-overdoses.html#google-trends-api",
+    "href": "Pages/injury-and-overdose/opioid-overdoses.html#google-trends-api",
+    "title": "Opioid Overdose",
+    "section": "",
+    "text": "Program Landing Page:\nTerms Searched:\n\n\n\nGoogle Trends\n“Naloxone”, “overdose”, “narcan”, and “drug+overdose”",
+    "crumbs": [
+      "Injury & Overdose",
+      "Opioid Overdoses"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/opioid-overdoses.html#harmonization-notes",
+    "href": "Pages/injury-and-overdose/opioid-overdoses.html#harmonization-notes",
+    "title": "Opioid Overdose",
+    "section": "Harmonization Notes",
+    "text": "Harmonization Notes\nIn the initial prototypes of the project, three datasets representing opioid overdoses were harmonized with one another: the Healthcare Cost & Utilization Project (HCUP), the State Unintentional Drug Overdose Reporting System (SUDORS), and the CDC Wide-ranging ONline Data for Epidemiologic Research (CDC WONDER).\n\nHealthcare Cost & Utilization Project (HCUP)\nDescription from their page:\n\nThe Healthcare Cost and Utilization Project (HCUP, pronounced “H-Cup”) is a family of healthcare databases and related software tools and products developed through a Federal-State-Industry partnership and sponsored by the Agency for Healthcare Research and Quality (AHRQ). HCUP databases bring together the data collection efforts of State data organizations, hospital associations, private data organizations, and the Federal government to create a national information resource of encounter-level healthcare data (HCUP Partners). HCUP includes the largest collection of longitudinal hospital care data in the United States, with all-payer, encounter-level information beginning in 1988. These databases enable research on a broad range of health policy issues, including cost and quality of health services, medical practice patterns, access to healthcare programs, and outcomes of treatments at the national, State, and local market levels.\n\n\n\nProgram Landing Page:\nhcup-us.ahrq.gov:\n\n\n\nHealthcare Cost & Utilization Project (HCUP)\nQuarterly and Annual Rates for Opioid-Related Hospital Use\n\n\n\n\nState Unintentional Drug Overdose Reporting System (SUDORS)\nDescription from their page:\n\nCDC’s Overdose Data to Action in States (OD2A-S) program supports 49 states and the District of Columbia to provide comprehensive data to the State Unintentional Drug Overdose Reporting System (SUDORS). Each of these 50 funded jurisdictions collects and abstracts data on drug overdose deaths from death certificates, coroner/medical examiner reports, and postmortem toxicology reports for entry into a web-based CDC platform that is shared with the National Violent Death Reporting System (NVDRS). States and local jurisdictions are increasingly better informed by systems like SUDORS, which presents comprehensive information on the characteristics and circumstances surrounding drug overdose deaths.\n\n\nThe overall goal of SUDORS is to inform overdose prevention and response efforts by: 1. Providing a better understanding of the circumstances that surround overdose deaths 2. Identifying specific substances causing or contributing to overdose deaths, as well as emerging and polysubstance overdose trends 3. Improving fatal overdose data timeliness and accuracy\n\n\n\nProgram Landing Page:\ncdc.gov:\n\n\n\nAbout the State Unintentional Drug Overdose Reporting System (SUDORS)\nSUDORS Dashboard: Fatal Drug Overdose Data\n\n\n\n\nCDC Wide-ranging ONline Data for Epidemiologic Research (CDC WONDER)\nDescription from their page:\n\nThe Multiple Cause of Death data available on WONDER are county-level national mortality and population data spanning the years 1999-2023. Data are based on death certificates for U.S. residents. Each death certificate contains a single underlying cause of death, up to twenty additional multiple causes, and demographic data. The number of deaths, crude death rates, age-adjusted death rates and 95% confidence intervals for death rates can be obtained by cause of death (4 digit ICD-10 codes, 113 selected causes of death, 130 selected causes of infant death, drug and alcohol related causes of death, injury intent and injury mechanism categories), place of residence (national, region, division, state, and county), age (single-year-of age, 5-year age groups, 10-year age groups and infant age groups), race (American Indian or Alaskan Native, Asian/Pacific Islander, Black or African American, White), Hispanic ethnicity, sex and year. Data are also available by place of death, month and week day of death, and whether an autopsy was performed.\n\n\n\nProgram Landing Page:\nwonder.cdc.gov:\n\n\n\nCDC WONDER\nMultiple Cause of Death by Single Race 2018-2023\n\n\n\n\nData Dictionary\n\n\n\n\n\nSignal\n\n\nDescription\n\n\n\n\n\n\n\nDataset\n\n\nIndicates the dataset from which the values are derived.\n\n\n\n\n\nState\n\n\nData are aggregated at the state level. Coverage depends on the reach of the respective programs.\n\n\n\n\n\nYear\n\n\nObservations are accurate to the nearest quarter unless Quarter = NA, in which case the values reflect the annual rate. The time span captured is from 2016 to 2023.\n\n\n\n\n\nQuarter\n\n\nEach three-month span starts at the beginning of January, April, July, and October, respectively.\n\n\n\n\n\nSetting\n\n\nAll places, Medical Facility – Inpatient (IP), or Medical Facility - Outpatient or ER (ED).   CDC WONDER Place of Death Description   HCUP draws inpatient data from the State Inpatient Databases (SID). The SID are limited to patients treated in community hospitals in the State. Community hospitals are defined as short-term, non-Federal, general, and other hospitals, excluding hospital units of other institutions (e.g., prisons). Included among community hospitals are obstetrics and gynecology, otolaryngology, orthopedic, cancer, pediatric, public, and academic medical hospitals. Excluded are community hospitals that are also long-term care facilities such as rehabilitation, psychiatric, and alcoholism and chemical dependency hospitals.\n\n\n\n\n\nUnderlying Cause of Death\n\n\nAll Causes of Death and Unintentional (ICD -10 codes X40-X44 and Y10-Y14 together). Selected from subset ICD codes by Drug/Alcohol Induced cases.\n\n\n\n\n\nDrug\n\n\nEach coding listed below is provided separately and grouped: “All opioids (T40.0 - T40.4, T40.6, F11.0)”, “All opioids + Benzodiazepines”, “All opioids + Cocaine”   Opioids: ICD-10 T40.0 (Opium), T40.1 (Heroin), T40.2 (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic narcotics), T40.6 (Other and unspecified narcotics), F11.0 (Mental and behavioural disorders due to use of opioids, acute intoxication).   Stimulants: T40.5 (Cocaine) and general stimulants (as defined by SUDORS).   Depressants: T42 (Benzodiazepines) and general depressants (as defined by SUDORS).   Polysubstance: Combinations of opioids with Cocaine or Benzodiazepines.   For the SUDORS data sets, ICD codes were not required. Data could reflect coronary toxicology results not explicitly categorized the same as ICD.\n\n\n\n\n\nCharacteristic\n\n\nNot Stratified, Age, Sex, or Race/Ethnicity.\n\n\n\n\n\nLevel\n\n\nCharacteristics are further broken down into the following groupings relevant to their characteristic stratification:  - Age: &lt;24, 25-44, 45-64, and 65+  - Sex: Male, Female  - Race/Ethnicity: AIAN, Asian, Black, Hispanic, NHPI, and White.   For CDC WONDER, the Not Hispanic or Latino with Single Race - 6 Race Categories (“3. Select demographics” and “1. Organize table layout”, respectively) was selected. Single Race description link. Hispanic Origin (“1. Organize table layout” only). Hispanic Origin description link.\n\n\n\n\n\nCount\n\n\nRaw counts of qualifying events. Counts &lt; 20 drug overdose deaths are suppressed for confidentiality or to limit the reporting of unstable rates.\n\n\n\n\n\nAge Adjusted Rate\n\n\nRates are age-adjusted for drug-, sex-, and race/ethnicity-specific rates using the 2010 U.S. Census population. The numerator represents the occurrent population with the residency population as the denominator. To clarify these rate differences, they will be split between two columns. Rates are multiplied by the constant per 100,000 persons.   Outcomes representing age group levels are not age-adjusted.   Numerical placeholders are adjusted to adhere to the nomeclature used in the CDC WONDER data cleaning steps.  - Not Applicable = NA  - Unreliable = 0.888 or 8888  - Suppressed = 0.999 or 9999  - Incomplete = 0.777 (for generating the quarters) or 7777\n\n\n\n\n\nPopulation\n\n\nPopulation values used to generate rates were recalculated directly from the provided rates and counts to improve data continuity by dataset when aggregating characteristic groupings.\n\n\n\n\n\n\n\nLimitations\nThe following summarizes specific data collection, processing, and reporting characteristics that might impact the interpretation of results. Efforts were made to find opportunities for cross-source comparison, but some data collection processes differ significantly, making direct comparison unwarranted.\nAdditional data processing notes have been recorded in the code: Harmonizing Script_Opioid OD Data.R and Compile CDC Wonder TXT Output.R for notes specific to data export and compilation for CDC WONDER. Notes summarizing the data export process from CDC WONDER can be found here: Opioid Overdose Harmonization_Query Methods, Plots, and Notes.pdf.\n\nAll rates reflect events per 100,000 persons.\nCoded numerical values were introduced to denote suppressed, missing, or unreliable values.\n\nNA: “Not Available” or ”Not Applicable”, depending on the situation (CDC WONDER Documentation). Aggregated NA’s imply all components were NA.\n7777: Incomplete information. This was introduced during aggregation of age-groups or dates and indicates at least component was missing, NA, 8888, or 9999.\n8888: Rates are unreliable as the numerator is 20 or less.\n9999: Suppressed counts to ensure the criteria for confidentiality constraints (CDC WONDER Documentation). Aggregated 9999 imply all components were suppressed.\n\nHCUP’s documentation did not imply that the rates were age-adjusted, justifying all of them being labeled as crude rates, only.\nAge-adjusted rates are available for entries that have not been stratified by age. CDC WONDER used the 2000 Census population for age-adjustments, and SUDORS used the 2010 U.S. Census population.\nUnderlying Cause of Death outcomes are defined by the CDC WONDER definition for that variable, and selections were made based on the UCD - Drug/Alcohol Induced Causes subset of ICD-10 codes (Step 6. Select underlying cause of death). “All” means any available underlying cause of death code, and “Unintentional” selects Drug poisonings (overdose) Unintentional (X40-X44) and only Drug poisonings (overdose) Undetermined (Y10-Y14).\nDrug outcomes indicated as “All” are only present in the SUDORS dataset. These are drug overdose/poisoning events involving opioids, stimulants, depressants, or polysubstances.\n“All Opioids” is defined by the HCUP documentation, including ICD-10 codes T40.0 (Opium), T40.1 (Heroin), T40.2 (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic narcotics), T40.6 (Other and unspecified narcotics), F11.0 (Mental and behavioural disorders due to use of opioids, acute intoxication).\nOverdose events involving multiple drug types (polysubstances) were included for the SUDORS and CDC WONDER datasets. SUDORS batches opioid plus any stimulants (including Cocaine) or depressants (including Benzodiazepines). CDC WONDER only included the ICD-10 codes T42.4 (Benzodiazepines) and T40.5 (Cocaine).",
+    "crumbs": [
+      "Injury & Overdose",
+      "Opioid Overdoses"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/infection.html",
+    "href": "Pages/injury-and-overdose/infection.html",
+    "title": "Infection",
+    "section": "",
+    "text": "BEAM (Bacteria, Enterics, Ameba, and Mycotics)\nThe BEAM (Bacteria, Enterics, Amoeba, and Mycotics) Dashboard is an interactive tool to access and visualize data from the System for Enteric Disease Response, Investigation, and Coordination (SEDRIC). The BEAM Dashboard provides timely data on pathogen trends and serotype details to inform work to prevent illnesses from food and animal contact.",
+    "crumbs": [
+      "Injury & Overdose",
+      "Infections"
+    ]
+  },
+  {
+    "objectID": "Pages/injury-and-overdose/infection.html#beam-bacteria-enterics-ameba-and-mycotics",
+    "href": "Pages/injury-and-overdose/infection.html#beam-bacteria-enterics-ameba-and-mycotics",
+    "title": "Infection",
+    "section": "",
+    "text": "Program Landing Page:\ncdc.gov API:\n\n\n\nBEAM Dashboard\n[BEAM Dashboard - Report Data]https://data.cdc.gov/Foodborne-Waterborne-and-Related-Diseases/BEAM-Dashboard-Report-Data/jbhn-e8xn/about_data)",
+    "crumbs": [
+      "Injury & Overdose",
+      "Infections"
     ]
   }
 ]
